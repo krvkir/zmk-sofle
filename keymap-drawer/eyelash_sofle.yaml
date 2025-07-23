@@ -151,6 +151,8 @@ combos:
   k: +
 - p: [7, 8]
   k: {t: '=', s: +}
+- p: [16, 29]
+  k: {t: '-', s: _}
 - p: [20, 33]
   k: $$mdi:mouse-right-click-outline$$
 - p: [33, 46]
