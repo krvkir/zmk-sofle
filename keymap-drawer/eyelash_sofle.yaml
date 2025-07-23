@@ -59,7 +59,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - LGUI
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - LCTL
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
@@ -139,11 +139,19 @@ combos:
   k: (
 - p: [33, 34]
   k: )
+- p: [43, 44]
+  k: '{'
+- p: [46, 47]
+  k: '}'
 - p: [18, 31]
   k: _
 - p: [31, 44]
   k: '|'
+- p: [4, 5]
+  k: +
+- p: [7, 8]
+  k: {t: '=', s: +}
 - p: [20, 33]
-  k: '&mkp MB2'
+  k: $$mdi:mouse-right-click-outline$$
 - p: [33, 46]
-  k: '&mkp MB3'
+  k: $$mdi:mouse-scroll-wheel$$
