@@ -171,7 +171,7 @@
 &to 0        &trans          &trans          &trans        &trans       &trans       &kp LGUI         &trans     &trans     &trans     &trans     &trans
 			  
             >;
-            sensor-bindings = <&lr_encoder>;
+            sensor-bindings = <&scroll_encoder>;
             display-name = "extra";
         };
 
