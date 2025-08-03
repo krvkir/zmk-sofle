@@ -99,12 +99,12 @@
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <4 5>;
+            key-positions = <15 28>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <7 8>;
+            key-positions = <22 35>;
         };
 
         minus {
