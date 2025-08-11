@@ -172,7 +172,7 @@
 			  
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            display-name = "extra";
+            display-name = "arrows";
         };
 
         layer2 { // mouse
@@ -194,7 +194,7 @@
 			  
             >;
             sensor-bindings = <&scroll_encoder>;
-            display-name = "extra";
+            display-name = "mouse";
         };
 
 	};
