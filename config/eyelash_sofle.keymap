@@ -209,11 +209,11 @@
 		
         Nav { // navigation
             bindings = <
-&trans       &kp F1     &kp F2     &kp F3        &kp F4       &kp F5     &kp LC(UP)     &kp F6     &kp F7          &kp F8     &kp F9        &kp F10   &kp RBKT
-&trans       &kp PG_UP  &kp PG_DN  &kp LC(BSPC)  &kp LC(DEL)  &kp EQUAL  &kp LC(DOWN)   &kp MINUS  &kp LC(RIGHT)   &kp UP     &kp LC(LEFT)  &kp BSLH  &kp LBKT
-&trans       &kp TAB    &kp ENTER  &kp BSPC      &kp DEL      &kp ESC    &kp LC(LEFT)   &kp GRAVE  &kp RIGHT       &kp DOWN   &kp LEFT      &kp SEMI  &kp APOS
-&trans       &kp LC(Z)  &kp LC(X)  &kp LC(C)     &kp LC(V)    &kp LC(B)  &kp LC(RIGHT)  &kp HOME   &kp END         &kp COMMA  &kp DOT       &kp FSLH  &kp RSHFT
-&trans       &trans     &trans     &trans        &trans       &trans     &kp LC(ENTER)  &trans     &kp LC(ENTER)   &trans     &trans        &trans		  
+&trans       &kp F1     &kp F2     &kp F3        &kp F4       &kp F5     &kp LC(UP)     &kp F6     &kp F7         &kp F8     &kp F9         &kp F10   &kp RBKT
+&trans       &kp PG_UP  &kp PG_DN  &kp LC(BSPC)  &kp LC(DEL)  &kp EQUAL  &kp LC(DOWN)   &kp MINUS  &kp LC(LEFT)   &kp UP     &kp LC(RIGHT)  &kp BSLH  &kp LBKT
+&trans       &kp TAB    &kp ENTER  &kp BSPC      &kp DEL      &kp ESC    &kp LC(LEFT)   &kp GRAVE  &kp LEFT       &kp DOWN   &kp RIGHT      &kp SEMI  &kp APOS
+&trans       &kp LC(Z)  &kp LC(X)  &kp LC(C)     &kp LC(V)    &kp LC(B)  &kp LC(RIGHT)  &kp HOME   &kp END        &kp COMMA  &kp DOT        &kp FSLH  &kp RSHFT
+&trans       &trans     &trans     &trans        &trans       &trans     &kp LC(ENTER)  &trans     &kp LC(ENTER)  &trans     &trans         &trans		  
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "Nav";
