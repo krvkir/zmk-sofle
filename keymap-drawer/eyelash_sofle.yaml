@@ -152,9 +152,9 @@ layers:
   - {t: '=', s: +}
   - Ctl+$$mdi:arrow-down-bold$$
   - {t: '-', s: _}
-  - Ctl+$$mdi:arrow-right-bold$$
-  - $$mdi:arrow-up-bold$$
   - Ctl+$$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - Ctl+$$mdi:arrow-right-bold$$
   - {t: \, s: '|'}
   - {t: '[', s: '{'}
   - {type: held alternate}
@@ -165,9 +165,9 @@ layers:
   - $$mdi:keyboard-esc$$
   - Ctl+$$mdi:arrow-left-bold$$
   - {t: '`', s: '~'}
-  - $$mdi:arrow-right-bold$$
-  - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
