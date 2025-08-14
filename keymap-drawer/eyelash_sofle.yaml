@@ -210,10 +210,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '4', s: $}
-  - {t: '3', s: '#'}
-  - {t: '2', s: '@'}
-  - {t: '1', s: '!'}
+  - {t: '4', h: F4, s: $}
+  - {t: '3', h: F3, s: '#'}
+  - {t: '2', h: F2, s: '@'}
+  - {t: '1', h: F1, s: '!'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -223,10 +223,10 @@ layers:
   - $
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '8', s: '*'}
-  - {t: '7', s: '&'}
-  - {t: '6', s: ^}
-  - {t: '5', s: '%'}
+  - {t: '8', h: F8, s: '*'}
+  - {t: '7', h: F7, s: '&'}
+  - {t: '6', h: F6, s: ^}
+  - {t: '5', h: F5, s: '%'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -236,10 +236,10 @@ layers:
   - '*'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', s: +}
-  - {t: '-', s: _}
-  - {t: '0', s: )}
-  - {t: '9', s: (}
+  - {t: '=', h: F12, s: +}
+  - {t: '-', h: F11, s: _}
+  - {t: '0', h: F10, s: )}
+  - {t: '9', h: F9, s: (}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
