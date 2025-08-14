@@ -172,12 +172,12 @@
 
 		apostrophe {
             bindings = <&kp APOS>;
-            key-positions = <22 35>;
+            key-positions = <21 34>;
         };
 
 		quote {
             bindings = <&kp DQT>;
-            key-positions = <35 48>;
+            key-positions = <34 47>;
         };
 
 		// ... number symbols
