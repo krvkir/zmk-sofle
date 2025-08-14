@@ -106,11 +106,8 @@
     combos {
         compatible = "zmk,combos";
 
-        /* esc { */
-        /*     bindings = <&kp ESCAPE>; */
-        /*     key-positions = <13 14>; */
-        /* }; */
-
+		// horizontal
+		
         left_bkt {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <17 18>;
@@ -141,11 +138,8 @@
             key-positions = <7 8>;
         };
 
-        /* minus { */
-        /*     bindings = <&kp MINUS>; */
-        /*     key-positions = <18 31>; */
-        /* }; */
-
+		// vertical
+		
         under {
             bindings = <&kp UNDERSCORE>;
             key-positions = <18 31>;
@@ -176,11 +170,6 @@
             key-positions = <29 42>;
         };
 
-        /* backslash { */
-        /*     bindings = <&kp BACKSLASH>; */
-        /*     key-positions = <31 44>; */
-        /* }; */
-
         mouse2 {
             bindings = <&mkp RCLK>;
             key-positions = <20 33>;
@@ -189,6 +178,38 @@
 		mouse3 {
             bindings = <&mkp MCLK>;
             key-positions = <33 46>;
+        };
+
+		apostrophe {
+            bindings = <&kp APOS>;
+            key-positions = <22 35>;
+        };
+
+		quote {
+            bindings = <&kp DQT>;
+            key-positions = <35 48>;
+        };
+
+		// four-finger
+		
+		excl {
+            bindings = <&kp EXCL>;
+            key-positions = <17 18 30 31>;
+        };
+
+		at {
+            bindings = <&kp AT>;
+            key-positions = <30 31 43 44>;
+        };
+
+		hash {
+            bindings = <&kp HASH>;
+            key-positions = <20 21 33 34>;
+        };
+
+		dollar {
+            bindings = <&kp DLLR>;
+            key-positions = <33 >;
         };
     };
 
