@@ -682,13 +682,13 @@ rect.held, rect.combo.held {
 <text x="196" y="168" class="combo tap">_</text>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="714" y="99" width="28" height="26" class="combo"/>
-<text x="728" y="112" class="combo tap">&#x27;</text>
-<text x="728" y="101" class="combo shifted">&quot;</text>
+<rect rx="6" ry="6" x="658" y="106" width="28" height="26" class="combo"/>
+<text x="672" y="119" class="combo tap">&#x27;</text>
+<text x="672" y="108" class="combo shifted">&quot;</text>
 </g>
 <g class="combo combopos-13">
-<rect rx="6" ry="6" x="714" y="155" width="28" height="26" class="combo"/>
-<text x="728" y="168" class="combo tap">&quot;</text>
+<rect rx="6" ry="6" x="658" y="162" width="28" height="26" class="combo"/>
+<text x="672" y="175" class="combo tap">&quot;</text>
 </g>
 <g class="combo combopos-14">
 <rect rx="6" ry="6" x="70" y="127" width="28" height="26" class="combo"/>
@@ -1195,13 +1195,13 @@ rect.held, rect.combo.held {
 <text x="196" y="168" class="combo tap">_</text>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="714" y="99" width="28" height="26" class="combo"/>
-<text x="728" y="112" class="combo tap">&#x27;</text>
-<text x="728" y="101" class="combo shifted">&quot;</text>
+<rect rx="6" ry="6" x="658" y="106" width="28" height="26" class="combo"/>
+<text x="672" y="119" class="combo tap">&#x27;</text>
+<text x="672" y="108" class="combo shifted">&quot;</text>
 </g>
 <g class="combo combopos-13">
-<rect rx="6" ry="6" x="714" y="155" width="28" height="26" class="combo"/>
-<text x="728" y="168" class="combo tap">&quot;</text>
+<rect rx="6" ry="6" x="658" y="162" width="28" height="26" class="combo"/>
+<text x="672" y="175" class="combo tap">&quot;</text>
 </g>
 <g class="combo combopos-14">
 <rect rx="6" ry="6" x="70" y="127" width="28" height="26" class="combo"/>
@@ -1685,13 +1685,13 @@ rect.held, rect.combo.held {
 <text x="196" y="168" class="combo tap">_</text>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="714" y="99" width="28" height="26" class="combo"/>
-<text x="728" y="112" class="combo tap">&#x27;</text>
-<text x="728" y="101" class="combo shifted">&quot;</text>
+<rect rx="6" ry="6" x="658" y="106" width="28" height="26" class="combo"/>
+<text x="672" y="119" class="combo tap">&#x27;</text>
+<text x="672" y="108" class="combo shifted">&quot;</text>
 </g>
 <g class="combo combopos-13">
-<rect rx="6" ry="6" x="714" y="155" width="28" height="26" class="combo"/>
-<text x="728" y="168" class="combo tap">&quot;</text>
+<rect rx="6" ry="6" x="658" y="162" width="28" height="26" class="combo"/>
+<text x="672" y="175" class="combo tap">&quot;</text>
 </g>
 <g class="combo combopos-14">
 <rect rx="6" ry="6" x="70" y="127" width="28" height="26" class="combo"/>
@@ -2195,13 +2195,13 @@ rect.held, rect.combo.held {
 <text x="196" y="168" class="combo tap">_</text>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="714" y="99" width="28" height="26" class="combo"/>
-<text x="728" y="112" class="combo tap">&#x27;</text>
-<text x="728" y="101" class="combo shifted">&quot;</text>
+<rect rx="6" ry="6" x="658" y="106" width="28" height="26" class="combo"/>
+<text x="672" y="119" class="combo tap">&#x27;</text>
+<text x="672" y="108" class="combo shifted">&quot;</text>
 </g>
 <g class="combo combopos-13">
-<rect rx="6" ry="6" x="714" y="155" width="28" height="26" class="combo"/>
-<text x="728" y="168" class="combo tap">&quot;</text>
+<rect rx="6" ry="6" x="658" y="162" width="28" height="26" class="combo"/>
+<text x="672" y="175" class="combo tap">&quot;</text>
 </g>
 <g class="combo combopos-14">
 <rect rx="6" ry="6" x="70" y="127" width="28" height="26" class="combo"/>
