@@ -284,7 +284,7 @@ combos:
 - p: [16, 29]
   k: {t: '-', s: _}
 - p: [29, 42]
-  k: UNDER2
+  k: _
 - p: [20, 33]
   k: $$mdi:mouse-right-click-outline$$
 - p: [33, 46]
