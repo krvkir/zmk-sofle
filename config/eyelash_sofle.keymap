@@ -170,18 +170,6 @@
             key-positions = <29 42>;
         };
 
-		// ... mouse keys
-
-        mouse2 {
-            bindings = <&mkp RCLK>;
-            key-positions = <20 33>;
-        };
-
-		mouse3 {
-            bindings = <&mkp MCLK>;
-            key-positions = <33 46>;
-        };
-
 		apostrophe {
             bindings = <&kp APOS>;
             key-positions = <22 35>;
@@ -210,7 +198,7 @@
         };
 
 		dollar {
-            bindings = <&kp DQT>;
+            bindings = <&kp DOLLAR>;
             key-positions = <28 41>;
         };
 
@@ -233,29 +221,70 @@
             bindings = <&kp ASTERISK>;
             key-positions = <37 50>;
         };
+
+		// ... mouse keys
+
+        mouse2 {
+            bindings = <&mkp RCLK>;
+            key-positions = <20 33>;
+        };
+
+		mouse3 {
+            bindings = <&mkp MCLK>;
+            key-positions = <33 46>;
+        };
 		
-		///*  four-finger */
+ 		// four-finger
 		
-		/* excl2 { */
-        /*     bindings = <&kp EXCL>; */
-        /*     key-positions = <17 18 30 31>; */
-        /* }; */
+		one {
+            bindings = <&kp N1>;
+            key-positions = <13 14 26 27>;
+        };
 
-		/* at2 { */
-        /*     bindings = <&kp AT>; */
-        /*     key-positions = <30 31 43 44>; */
-        /* }; */
+		two {
+            bindings = <&kp N2>;
+            key-positions = <14 15 27 28>;
+        };
 
-		/* hash2 { */
-        /*     bindings = <&kp HASH>; */
-        /*     key-positions = <20 21 33 34>; */
-        /* }; */
+		three {
+            bindings = <&kp N3>;
+            key-positions = <15 16 28 29>;
+        };
 
-		/* dollar2 { */
-        /*     bindings = <&kp DLLR>; */
-        /*     key-positions = <33 34 46 47>; */
-        /* }; */
-    };
+		four {
+            bindings = <&kp N4>;
+            key-positions = <16 17 29 30>;
+        };
+		five {
+            bindings = <&kp N5>;
+            key-positions = <17 18 30 31>;
+        };
+
+		six {
+            bindings = <&kp N6>;
+            key-positions = <20 21 33 34>;
+        };
+
+		seven {
+            bindings = <&kp N7>;
+            key-positions = <21 22 34 35>;
+        };
+
+		eight {
+            bindings = <&kp N8>;
+            key-positions = <22 23 35 36>;
+        };
+
+		nine {
+            bindings = <&kp N9>;
+            key-positions = <23 24 36 37>;
+        };
+
+		zero {
+            bindings = <&kp N0>;
+            key-positions = <24 25 37 38>;
+        };
+	};
 
     keymap {
         compatible = "zmk,keymap";
