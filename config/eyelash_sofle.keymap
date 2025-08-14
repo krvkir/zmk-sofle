@@ -246,9 +246,9 @@
         Digits { // numpad and service bindings
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4 &mmv MOVE_UP     &trans         &trans     &trans     &trans     &trans      &trans
-&trans       &mt F4 N4          &mt F3 N3          &mt F2 N2        &mt F1 N1       &trans       &mmv MOVE_DOWN   &trans         &kp EXCL   &kp AT     &kp HASH   &kp DLLR    &trans
-&trans       &mt F8 N8          &mt F7 N7          &mt F6 N6        &mt F5 N5       &trans       &mmv MOVE_LEFT   &trans         &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK   &trans
-&trans       &mt F12 EQUAL       &mt F11 MINUS       &mt F10 N0        &mt F9 N9       &trans       &mmv MOVE_RIGHT  &trans         &kp LPAR   &kp RPAR   &kp PLUS   &kp UNDER   &trans
+&trans       &tho F4 N4      &tho F3 N3      &tho F2 N2    &tho F1 N1   &trans       &mmv MOVE_DOWN   &trans         &kp EXCL   &kp AT     &kp HASH   &kp DLLR    &trans
+&trans       &tho F8 N8      &tho F7 N7      &tho F6 N6    &tho F5 N5   &trans       &mmv MOVE_LEFT   &trans         &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK   &trans
+&trans       &tho F12 EQUAL  &tho F11 MINUS  &tho F10 N0   &tho F9 N9   &trans       &mmv MOVE_RIGHT  &trans         &kp LPAR   &kp RPAR   &kp PLUS   &kp UNDER   &trans
 &to 2        &trans          &trans          &trans        &trans       &trans       &mkp LCLK        &kp LC(ENTER)  &trans     &trans     &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
