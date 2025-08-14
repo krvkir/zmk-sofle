@@ -172,7 +172,7 @@
         };
 
         under2 {
-            bindings = <&kp UNDER2>;
+            bindings = <&kp UNDERSCORE>;
             key-positions = <29 42>;
         };
 
