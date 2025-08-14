@@ -156,14 +156,14 @@
             key-positions = <31 44>;
         };
 
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <15 28>;
-        };
-
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <22 35>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <35 48>;
         };
 
         minus {
