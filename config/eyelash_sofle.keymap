@@ -132,8 +132,8 @@
             key-positions = <18 31>;
         };
 
-        pipe {
-            bindings = <&kp PIPE>;
+        backslash {
+            bindings = <&kp BSLH>;
             key-positions = <31 44>;
         };
 
@@ -150,6 +150,11 @@
         minus {
             bindings = <&kp MINUS>;
             key-positions = <16 29>;
+        };
+		
+        under2 {
+            bindings = <&kp UNDER2>;
+            key-positions = <29 42>;
         };
 		
         /* backslash { */
