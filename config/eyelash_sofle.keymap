@@ -140,13 +140,13 @@
 
 		// vertical
 		
-        under {
-            bindings = <&kp UNDERSCORE>;
+        backslash {
+            bindings = <&kp BSLH>;
             key-positions = <18 31>;
         };
 
-        backslash {
-            bindings = <&kp BSLH>;
+        pipe {
+            bindings = <&kp PIPE>;
             key-positions = <31 44>;
         };
 
@@ -165,10 +165,12 @@
             key-positions = <16 29>;
         };
 
-        under2 {
+        under {
             bindings = <&kp UNDERSCORE>;
             key-positions = <29 42>;
         };
+
+		// ... mouse keys
 
         mouse2 {
             bindings = <&mkp RCLK>;
@@ -190,27 +192,69 @@
             key-positions = <35 48>;
         };
 
-		// four-finger
-		
+		// ... number symbols
+
 		excl {
             bindings = <&kp EXCL>;
-            key-positions = <17 18 30 31>;
+            key-positions = <14 27>;
         };
 
 		at {
             bindings = <&kp AT>;
-            key-positions = <30 31 43 44>;
+            key-positions = <27 40>;
         };
 
 		hash {
             bindings = <&kp HASH>;
-            key-positions = <20 21 33 34>;
+            key-positions = <15 28>;
         };
 
 		dollar {
-            bindings = <&kp DLLR>;
-            key-positions = <33 >;
+            bindings = <&kp DQT>;
+            key-positions = <28 41>;
         };
+
+		percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <23 36>;
+        };
+
+		caret {
+            bindings = <&kp CARET>;
+            key-positions = <36 49>;
+        };
+
+		ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <24 37>;
+        };
+
+		asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <37 50>;
+        };
+		
+		///*  four-finger */
+		
+		/* excl2 { */
+        /*     bindings = <&kp EXCL>; */
+        /*     key-positions = <17 18 30 31>; */
+        /* }; */
+
+		/* at2 { */
+        /*     bindings = <&kp AT>; */
+        /*     key-positions = <30 31 43 44>; */
+        /* }; */
+
+		/* hash2 { */
+        /*     bindings = <&kp HASH>; */
+        /*     key-positions = <20 21 33 34>; */
+        /* }; */
+
+		/* dollar2 { */
+        /*     bindings = <&kp DLLR>; */
+        /*     key-positions = <33 34 46 47>; */
+        /* }; */
     };
 
     keymap {
