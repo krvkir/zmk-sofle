@@ -982,7 +982,6 @@ MACRO(c_efly, &kp E &kp F &kp F &kp E &kp C &kp T &kp I &kp V &kp E &kp L &kp Y 
 MACRO(c_clsf, &kp C &kp L &kp A &kp S &kp S &kp I &kp F &kp I &kp C &kp A &kp T &kp I &kp O &kp N &kp SPC)
 MACRO(c_soag, &kp S &kp T &kp O &kp R &kp A &kp G &kp E &kp SPC)
 MACRO(c_hgw, &kp H &kp I &kp G &kp H &kp W &kp A &kp Y &kp SPC)
-MACRO(c_lgm, &kp L &kp O &kp N &kp G &kp - &kp T &kp E &kp R &kp M &kp SPC)
 MACRO(c_eql, &kp E &kp Q &kp U &kp A &kp L &kp SPC)
 MACRO(c_ltan, &kp L &kp I &kp M &kp I &kp T &kp A &kp T &kp I &kp O &kp N &kp SPC)
 MACRO(c_dph, &kp D &kp E &kp P &kp T &kp H &kp SPC)
