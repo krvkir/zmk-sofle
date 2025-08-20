@@ -1761,6 +1761,756 @@ combos:
 - p: [16, 17, 22, 28, 57]
   k: '&macro_c_ersi'
   l: [Base, Solo]
+- p: [27, 29, 46, 57]
+  k: '&macro_c_and'
+  l: [Base, Solo]
+- p: [30, 36, 46, 57]
+  k: '&macro_c_fnl'
+  l: [Base, Solo]
+- p: [21, 23, 28, 57]
+  k: '&macro_c_sou'
+  l: [Base, Solo]
+- p: [16, 23, 24, 27, 57]
+  k: '&macro_c_poea'
+  l: [Base, Solo]
+- p: [21, 22, 42, 57]
+  k: '&macro_c_cui'
+  l: [Base, Solo]
+- p: [16, 18, 36, 47, 57]
+  k: '&macro_c_elmt'
+  l: [Base, Solo]
+- p: [16, 18, 24, 27, 57]
+  k: '&macro_c_atep'
+  l: [Base, Solo]
+- p: [15, 23, 27, 57]
+  k: '&macro_c_wao'
+  l: [Base, Solo]
+- p: [23, 24, 33, 57]
+  k: '&macro_c_pho'
+  l: [Base, Solo]
+- p: [20, 22, 27, 57]
+  k: '&macro_c_aiy'
+  l: [Base, Solo]
+- p: [16, 27, 28, 47, 57]
+  k: '&macro_c_meas'
+  l: [Base, Solo]
+- p: [17, 22, 28, 29, 57]
+  k: '&macro_c_disr'
+  l: [Base, Solo]
+- p: [17, 21, 28, 29, 57]
+  k: '&macro_c_surd'
+  l: [Base, Solo]
+- p: [22, 23, 28, 43, 57]
+  k: '&macro_c_viso'
+  l: [Base, Solo]
+- p: [24, 27, 31, 57]
+  k: '&macro_c_pag'
+  l: [Base, Solo]
+- p: [30, 36, 47, 57]
+  k: '&macro_c_mlf'
+  l: [Base, Solo]
+- p: [24, 27, 33, 57]
+  k: '&macro_c_hap'
+  l: [Base, Solo]
+- p: [28, 29, 43, 57]
+  k: '&macro_c_dsv'
+  l: [Base, Solo]
+- p: [20, 24, 28, 57]
+  k: '&macro_c_pys'
+  l: [Base, Solo]
+- p: [28, 30, 33, 57]
+  k: '&macro_c_fsh'
+  l: [Base, Solo]
+- p: [16, 17, 20, 57]
+  k: '&macro_c_ery'
+  l: [Base, Solo]
+- p: [16, 31, 47, 57]
+  k: '&macro_c_mge'
+  l: [Base, Solo]
+- p: [30, 42, 47, 57]
+  k: '&macro_c_cfm'
+  l: [Base, Solo]
+- p: [27, 36, 42, 46, 57]
+  k: '&macro_c_cnal'
+  l: [Base, Solo]
+- p: [17, 29, 46, 57]
+  k: '&macro_c_rnd'
+  l: [Base, Solo]
+- p: [18, 21, 24, 57]
+  k: '&macro_c_ptu'
+  l: [Base, Solo]
+- p: [22, 27, 28, 33, 57]
+  k: '&macro_c_saih'
+  l: [Base, Solo]
+- p: [22, 42, 44, 57]
+  k: '&macro_c_cib'
+  l: [Base, Solo]
+- p: [16, 17, 22, 23, 57]
+  k: '&macro_c_reoi'
+  l: [Base, Solo]
+- p: [16, 27, 31, 47, 57]
+  k: '&macro_c_mage'
+  l: [Base, Solo]
+- p: [28, 36, 46, 57]
+  k: '&macro_c_snl'
+  l: [Base, Solo]
+- p: [16, 30, 46, 57]
+  k: '&macro_c_fen'
+  l: [Base, Solo]
+- p: [23, 34, 57]
+  k: '&macro_c_oj'
+  l: [Base, Solo]
+- p: [16, 31, 46, 57]
+  k: '&macro_c_gen'
+  l: [Base, Solo]
+- p: [20, 29, 36, 57]
+  k: '&macro_c_dly'
+  l: [Base, Solo]
+- p: [14, 35, 57]
+  k: '&macro_c_qk'
+  l: [Base, Solo]
+- p: [16, 22, 23, 30, 57]
+  k: '&macro_c_ofie'
+  l: [Base, Solo]
+- p: [16, 23, 31, 57]
+  k: '&macro_c_goe'
+  l: [Base, Solo]
+- p: [21, 27, 44, 57]
+  k: '&macro_c_uba'
+  l: [Base, Solo]
+- p: [16, 17, 28, 47, 57]
+  k: '&macro_c_mser'
+  l: [Base, Solo]
+- p: [20, 22, 28, 57]
+  k: '&macro_c_siy'
+  l: [Base, Solo]
+- p: [21, 23, 28, 42, 57]
+  k: '&macro_c_cuso'
+  l: [Base, Solo]
+- p: [16, 21, 31, 57]
+  k: '&macro_c_eug'
+  l: [Base, Solo]
+- p: [18, 27, 33, 57]
+  k: '&macro_c_tha'
+  l: [Base, Solo]
+- p: [31, 33, 36, 57]
+  k: '&macro_c_lgh'
+  l: [Base, Solo]
+- p: [18, 27, 35, 57]
+  k: '&macro_c_tak'
+  l: [Base, Solo]
+- p: [22, 30, 42, 57]
+  k: '&macro_c_ifc'
+  l: [Base, Solo]
+- p: [21, 23, 29, 57]
+  k: '&macro_c_duo'
+  l: [Base, Solo]
+- p: [16, 21, 22, 28, 57]
+  k: '&macro_c_seiu'
+  l: [Base, Solo]
+- p: [16, 17, 22, 27, 57]
+  k: '&macro_c_reai'
+  l: [Base, Solo]
+- p: [28, 29, 47, 57]
+  k: '&macro_c_dms'
+  l: [Base, Solo]
+- p: [28, 35, 36, 57]
+  k: '&macro_c_skl'
+  l: [Base, Solo]
+- p: [14, 21, 57]
+  k: '&macro_c_uq'
+  l: [Base, Solo]
+- p: [21, 24, 43, 57]
+  k: '&macro_c_pvu'
+  l: [Base, Solo]
+- p: [16, 21, 36, 57]
+  k: '&macro_c_elu'
+  l: [Base, Solo]
+- p: [31, 33, 57]
+  k: '&macro_c_hg'
+  l: [Base, Solo]
+- p: [27, 33, 44, 57]
+  k: '&macro_c_bah'
+  l: [Base, Solo]
+- p: [27, 28, 42, 47, 57]
+  k: '&macro_c_mcas'
+  l: [Base, Solo]
+- p: [30, 36, 42, 57]
+  k: '&macro_c_fcl'
+  l: [Base, Solo]
+- p: [41, 42, 57]
+  k: '&macro_c_cx'
+  l: [Base, Solo]
+- p: [28, 42, 46, 57]
+  k: '&macro_c_cns'
+  l: [Base, Solo]
+- p: [17, 21, 36, 57]
+  k: '&macro_c_rul'
+  l: [Base, Solo]
+- p: [28, 30, 36, 57]
+  k: '&macro_c_sfl'
+  l: [Base, Solo]
+- p: [24, 27, 30, 57]
+  k: '&macro_c_paf'
+  l: [Base, Solo]
+- p: [17, 20, 29, 57]
+  k: '&macro_c_rdy'
+  l: [Base, Solo]
+- p: [27, 44, 47, 57]
+  k: '&macro_c_mab'
+  l: [Base, Solo]
+- p: [17, 27, 28, 47, 57]
+  k: '&macro_c_masr'
+  l: [Base, Solo]
+- p: [23, 28, 30, 57]
+  k: '&macro_c_fos'
+  l: [Base, Solo]
+- p: [17, 29, 35, 57]
+  k: '&macro_c_drk'
+  l: [Base, Solo]
+- p: [15, 18, 23, 57]
+  k: '&macro_c_tow'
+  l: [Base, Solo]
+- p: [16, 22, 31, 57]
+  k: '&macro_c_ieg'
+  l: [Base, Solo]
+- p: [27, 29, 31, 57]
+  k: '&macro_c_gad'
+  l: [Base, Solo]
+- p: [17, 23, 28, 29, 57]
+  k: '&macro_c_rsod'
+  l: [Base, Solo]
+- p: [28, 29, 36, 57]
+  k: '&macro_c_sld'
+  l: [Base, Solo]
+- p: [17, 22, 27, 28, 57]
+  k: '&macro_c_rsia'
+  l: [Base, Solo]
+- p: [27, 43, 46, 57]
+  k: '&macro_c_avn'
+  l: [Base, Solo]
+- p: [16, 17, 28, 36, 57]
+  k: '&macro_c_resl'
+  l: [Base, Solo]
+- p: [27, 33, 43, 57]
+  k: '&macro_c_hav'
+  l: [Base, Solo]
+- p: [27, 31, 46, 57]
+  k: '&macro_c_gna'
+  l: [Base, Solo]
+- p: [30, 33, 36, 57]
+  k: '&macro_c_hlf'
+  l: [Base, Solo]
+- p: [15, 16, 31, 57]
+  k: '&macro_c_weg'
+  l: [Base, Solo]
+- p: [15, 16, 35, 57]
+  k: '&macro_c_wke'
+  l: [Base, Solo]
+- p: [16, 24, 33, 57]
+  k: '&macro_c_phe'
+  l: [Base, Solo]
+- p: [20, 23, 42, 57]
+  k: '&macro_c_coy'
+  l: [Base, Solo]
+- p: [18, 28, 46, 57]
+  k: '&macro_c_tns'
+  l: [Base, Solo]
+- p: [16, 30, 36, 57]
+  k: '&macro_c_fle'
+  l: [Base, Solo]
+- p: [22, 29, 31, 57]
+  k: '&macro_c_gid'
+  l: [Base, Solo]
+- p: [15, 27, 46, 57]
+  k: '&macro_c_nwa'
+  l: [Base, Solo]
+- p: [28, 29, 44, 57]
+  k: '&macro_c_dsb'
+  l: [Base, Solo]
+- p: [28, 33, 42, 57]
+  k: '&macro_c_sch'
+  l: [Base, Solo]
+- p: [28, 33, 36, 57]
+  k: '&macro_c_shl'
+  l: [Base, Solo]
+- p: [16, 17, 27, 36, 57]
+  k: '&macro_c_rela'
+  l: [Base, Solo]
+- p: [18, 22, 24, 29, 57]
+  k: '&macro_c_idpt'
+  l: [Base, Solo]
+- p: [17, 24, 33, 57]
+  k: '&macro_c_prh'
+  l: [Base, Solo]
+- p: [15, 17, 23, 57]
+  k: '&macro_c_owr'
+  l: [Base, Solo]
+- p: [42, 44, 47, 57]
+  k: '&macro_c_cmb'
+  l: [Base, Solo]
+- p: [21, 22, 36, 42, 57]
+  k: '&macro_c_cuil'
+  l: [Base, Solo]
+- p: [22, 27, 29, 36, 57]
+  k: '&macro_c_adil'
+  l: [Base, Solo]
+- p: [16, 17, 28, 46, 57]
+  k: '&macro_c_ners'
+  l: [Base, Solo]
+- p: [15, 17, 33, 57]
+  k: '&macro_c_wrh'
+  l: [Base, Solo]
+- p: [23, 28, 33, 57]
+  k: '&macro_c_hos'
+  l: [Base, Solo]
+- p: [16, 17, 21, 27, 57]
+  k: '&macro_c_eura'
+  l: [Base, Solo]
+- p: [29, 35, 44, 57]
+  k: '&macro_c_bkd'
+  l: [Base, Solo]
+- p: [15, 23, 29, 57]
+  k: '&macro_c_dow'
+  l: [Base, Solo]
+- p: [27, 29, 33, 57]
+  k: '&macro_c_ahd'
+  l: [Base, Solo]
+- p: [22, 33, 36, 57]
+  k: '&macro_c_hil'
+  l: [Base, Solo]
+- p: [18, 22, 23, 57]
+  k: '&macro_c_ito'
+  l: [Base, Solo]
+- p: [42, 43, 47, 57]
+  k: '&macro_c_vcm'
+  l: [Base, Solo]
+- p: [17, 20, 24, 57]
+  k: '&macro_c_pry'
+  l: [Base, Solo]
+- p: [16, 20, 23, 57]
+  k: '&macro_c_eoy'
+  l: [Base, Solo]
+- p: [20, 28, 29, 57]
+  k: '&macro_c_ysd'
+  l: [Base, Solo]
+- p: [18, 29, 47, 57]
+  k: '&macro_c_dmt'
+  l: [Base, Solo]
+- p: [16, 17, 27, 46, 57]
+  k: '&macro_c_aren'
+  l: [Base, Solo]
+- p: [24, 28, 30, 57]
+  k: '&macro_c_pfs'
+  l: [Base, Solo]
+- p: [30, 42, 46, 57]
+  k: '&macro_c_cnf'
+  l: [Base, Solo]
+- p: [18, 23, 29, 57]
+  k: '&macro_c_dto'
+  l: [Base, Solo]
+- p: [27, 29, 30, 57]
+  k: '&macro_c_fda'
+  l: [Base, Solo]
+- p: [22, 29, 44, 57]
+  k: '&macro_c_bid'
+  l: [Base, Solo]
+- p: [18, 28, 33, 57]
+  k: '&macro_c_sth'
+  l: [Base, Solo]
+- p: [16, 20, 27, 57]
+  k: '&macro_c_aye'
+  l: [Base, Solo]
+- p: [24, 28, 31, 57]
+  k: '&macro_c_psg'
+  l: [Base, Solo]
+- p: [15, 18, 27, 57]
+  k: '&macro_c_wat'
+  l: [Base, Solo]
+- p: [17, 22, 27, 36, 57]
+  k: '&macro_c_lari'
+  l: [Base, Solo]
+- p: [16, 22, 23, 27, 57]
+  k: '&macro_c_ioae'
+  l: [Base, Solo]
+- p: [16, 17, 22, 24, 57]
+  k: '&macro_c_prei'
+  l: [Base, Solo]
+- p: [20, 22, 42, 57]
+  k: '&macro_c_ciy'
+  l: [Base, Solo]
+- p: [21, 22, 28, 42, 57]
+  k: '&macro_c_csui'
+  l: [Base, Solo]
+- p: [36, 44, 46, 57]
+  k: '&macro_c_bln'
+  l: [Base, Solo]
+- p: [20, 22, 29, 57]
+  k: '&macro_c_idy'
+  l: [Base, Solo]
+- p: [21, 24, 27, 42, 57]
+  k: '&macro_c_capu'
+  l: [Base, Solo]
+- p: [14, 17, 57]
+  k: '&macro_c_rq'
+  l: [Base, Solo]
+- p: [27, 41, 57]
+  k: '&macro_c_ax'
+  l: [Base, Solo]
+- p: [16, 21, 23, 28, 57]
+  k: '&macro_c_soue'
+  l: [Base, Solo]
+- p: [16, 17, 22, 36, 57]
+  k: '&macro_c_reli'
+  l: [Base, Solo]
+- p: [16, 27, 31, 46, 57]
+  k: '&macro_c_nega'
+  l: [Base, Solo]
+- p: [22, 23, 31, 57]
+  k: '&macro_c_gio'
+  l: [Base, Solo]
+- p: [16, 18, 21, 23, 57]
+  k: '&macro_c_oute'
+  l: [Base, Solo]
+- p: [16, 18, 22, 28, 57]
+  k: '&macro_c_iest'
+  l: [Base, Solo]
+- p: [14, 30, 57]
+  k: '&macro_c_fq'
+  l: [Base, Solo]
+- p: [24, 27, 29, 57]
+  k: '&macro_c_pda'
+  l: [Base, Solo]
+- p: [17, 27, 29, 36, 57]
+  k: '&macro_c_dlar'
+  l: [Base, Solo]
+- p: [21, 30, 36, 57]
+  k: '&macro_c_ful'
+  l: [Base, Solo]
+- p: [22, 27, 28, 42, 57]
+  k: '&macro_c_isac'
+  l: [Base, Solo]
+- p: [17, 22, 24, 27, 57]
+  k: '&macro_c_pari'
+  l: [Base, Solo]
+- p: [18, 20, 24, 57]
+  k: '&macro_c_pty'
+  l: [Base, Solo]
+- p: [17, 20, 27, 57]
+  k: '&macro_c_ray'
+  l: [Base, Solo]
+- p: [16, 20, 30, 57]
+  k: '&macro_c_fey'
+  l: [Base, Solo]
+- p: [17, 22, 28, 36, 57]
+  k: '&macro_c_rsil'
+  l: [Base, Solo]
+- p: [27, 28, 33, 42, 57]
+  k: '&macro_c_chas'
+  l: [Base, Solo]
+- p: [36, 43, 46, 57]
+  k: '&macro_c_vln'
+  l: [Base, Solo]
+- p: [17, 21, 28, 36, 57]
+  k: '&macro_c_rslu'
+  l: [Base, Solo]
+- p: [24, 33, 42, 57]
+  k: '&macro_c_chp'
+  l: [Base, Solo]
+- p: [17, 22, 34, 57]
+  k: '&macro_c_ijr'
+  l: [Base, Solo]
+- p: [30, 33, 42, 57]
+  k: '&macro_c_chf'
+  l: [Base, Solo]
+- p: [21, 35, 57]
+  k: '&macro_c_uk'
+  l: [Base, Solo]
+- p: [27, 30, 46, 57]
+  k: '&macro_c_fna'
+  l: [Base, Solo]
+- p: [20, 23, 27, 57]
+  k: '&macro_c_ayo'
+  l: [Base, Solo]
+- p: [16, 18, 22, 23, 57]
+  k: '&macro_c_eito'
+  l: [Base, Solo]
+- p: [22, 27, 36, 42, 57]
+  k: '&macro_c_cial'
+  l: [Base, Solo]
+- p: [22, 28, 33, 42, 57]
+  k: '&macro_c_chis'
+  l: [Base, Solo]
+- p: [34, 36, 57]
+  k: '&macro_c_jl'
+  l: [Base, Solo]
+- p: [23, 27, 43, 57]
+  k: '&macro_c_ova'
+  l: [Base, Solo]
+- p: [17, 22, 23, 27, 57]
+  k: '&macro_c_aroi'
+  l: [Base, Solo]
+- p: [21, 22, 27, 29, 57]
+  k: '&macro_c_audi'
+  l: [Base, Solo]
+- p: [23, 34, 43, 57]
+  k: '&macro_c_ojv'
+  l: [Base, Solo]
+- p: [28, 43, 46, 57]
+  k: '&macro_c_vsn'
+  l: [Base, Solo]
+- p: [29, 33, 36, 57]
+  k: '&macro_c_hdl'
+  l: [Base, Solo]
+- p: [16, 18, 28, 47, 57]
+  k: '&macro_c_estm'
+  l: [Base, Solo]
+- p: [16, 21, 24, 28, 57]
+  k: '&macro_c_supe'
+  l: [Base, Solo]
+- p: [16, 30, 33, 57]
+  k: '&macro_c_feh'
+  l: [Base, Solo]
+- p: [27, 28, 29, 47, 57]
+  k: '&macro_c_adms'
+  l: [Base, Solo]
+- p: [29, 43, 46, 57]
+  k: '&macro_c_dvn'
+  l: [Base, Solo]
+- p: [16, 27, 33, 36, 57]
+  k: '&macro_c_heal'
+  l: [Base, Solo]
+- p: [16, 23, 24, 28, 57]
+  k: '&macro_c_poes'
+  l: [Base, Solo]
+- p: [22, 23, 24, 28, 57]
+  k: '&macro_c_opsi'
+  l: [Base, Solo]
+- p: [21, 28, 43, 57]
+  k: '&macro_c_uvs'
+  l: [Base, Solo]
+- p: [22, 24, 31, 57]
+  k: '&macro_c_pig'
+  l: [Base, Solo]
+- p: [28, 30, 42, 57]
+  k: '&macro_c_sfc'
+  l: [Base, Solo]
+- p: [21, 23, 30, 57]
+  k: '&macro_c_fuo'
+  l: [Base, Solo]
+- p: [28, 29, 33, 57]
+  k: '&macro_c_hsd'
+  l: [Base, Solo]
+- p: [29, 31, 36, 57]
+  k: '&macro_c_dgl'
+  l: [Base, Solo]
+- p: [17, 34, 57]
+  k: '&macro_c_jr'
+  l: [Base, Solo]
+- p: [23, 29, 30, 57]
+  k: '&macro_c_fod'
+  l: [Base, Solo]
+- p: [27, 33, 36, 42, 57]
+  k: '&macro_c_chal'
+  l: [Base, Solo]
+- p: [16, 17, 27, 28, 57]
+  k: '&macro_c_resa'
+  l: [Base, Solo]
+- p: [22, 27, 30, 36, 57]
+  k: '&macro_c_fail'
+  l: [Base, Solo]
+- p: [23, 24, 43, 57]
+  k: '&macro_c_pov'
+  l: [Base, Solo]
+- p: [22, 30, 36, 42, 57]
+  k: '&macro_c_cfli'
+  l: [Base, Solo]
+- p: [22, 33, 44, 57]
+  k: '&macro_c_bih'
+  l: [Base, Solo]
+- p: [27, 28, 44, 57]
+  k: '&macro_c_bas'
+  l: [Base, Solo]
+- p: [22, 28, 44, 57]
+  k: '&macro_c_bsi'
+  l: [Base, Solo]
+- p: [18, 22, 28, 29, 57]
+  k: '&macro_c_itsd'
+  l: [Base, Solo]
+- p: [21, 22, 28, 43, 57]
+  k: '&macro_c_suvi'
+  l: [Base, Solo]
+- p: [16, 22, 30, 36, 57]
+  k: '&macro_c_feli'
+  l: [Base, Solo]
+- p: [18, 21, 36, 57]
+  k: '&macro_c_ltu'
+  l: [Base, Solo]
+- p: [21, 27, 36, 42, 57]
+  k: '&macro_c_caul'
+  l: [Base, Solo]
+- p: [30, 36, 42, 47, 57]
+  k: '&macro_c_cmfl'
+  l: [Base, Solo]
+- p: [16, 18, 36, 46, 57]
+  k: '&macro_c_elnt'
+  l: [Base, Solo]
+- p: [16, 17, 36, 46, 57]
+  k: '&macro_c_reln'
+  l: [Base, Solo]
+- p: [27, 28, 29, 36, 57]
+  k: '&macro_c_dsla'
+  l: [Base, Solo]
+- p: [16, 18, 28, 46, 57]
+  k: '&macro_c_sent'
+  l: [Base, Solo]
+- p: [22, 27, 30, 42, 57]
+  k: '&macro_c_aicf'
+  l: [Base, Solo]
+- p: [16, 20, 22, 57]
+  k: '&macro_c_eiy'
+  l: [Base, Solo]
+- p: [16, 22, 24, 28, 57]
+  k: '&macro_c_epsi'
+  l: [Base, Solo]
+- p: [14, 16, 17, 57]
+  k: '&macro_c_req'
+  l: [Base, Solo]
+- p: [28, 31, 33, 57]
+  k: '&macro_c_sgh'
+  l: [Base, Solo]
+- p: [16, 18, 28, 36, 57]
+  k: '&macro_c_tels'
+  l: [Base, Solo]
+- p: [22, 23, 24, 43, 57]
+  k: '&macro_c_ipov'
+  l: [Base, Solo]
+- p: [16, 18, 27, 46, 57]
+  k: '&macro_c_enta'
+  l: [Base, Solo]
+- p: [24, 28, 44, 57]
+  k: '&macro_c_psb'
+  l: [Base, Solo]
+- p: [28, 31, 46, 57]
+  k: '&macro_c_sng'
+  l: [Base, Solo]
+- p: [17, 20, 22, 57]
+  k: '&macro_c_riy'
+  l: [Base, Solo]
+- p: [20, 23, 29, 57]
+  k: '&macro_c_doy'
+  l: [Base, Solo]
+- p: [22, 23, 28, 42, 57]
+  k: '&macro_c_cosi'
+  l: [Base, Solo]
+- p: [16, 18, 22, 36, 57]
+  k: '&macro_c_ilet'
+  l: [Base, Solo]
+- p: [29, 36, 46, 57]
+  k: '&macro_c_lnd'
+  l: [Base, Solo]
+- p: [16, 20, 23, 24, 57]
+  k: '&macro_c_epoy'
+  l: [Base, Solo]
+- p: [24, 42, 43, 57]
+  k: '&macro_c_pcv'
+  l: [Base, Solo]
+- p: [18, 20, 36, 57]
+  k: '&macro_c_tyl'
+  l: [Base, Solo]
+- p: [21, 29, 44, 57]
+  k: '&macro_c_bud'
+  l: [Base, Solo]
+- p: [18, 21, 29, 57]
+  k: '&macro_c_tud'
+  l: [Base, Solo]
+- p: [22, 27, 36, 43, 57]
+  k: '&macro_c_vail'
+  l: [Base, Solo]
+- p: [16, 17, 28, 33, 57]
+  k: '&macro_c_sreh'
+  l: [Base, Solo]
+- p: [16, 22, 28, 36, 57]
+  k: '&macro_c_seli'
+  l: [Base, Solo]
+- p: [15, 17, 46, 57]
+  k: '&macro_c_wrn'
+  l: [Base, Solo]
+- p: [22, 23, 27, 28, 57]
+  k: '&macro_c_asoi'
+  l: [Base, Solo]
+- p: [29, 36, 47, 57]
+  k: '&macro_c_mdl'
+  l: [Base, Solo]
+- p: [15, 17, 36, 57]
+  k: '&macro_c_rlw'
+  l: [Base, Solo]
+- p: [16, 17, 36, 47, 57]
+  k: '&macro_c_erml'
+  l: [Base, Solo]
+- p: [22, 24, 28, 42, 57]
+  k: '&macro_c_pics'
+  l: [Base, Solo]
+- p: [27, 28, 30, 36, 57]
+  k: '&macro_c_fsal'
+  l: [Base, Solo]
+- p: [20, 36, 57]
+  k: '&macro_c_ly'
+  l: [Base, Solo]
+- p: [21, 28, 36, 42, 57]
+  k: '&macro_c_clus'
+  l: [Base, Solo]
+- p: [16, 18, 20, 57]
+  k: '&macro_c_tey'
+  l: [Base, Solo]
+- p: [15, 29, 36, 57]
+  k: '&macro_c_wdl'
+  l: [Base, Solo]
+- p: [22, 23, 24, 42, 57]
+  k: '&macro_c_copi'
+  l: [Base, Solo]
+- p: [23, 33, 42, 57]
+  k: '&macro_c_coh'
+  l: [Base, Solo]
+- p: [21, 22, 23, 57]
+  k: '&macro_c_iuo'
+  l: [Base, Solo]
+- p: [16, 27, 28, 30, 57]
+  k: '&macro_c_sfae'
+  l: [Base, Solo]
+- p: [28, 36, 43, 57]
+  k: '&macro_c_slv'
+  l: [Base, Solo]
+- p: [17, 21, 22, 29, 57]
+  k: '&macro_c_rdui'
+  l: [Base, Solo]
+- p: [16, 21, 27, 36, 57]
+  k: '&macro_c_eual'
+  l: [Base, Solo]
+- p: [18, 35, 46, 57]
+  k: '&macro_c_tnk'
+  l: [Base, Solo]
+- p: [22, 23, 40, 57]
+  k: '&macro_c_oiz'
+  l: [Base, Solo]
+- p: [21, 27, 28, 29, 57]
+  k: '&macro_c_usad'
+  l: [Base, Solo]
+- p: [29, 31, 46, 57]
+  k: '&macro_c_ngd'
+  l: [Base, Solo]
+- p: [23, 42, 44, 57]
+  k: '&macro_c_cob'
+  l: [Base, Solo]
+- p: [18, 22, 27, 36, 57]
+  k: '&macro_c_ital'
+  l: [Base, Solo]
+- p: [20, 23, 28, 57]
+  k: '&macro_c_soy'
+  l: [Base, Solo]
+- p: [15, 22, 23, 57]
+  k: '&macro_c_owi'
+  l: [Base, Solo]
 - p: [17, 18]
   k: {t: '[', s: '{'}
 - p: [20, 21]
