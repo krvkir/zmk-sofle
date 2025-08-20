@@ -30,6 +30,8 @@
 
 / {
     macros {
+        #include "macros.dtsi"
+
         hold_once: hold_once {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -38,7 +40,7 @@
             /* Forward the parameter into &kp, and TAP it once */
             bindings = <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>;
         };
-    };
+	};
 
     behaviors {
         tho: tho { // tap-hold once
@@ -105,9 +107,10 @@
 
     combos {
         compatible = "zmk,combos";
+        #include "combos.dtsi"
 
 		// horizontal
-		
+
         left_bkt {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <17 18>;
@@ -139,7 +142,7 @@
         };
 
 		// vertical
-		
+
         backslash {
             bindings = <&kp BSLH>;
             key-positions = <18 31>;
@@ -233,9 +236,9 @@
             bindings = <&mkp MCLK>;
             key-positions = <33 46>;
         };
-		
+
  		// four-finger
-		
+
 		one {
             bindings = <&kp N1>;
             key-positions = <13 14 26 27>;
