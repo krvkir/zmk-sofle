@@ -230,97 +230,99 @@
         mouse2 {
             bindings = <&mkp RCLK>;
             key-positions = <20 33>;
+			layers = <3>;
         };
 
 		mouse3 {
             bindings = <&mkp MCLK>;
             key-positions = <33 46>;
+			layers = <3>;
         };
 
- 		// four-finger
+ 		/* // four-finger */
 
-		one {
-            bindings = <&kp N1>;
-            key-positions = <13 14 26 27>;
-        };
+		/* one { */
+        /*     bindings = <&kp N1>; */
+        /*     key-positions = <13 14 26 27>; */
+        /* }; */
 
-		two {
-            bindings = <&kp N2>;
-            key-positions = <14 15 27 28>;
-        };
+		/* two { */
+        /*     bindings = <&kp N2>; */
+        /*     key-positions = <14 15 27 28>; */
+        /* }; */
 
-		three {
-            bindings = <&kp N3>;
-            key-positions = <15 16 28 29>;
-        };
+		/* three { */
+        /*     bindings = <&kp N3>; */
+        /*     key-positions = <15 16 28 29>; */
+        /* }; */
 
-		four {
-            bindings = <&kp N4>;
-            key-positions = <16 17 29 30>;
-        };
-		five {
-            bindings = <&kp N5>;
-            key-positions = <17 18 30 31>;
-        };
+		/* four { */
+        /*     bindings = <&kp N4>; */
+        /*     key-positions = <16 17 29 30>; */
+        /* }; */
+		/* five { */
+        /*     bindings = <&kp N5>; */
+        /*     key-positions = <17 18 30 31>; */
+        /* }; */
 
-		six {
-            bindings = <&kp N6>;
-            key-positions = <20 21 33 34>;
-        };
+		/* six { */
+        /*     bindings = <&kp N6>; */
+        /*     key-positions = <20 21 33 34>; */
+        /* }; */
 
-		seven {
-            bindings = <&kp N7>;
-            key-positions = <21 22 34 35>;
-        };
+		/* seven { */
+        /*     bindings = <&kp N7>; */
+        /*     key-positions = <21 22 34 35>; */
+        /* }; */
 
-		eight {
-            bindings = <&kp N8>;
-            key-positions = <22 23 35 36>;
-        };
+		/* eight { */
+        /*     bindings = <&kp N8>; */
+        /*     key-positions = <22 23 35 36>; */
+        /* }; */
 
-		nine {
-            bindings = <&kp N9>;
-            key-positions = <23 24 36 37>;
-        };
+		/* nine { */
+        /*     bindings = <&kp N9>; */
+        /*     key-positions = <23 24 36 37>; */
+        /* }; */
 
-		zero {
-            bindings = <&kp N0>;
-            key-positions = <24 25 37 38>;
-        };
+		/* zero { */
+        /*     bindings = <&kp N0>; */
+        /*     key-positions = <24 25 37 38>; */
+        /* }; */
 	};
 
     keymap {
         compatible = "zmk,keymap";
 
-        Base { // a base for kmonad mapping: no nav layer, no home row mods — they're done via kmonad
+        Base { // a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
             bindings = <
-//0          1               2               3             4            5             6               7             8          9          10         11          12
-&kp ESC      &kp N1          &kp N2          &kp N3        &kp N4       &kp N5        &kp UP_ARROW    &kp N6        &kp N7     &kp N8     &kp N9     &kp N0      &kp RBKT
-
-//13         14              15              16            17           18            19              20            21         22         23         24          25
-&kp TAB      &kp Q           &kp W           &kp E         &kp R        &kp T         &kp DOWN_ARROW  &kp Y         &kp U      &kp I      &kp O      &kp P       &kp LBKT
-
-//26         27              28              29            30           31            32              33            34         35         36         37          38
-&kp CAPS     &kp A           &kp S           &kp D         &kp F        &kp G         &kp LEFT_ARROW  &kp H         &kp J      &kp K      &kp L      &kp SEMI    &kp APOS
-
-//39         40              41              42            43           44            45              46            47         48         49         50          51
-&kp LSHFT    &kp Z           &kp X           &kp C         &kp V        &kp B         &kp RIGHT_ARROW &kp N         &kp M      &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT
-
-//52         53              54              55            56           57            58              59            60         61         62         63
-&to 1        &kp UP_ARROW    &kp DOWN_ARROW  &kp LALT      &kp SPACE    &ltq 3 SPACE  &kp ENTER       &ltq 2 ENTER  &kp ENTER  &kp RALT   &kp MINUS  &kp EQUAL
+//0          1               2               3             4              5             6               7             8             9          10         11          12
+&kp ESC      &kp N1          &kp N2          &kp N3        &kp N4         &kp N5        &kp UP_ARROW    &kp N6        &kp N7        &kp N8     &kp N9     &kp N0      &kp RBKT
+																		  														    
+//13         14              15              16            17             18            19              20            21            22         23         24          25
+&kp TAB      &kp Q           &kp W           &kp E         &kp R          &kp T         &kp DOWN_ARROW  &kp Y         &kp U         &kp I      &kp O      &kp P       &kp LBKT
+																		  														    
+//26         27              28              29            30             31            32              33            34            35         36         37          38
+&kp CAPS     &kp A           &kp S           &kp D         &kp F          &kp G         &kp LEFT_ARROW  &kp H         &kp J         &kp K      &kp L      &kp SEMI    &kp APOS
+																		  														    
+//39         40              41              42            43             44            45              46            47            48         49         50          51
+&kp LSHFT    &kp Z           &kp X           &kp C         &kp V          &kp B         &kp RIGHT_ARROW &kp N         &kp M         &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT
+																		  														    
+//52         53              54              55            56             57            58              59            60            61         62         63
+&to 1        &kp UP_ARROW    &kp DOWN_ARROW  &kp LALT      &ltq 3 SPACE   &ltq 2 SPACE  &kp ENTER       &ltq 2 ENTER  &ltq 3 ENTER  &kp RALT   &kp MINUS  &kp EQUAL
 
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
             display-name = "Base";
         };
 
         Solo { // autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
             bindings = <
-&kp ESC      &kp N1       &kp N2      &kp N3       &kp N4        &kp N5       &kp UP     &kp N6        &kp N7      &kp N8       &kp N9        &kp N0          &kp RBKT
-&kp TAB      &kp Q        &kp W       &kp E        &kp R         &kp T        &kp DOWN   &kp Y         &kp U       &kp I        &kp O         &kp P           &kp LBKT
-&mo 2        &hm LCTRL A  &hm LALT S  &hm LSHFT D  &hm LGUI F    &kp G        &kp LEFT   &kp H         &hm LGUI J  &hm LSHFT K  &hm LALT L    &hm LCTRL SEMI  &kp APOS
-&kp LSHFT    &kp Z        &kp X       &kp C        &kp V         &kp B        &kp RIGHT  &kp N         &kp M       &kp COMMA    &kp DOT       &kp FSLH        &kp RSHFT
-&to 0        &kp UP       &kp DOWN    &kp LALT     &ltq 3 SPACE  &ltq 3 SPACE &kp ENTER  &ltq 2 ENTER  &kp ENTER   &kp RALT     &kp MINUS     &kp EQUAL
+&kp ESC      &kp N1       &kp N2      &kp N3       &kp N4      &kp N5  &trans  &kp N6  &kp N7      &kp N8       &kp N9        &kp N0          &kp RBKT
+&kp TAB      &kp Q        &kp W       &kp E        &kp R       &kp T   &trans  &kp Y   &kp U       &kp I        &kp O         &kp P           &kp LBKT
+&mo 2        &hm LCTRL A  &hm LALT S  &hm LSHFT D  &hm LGUI F  &kp G   &trans  &kp H   &hm LGUI J  &hm LSHFT K  &hm LALT L    &hm LCTRL SEMI  &kp APOS
+&kp LSHFT    &kp Z        &kp X       &kp C        &kp V       &kp B   &trans  &kp N   &kp M       &kp COMMA    &kp DOT       &kp FSLH        &kp RSHFT
+&to 0        &trans       &kp trans   &kp trans    &trans      &trans  &trans  &trans  &trans      &trans       &trans        &trans
 
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -346,7 +348,7 @@
 &trans       &tho F4 N4      &tho F3 N3      &tho F2 N2    &tho F1 N1   &trans       &mmv MOVE_DOWN   &trans         &kp EXCL   &kp AT     &kp HASH   &kp DLLR    &trans
 &trans       &tho F8 N8      &tho F7 N7      &tho F6 N6    &tho F5 N5   &trans       &mmv MOVE_LEFT   &trans         &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK   &trans
 &trans       &tho F12 EQUAL  &tho F11 MINUS  &tho F10 N0   &tho F9 N9   &trans       &mmv MOVE_RIGHT  &trans         &kp LPAR   &kp RPAR   &kp PLUS   &kp UNDER   &trans
-&to 2        &trans          &trans          &trans        &trans       &trans       &mkp LCLK        &kp LC(ENTER)  &trans     &trans     &trans     &trans
+&trans       &trans          &trans          &trans        &trans       &trans       &mkp LCLK        &kp LC(ENTER)  &trans     &trans     &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "Digits";
