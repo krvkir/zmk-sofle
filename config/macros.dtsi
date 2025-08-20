@@ -7,9 +7,6 @@
       bindings = <BINDINGS>; \
   };
 
-MACRO(c_SEMI, &kp BSPC &kp SEMI &kp SPC)
-MACRO(c_COMMA, &kp BSPC &kp COMMA &kp SPC)
-MACRO(c_DOT, &kp BSPC &kp DOT &kp SPC)
 MACRO(c_t, &kp T &kp H &kp E &kp SPC)
 MACRO(c_a, &kp A &kp N &kp D &kp SPC)
 MACRO(c_y, &kp Y &kp O &kp U &kp SPC)
