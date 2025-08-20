@@ -3186,9 +3186,6 @@ combos:
 - p: [15, 31, 33, 57]
   k: '&macro_c_hgw'
   l: [Base, Solo]
-- p: [31, 36, 47, 57]
-  k: '&macro_c_lgm'
-  l: [Base, Solo]
 - p: [14, 16, 36, 57]
   k: '&macro_c_eql'
   l: [Base, Solo]
