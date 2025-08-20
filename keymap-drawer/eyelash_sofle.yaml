@@ -120,8 +120,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - trans
-  - trans
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
