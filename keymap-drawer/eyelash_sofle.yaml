@@ -483,9 +483,6 @@ combos:
 - p: [20, 23, 57]
   k: '&macro_c_oy'
   l: [Base, Solo]
-- p: [18, 29, 57]
-  k: '&macro_c_dt'
-  l: [Base, Solo]
 - p: [16, 27, 57]
   k: '&macro_c_ae'
   l: [Base, Solo]
@@ -498,8 +495,8 @@ combos:
 - p: [20, 29, 57]
   k: '&macro_c_dy'
   l: [Base, Solo]
-- p: [18, 22, 29, 57]
-  k: '&macro_c_dit'
+- p: [18, 29, 57]
+  k: '&macro_c_dt'
   l: [Base, Solo]
 - p: [17, 23, 57]
   k: '&macro_c_or'
@@ -614,9 +611,6 @@ combos:
   l: [Base, Solo]
 - p: [21, 40, 57]
   k: '&macro_c_zu'
-  l: [Base, Solo]
-- p: [18, 29, 46, 57]
-  k: '&macro_c_dnt'
   l: [Base, Solo]
 - p: [20, 24, 57]
   k: '&macro_c_py'
@@ -744,9 +738,6 @@ combos:
 - p: [15, 29, 35, 57]
   k: '&macro_c_wkd'
   l: [Base, Solo]
-- p: [18, 22, 57]
-  k: '&macro_c_it'
-  l: [Base, Solo]
 - p: [16, 30, 57]
   k: '&macro_c_fe'
   l: [Base, Solo]
@@ -758,6 +749,9 @@ combos:
   l: [Base, Solo]
 - p: [28, 40, 47, 57]
   k: '&macro_c_zsm'
+  l: [Base, Solo]
+- p: [18, 22, 57]
+  k: '&macro_c_it'
   l: [Base, Solo]
 - p: [16, 17, 27, 57]
   k: '&macro_c_are'
@@ -779,9 +773,6 @@ combos:
   l: [Base, Solo]
 - p: [22, 27, 57]
   k: '&macro_c_ai'
-  l: [Base, Solo]
-- p: [27, 42, 46, 57]
-  k: '&macro_c_can'
   l: [Base, Solo]
 - p: [16, 30, 36, 57]
   k: '&macro_c_fel'
@@ -1031,9 +1022,6 @@ combos:
   l: [Base, Solo]
 - p: [23, 27, 42, 57]
   k: '&macro_c_coa'
-  l: [Base, Solo]
-- p: [18, 28, 29, 57]
-  k: '&macro_c_dst'
   l: [Base, Solo]
 - p: [23, 35, 44, 57]
   k: '&macro_c_bok'
@@ -1332,6 +1320,9 @@ combos:
 - p: [28, 42, 46, 57]
   k: '&macro_c_scn'
   l: [Base, Solo]
+- p: [18, 22, 29, 57]
+  k: '&macro_c_idt'
+  l: [Base, Solo]
 - p: [16, 28, 47, 57]
   k: '&macro_c_mes'
   l: [Base, Solo]
@@ -1419,8 +1410,8 @@ combos:
 - p: [22, 30, 33, 57]
   k: '&macro_c_fih'
   l: [Base, Solo]
-- p: [18, 21, 28, 57]
-  k: '&macro_c_stu'
+- p: [18, 28, 29, 57]
+  k: '&macro_c_std'
   l: [Base, Solo]
 - p: [16, 22, 24, 57]
   k: '&macro_c_pie'
