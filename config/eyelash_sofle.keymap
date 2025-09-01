@@ -239,62 +239,16 @@
 			layers = <3>;
         };
 
- 		/* // four-finger */
-
-		/* one { */
-        /*     bindings = <&kp N1>; */
-        /*     key-positions = <13 14 26 27>; */
-        /* }; */
-
-		/* two { */
-        /*     bindings = <&kp N2>; */
-        /*     key-positions = <14 15 27 28>; */
-        /* }; */
-
-		/* three { */
-        /*     bindings = <&kp N3>; */
-        /*     key-positions = <15 16 28 29>; */
-        /* }; */
-
-		/* four { */
-        /*     bindings = <&kp N4>; */
-        /*     key-positions = <16 17 29 30>; */
-        /* }; */
-		/* five { */
-        /*     bindings = <&kp N5>; */
-        /*     key-positions = <17 18 30 31>; */
-        /* }; */
-
-		/* six { */
-        /*     bindings = <&kp N6>; */
-        /*     key-positions = <20 21 33 34>; */
-        /* }; */
-
-		/* seven { */
-        /*     bindings = <&kp N7>; */
-        /*     key-positions = <21 22 34 35>; */
-        /* }; */
-
-		/* eight { */
-        /*     bindings = <&kp N8>; */
-        /*     key-positions = <22 23 35 36>; */
-        /* }; */
-
-		/* nine { */
-        /*     bindings = <&kp N9>; */
-        /*     key-positions = <23 24 36 37>; */
-        /* }; */
-
-		/* zero { */
-        /*     bindings = <&kp N0>; */
-        /*     key-positions = <24 25 37 38>; */
-        /* }; */
+		delete_word {
+            bindings = <&kp LC(BSPC)>;
+            key-positions = <16 57>;
+        };
 	};
 
     keymap {
         compatible = "zmk,keymap";
 
-        Base { // a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
+        Base { // Layer 0: a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
             bindings = <
 //0          1               2               3             4              5             6               7             8             9          10         11          12
 &kp ESC      &kp N1          &kp N2          &kp N3        &kp N4         &kp N5        &kp UP_ARROW    &kp N6        &kp N7        &kp N8     &kp N9     &kp N0      &kp RBKT
@@ -309,14 +263,14 @@
 &kp LSHFT    &kp Z           &kp X           &kp C         &kp V          &kp B         &kp RIGHT_ARROW &kp N         &kp M         &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT
 																		  														    
 //52         53              54              55            56             57            58              59            60            61         62         63
-&to 1        &kp UP_ARROW    &kp DOWN_ARROW  &kp LALT      &kp SPACE   &ltq 2 SPACE  &kp ENTER       &ltq 2 ENTER  &kp ENTER     &kp RALT   &kp MINUS  &kp EQUAL
+&to 1        &kp UP_ARROW    &kp DOWN_ARROW  &kp LALT      &kp SPACE      &ltq 3 SPACE  &kp ENTER       &ltq 2 ENTER  &kp ENTER     &kp RALT   &kp MINUS  &kp EQUAL
 
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
             display-name = "Base";
         };
 
-        Solo { // autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
+        Solo { // Layer 1: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
             bindings = <
 &kp ESC      &kp N1       &kp N2      &kp N3       &kp N4      &kp N5        &trans  &kp N6  &kp N7      &kp N8       &kp N9        &kp N0          &kp RBKT
 &kp TAB      &kp Q        &kp W       &kp E        &kp R       &kp T         &trans  &kp Y   &kp U       &kp I        &kp O         &kp P           &kp LBKT
@@ -330,7 +284,7 @@
         };
 
 
-        Nav { // navigation
+        Nav { // Layer 2: Navigation
             bindings = <
 &trans       &kp F1     &kp F2     &kp F3        &kp F4       &kp F5     &kp LC(UP)     &kp F6     &kp F7         &kp F8     &kp F9         &kp F10   &kp RBKT
 &trans       &kp PG_UP  &kp PG_DN  &kp LC(BSPC)  &kp LC(DEL)  &kp EQUAL  &kp LC(DOWN)   &kp MINUS  &kp LC(LEFT)   &kp UP     &kp LC(RIGHT)  &kp BSLH  &kp LBKT
@@ -342,7 +296,7 @@
             display-name = "Nav";
         };
 
-        Digits { // numpad and service bindings
+        Digits { // Layer 3: Numpad and service bindings
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4 &mmv MOVE_UP     &trans         &trans     &trans     &trans     &trans      &trans
 &trans       &tho F4 N4      &tho F3 N3      &tho F2 N2    &tho F1 N1   &trans       &mmv MOVE_DOWN   &trans         &kp EXCL   &kp AT     &kp HASH   &kp DLLR    &trans
