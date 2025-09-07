@@ -266,7 +266,7 @@
 &to 1        &kp UP_ARROW    &kp DOWN_ARROW  &kp LALT      &kp SPACE      &none         &kp ENTER       &none         &kp ENTER     &kp RALT   &kp MINUS  &kp EQUAL
 
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
             display-name = "Base";
         };
 
@@ -279,7 +279,7 @@
 &to 0        &trans          &trans           &trans       &trans         &trans        &trans         &trans  &trans      &trans       &trans        &trans
 
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
             display-name = "Solo";
         };
 
