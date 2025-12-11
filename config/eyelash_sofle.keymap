@@ -267,7 +267,8 @@
 &to 1        &kp UP_ARROW    &kp DOWN_ARROW  &kp LALT      &kp SPACE      &none         &kp ENTER       &none         &kp ENTER     &kp RALT   &kp MINUS  &kp EQUAL
 
             >;
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&scroll_encoder>;
+            /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
             display-name = "Base";
         };
 		
@@ -281,7 +282,8 @@
 &to 0        &trans          &trans           &trans       &trans         &trans        &trans         &trans  &trans      &trans       &trans        &trans
 
             >;
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&scroll_encoder>;
+            /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
             display-name = "Solo";
         };
 
@@ -295,7 +297,7 @@
 &trans       &trans     &trans     &trans        &trans       &trans     &kp LC(ENTER)  &trans     &kp LC(ENTER)  &trans     &trans         &trans
             >;
             sensor-bindings = <&scroll_encoder>;
-            display-name = "Nav";
+            display-name = "Nav1";
         };
 
 		// Layer 3: Additional navigationNumpad and service bindings.
@@ -309,7 +311,7 @@
 &trans       &trans          &trans          &trans        &trans       &trans       &mkp LCLK        &trans         &trans     &trans     &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
-            display-name = "Digits";
+            display-name = "Nav2";
         };
 
 		// Layer 4: Numpad and service bindings
