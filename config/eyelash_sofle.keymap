@@ -247,8 +247,9 @@
 
     keymap {
         compatible = "zmk,keymap";
-
-        Base { // Layer 0: a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
+		
+		// Layer 0: a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
+        Base { 
             bindings = <
 //0          1               2               3             4              5             6               7             8             9          10         11          12
 &kp ESC      &kp N1          &kp N2          &kp N3        &kp N4         &kp N5        &kp UP_ARROW    &kp N6        &kp N7        &kp N8     &kp N9     &kp N0      &kp RBKT
@@ -266,11 +267,13 @@
 &to 1        &kp UP_ARROW    &kp DOWN_ARROW  &kp LALT      &kp SPACE      &none         &kp ENTER       &none         &kp ENTER     &kp RALT   &kp MINUS  &kp EQUAL
 
             >;
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&scroll_encoder>;
+            /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
             display-name = "Base";
         };
-
-        Solo { // Layer 1: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
+		
+		// Layer 1: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
+        Solo { 
             bindings = <
 &kp ESC      &kp N1          &kp N2           &kp N3       &kp N4         &kp N5        &trans         &kp N6  &kp N7      &kp N8       &kp N9        &kp N0          &kp RBKT
 &kp TAB      &kp Q           &kp W            &kp E        &kp R          &kp T         &trans         &kp Y   &kp U       &kp I        &kp O         &kp P           &kp LBKT
@@ -279,12 +282,13 @@
 &to 0        &trans          &trans           &trans       &trans         &trans        &trans         &trans  &trans      &trans       &trans        &trans
 
             >;
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&scroll_encoder>;
+            /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
             display-name = "Solo";
         };
 
-
-        Nav { // Layer 2: Navigation
+		// Layer 2: Navigation
+        Nav1 {
             bindings = <
 &trans       &kp F1     &kp F2     &kp F3        &kp F4       &kp F5     &kp LC(UP)     &kp F6     &kp F7         &kp F8     &kp F9         &kp F10   &kp RBKT
 &trans       &kp PG_UP  &kp PG_DN  &kp LC(BSPC)  &kp LC(DEL)  &kp EQUAL  &kp LC(DOWN)   &kp MINUS  &kp LC(LEFT)   &kp UP     &kp LC(RIGHT)  &kp BSLH  &kp LBKT
@@ -293,20 +297,36 @@
 &trans       &trans     &trans     &trans        &trans       &trans     &kp LC(ENTER)  &trans     &kp LC(ENTER)  &trans     &trans         &trans
             >;
             sensor-bindings = <&scroll_encoder>;
-            display-name = "Nav";
+            display-name = "Nav1";
         };
 
-        Digits { // Layer 3: Numpad and service bindings
+		// Layer 3: Additional navigationNumpad and service bindings.
+		// Don't remap alphabetical charactres on this layer as it may cause false recognitions when typing fast.
+        Nav2 { 
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4 &mmv MOVE_UP     &trans         &trans     &trans     &trans     &trans      &trans
-&trans       &tho F4 N4      &tho F3 N3      &tho F2 N2    &tho F1 N1   &trans       &mmv MOVE_DOWN   &trans         &kp EXCL   &kp AT     &kp HASH   &kp DLLR    &trans
-&trans       &tho F8 N8      &tho F7 N7      &tho F6 N6    &tho F5 N5   &trans       &mmv MOVE_LEFT   &trans         &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK   &trans
-&trans       &tho F12 EQUAL  &tho F11 MINUS  &tho F10 N0   &tho F9 N9   &trans       &mmv MOVE_RIGHT  &trans         &kp LPAR   &kp RPAR   &kp PLUS   &kp UNDER   &trans
-&trans       &trans          &trans          &trans        &trans       &trans       &mkp LCLK        &kp LC(ENTER)  &trans     &trans     &trans     &trans
+&trans       &trans          &trans          &trans        &trans       &trans       &mmv MOVE_DOWN   &trans         &trans     &trans     &trans     &trans      &trans
+&trans       &trans          &trans          &trans        &trans       &trans       &mmv MOVE_LEFT   &trans         &trans     &trans     &trans     &trans      &trans
+&trans       &trans          &trans          &trans        &trans       &trans       &mmv MOVE_RIGHT  &trans         &trans     &trans     &trans     &trans      &trans
+&trans       &trans          &trans          &trans        &trans       &trans       &mkp LCLK        &trans         &trans     &trans     &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
-            display-name = "Digits";
+            display-name = "Nav2";
         };
+
+/* 		// Layer 4: Numpad and service bindings */
+/* 		// TODO Enable it with some key from the thumbs cluster. */
+/*         Digits {  */
+/*             bindings = < */
+/* &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4 &mmv MOVE_UP     &trans         &trans     &trans     &trans     &trans      &trans */
+/* &trans       &tho F4 N4      &tho F3 N3      &tho F2 N2    &tho F1 N1   &trans       &mmv MOVE_DOWN   &trans         &kp EXCL   &kp AT     &kp HASH   &kp DLLR    &trans */
+/* &trans       &tho F8 N8      &tho F7 N7      &tho F6 N6    &tho F5 N5   &trans       &mmv MOVE_LEFT   &trans         &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK   &trans */
+/* &trans       &tho F12 EQUAL  &tho F11 MINUS  &tho F10 N0   &tho F9 N9   &trans       &mmv MOVE_RIGHT  &trans         &kp LPAR   &kp RPAR   &kp PLUS   &kp UNDER   &trans */
+/* &trans       &trans          &trans          &trans        &trans       &trans       &mkp LCLK        &kp LC(ENTER)  &trans     &trans     &trans     &trans */
+/*             >; */
+/*             sensor-bindings = <&scroll_encoder>; */
+/*             display-name = "Digits"; */
+/*         }; */
 
 /*         layer1 { // arrows */
 /*             bindings = < */
