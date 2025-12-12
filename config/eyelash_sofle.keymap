@@ -190,10 +190,6 @@
 		// ... number symbols
 
         COMBO(excl, &kp EXCL, 14 27)
-		/* excl { */
-        /*     bindings = <&kp EXCL>; */
-        /*     key-positions = <14 27>; */
-        /* }; */
 
 		at {
             bindings = <&kp AT>;
@@ -220,16 +216,8 @@
             key-positions = <36 49>;
         };
 
-		ampersand {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <24 37>;
-        };
-
+		COMBO(ampersand, &kp AMPERSAND, 24 37)
         COMBO(asterisk, &kp ASTERISK, 37 50)	
-		/* asterisk { */
-        /*     bindings = <&kp ASTERISK>; */
-        /*     key-positions = <37 50>; */
-        /* }; */
 
 		// ... mouse keys
 
