@@ -111,15 +111,19 @@
 
 		// horizontal
 
-        left_bkt {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <17 18>;
-        };
+        COMBO(left_bkt, &kp LEFT_BRACKET, 17 18)
 
-        right_bkt {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <20 21>;
-        };
+		/* left_bkt { */
+        /*     bindings = <&kp LEFT_BRACKET>; */
+        /*     key-positions = <17 18>; */
+        /* }; */
+
+        COMBO(right_bkt, &kp RIGHT_BRACKET, 20 21)
+		  
+        /* right_bkt { */
+        /*     bindings = <&kp RIGHT_BRACKET>; */
+        /*     key-positions = <20 21>; */
+        /* }; */
 
         left_par {
             bindings = <&kp LEFT_PARENTHESIS>;
