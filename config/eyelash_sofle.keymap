@@ -109,118 +109,37 @@
         compatible = "zmk,combos";
         #include "combos.dtsi"
 
-		// horizontal
-
+		// Horizontal
+		
         COMBO(left_bkt, &kp LEFT_BRACKET, 17 18)
-
-		/* left_bkt { */
-        /*     bindings = <&kp LEFT_BRACKET>; */
-        /*     key-positions = <17 18>; */
-        /* }; */
-
         COMBO(right_bkt, &kp RIGHT_BRACKET, 20 21)
-		  
-        /* right_bkt { */
-        /*     bindings = <&kp RIGHT_BRACKET>; */
-        /*     key-positions = <20 21>; */
-        /* }; */
+		COMBO(left_par, &kp LEFT_PARENTHESIS, 30 31)
+        COMBO(right_par, &kp RIGHT_PARENTHESIS, 33 34)
+        COMBO(left_brace, &kp LEFT_BRACE, 4 5)
+        COMBO(right_brace, &kp RIGHT_BRACE, 7 8)
 
-        left_par {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <30 31>;
-        };
+		// Vertical
+		
+        COMBO(backslash, &kp BSLH, 18 31)
+        COMBO(pipe, &kp PIPE, 31 44)
+        COMBO(equal, &kp EQUAL, 22 35)
+        COMBO(plus, &kp PLUS, 35 48)
+        COMBO(minus, &kp MINUS, 16 29)
+        COMBO(under, &kp UNDERSCORE, 29 42)
+		COMBO(apostrophe, &kp APOS, 21 34)
+		COMBO(quote, &kp DQT, 34 47)
 
-        right_par {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <33 34>;
-        };
-
-        left_brace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <4 5>;
-        };
-
-        right_brace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <7 8>;
-        };
-
-		// vertical
-
-        backslash {
-            bindings = <&kp BSLH>;
-            key-positions = <18 31>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <31 44>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <22 35>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <35 48>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <16 29>;
-        };
-
-        under {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <29 42>;
-        };
-
-		apostrophe {
-            bindings = <&kp APOS>;
-            key-positions = <21 34>;
-        };
-
-		quote {
-            bindings = <&kp DQT>;
-            key-positions = <34 47>;
-        };
-
-		// ... number symbols
-
+		// ... symbols from digits row
         COMBO(excl, &kp EXCL, 14 27)
-
-		at {
-            bindings = <&kp AT>;
-            key-positions = <27 40>;
-        };
-
-		hash {
-            bindings = <&kp HASH>;
-            key-positions = <15 28>;
-        };
-
-		dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <28 41>;
-        };
-
-		percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <23 36>;
-        };
-
-		caret {
-            bindings = <&kp CARET>;
-            key-positions = <36 49>;
-        };
-
+		COMBO(at, &kp AT, 27 40)
+		COMBO(hash, &kp HASH, 15 28)
+		COMBO(dollar, &kp DOLLAR, 28 41)
+		COMBO(percent, &kp PERCENT, 23 36)
+		COMBO(caret, &kp CARET, 36 49)
 		COMBO(ampersand, &kp AMPERSAND, 24 37)
         COMBO(asterisk, &kp ASTERISK, 37 50)	
 
 		// ... mouse keys
-
         mouse2 {
             bindings = <&mkp RCLK>;
             key-positions = <20 33>;
@@ -233,10 +152,7 @@
 			layers = <3>;
         };
 
-		delete_word {
-            bindings = <&kp LC(BSPC)>;
-            key-positions = <16 57>;
-        };
+		// COMBO(delete_word, &kp LC(BSPC), 16 57)
 	};
 
     keymap {
