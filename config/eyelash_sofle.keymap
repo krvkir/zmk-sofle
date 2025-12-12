@@ -122,12 +122,14 @@
 		
         COMBO(backslash, &kp BSLH, 18 31)
         COMBO(pipe, &kp PIPE, 31 44)
-        COMBO(equal, &kp EQUAL, 22 35)
-        COMBO(plus, &kp PLUS, 35 48)
         COMBO(minus, &kp MINUS, 16 29)
         COMBO(under, &kp UNDERSCORE, 29 42)
+        COMBO(equal, &kp EQUAL, 22 35)
+        COMBO(plus, &kp PLUS, 35 48)
 		COMBO(apostrophe, &kp APOS, 21 34)
-		COMBO(quote, &kp DQT, 34 47)
+		/* COMBO(quote, &kp DQT, 34 47) */
+		  
+		COMBO(tab, &kp TAB, 17 30)
 
 		// ... symbols from digits row
         COMBO(excl, &kp EXCL, 14 27)
@@ -139,6 +141,15 @@
 		COMBO(ampersand, &kp AMPERSAND, 24 37)
         COMBO(asterisk, &kp ASTERISK, 37 50)	
 
+        COMBO(excl_, &kp EXCL, 1 14)
+		COMBO(at_, &kp AT, 2 15)
+		COMBO(hash_, &kp HASH, 3 16)
+		COMBO(dollar_, &kp DOLLAR, 4 17)
+		COMBO(percent_, &kp PERCENT, 5 18)
+		COMBO(caret_, &kp CARET, 7 20)
+		COMBO(ampersand_, &kp AMPERSAND, 8 21)
+        COMBO(asterisk_, &kp ASTERISK, 9 22)	
+		  
 		// ... mouse keys
         mouse2 {
             bindings = <&mkp RCLK>;
@@ -187,7 +198,7 @@
             bindings = <
 &kp ESC      &kp N1          &kp N2           &kp N3       &kp N4         &kp N5        &trans         &kp N6  &kp N7      &kp N8       &kp N9        &kp N0          &kp RBKT
 &kp TAB      &kp Q           &kp W            &kp E        &kp R          &kp T         &trans         &kp Y   &kp U       &kp I        &kp O         &kp P           &kp LBKT
-&mo 2        &hm LCTRL A     &hm LALT S       &hm LSHFT D  &hm LGUI F     &kp G         &trans         &kp H   &hm LGUI J  &hm LSHFT K  &hm LALT L    &hm LCTRL SEMI  &ltq 3 APOS
+&mo 2        &hm LCTRL A     &hm LALT S       &hm LSHFT D  &kp F          &kp G         &trans         &kp H   &kp J       &hm LSHFT K  &hm LALT L    &hm LCTRL SEMI  &ltq 3 APOS
 &kp LSHFT    &kp Z           &kp X            &kp C        &kp V          &kp B         &trans         &kp N   &kp M       &kp COMMA    &kp DOT       &kp FSLH        &kp RSHFT
 &to 0        &trans          &trans           &trans       &trans         &trans        &trans         &trans  &trans      &trans       &trans        &trans
 
