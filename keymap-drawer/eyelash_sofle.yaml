@@ -96,11 +96,11 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: F, h: LGUI}
+  - F
   - G
   - {t: '$$mdi:transfer$$', type: trans}
   - H
-  - {t: J, h: LGUI}
+  - J
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
@@ -285,23 +285,23 @@ combos:
 - p: [31, 44]
   k: '|'
   l: [Base, Solo]
-- p: [22, 35]
-  k: {h: '=', s: +}
-  l: [Base, Solo]
-- p: [35, 48]
-  k: +
-  l: [Base, Solo]
 - p: [16, 29]
   k: {h: '-', s: _}
   l: [Base, Solo]
 - p: [29, 42]
   k: _
   l: [Base, Solo]
+- p: [22, 35]
+  k: {h: '=', s: +}
+  l: [Base, Solo]
+- p: [35, 48]
+  k: +
+  l: [Base, Solo]
 - p: [21, 34]
   k: {t: '''', s: '"'}
   l: [Base, Solo]
-- p: [34, 47]
-  k: '"'
+- p: [17, 30]
+  k: $$mdi:keyboard-tab$$
   l: [Base, Solo]
 - p: [14, 27]
   k: '!'
@@ -325,6 +325,30 @@ combos:
   k: '&'
   l: [Base, Solo]
 - p: [37, 50]
+  k: '*'
+  l: [Base, Solo]
+- p: [1, 14]
+  k: '!'
+  l: [Base, Solo]
+- p: [2, 15]
+  k: '@'
+  l: [Base, Solo]
+- p: [3, 16]
+  k: '#'
+  l: [Base, Solo]
+- p: [4, 17]
+  k: $
+  l: [Base, Solo]
+- p: [5, 18]
+  k: '%'
+  l: [Base, Solo]
+- p: [7, 20]
+  k: ^
+  l: [Base, Solo]
+- p: [8, 21]
+  k: '&'
+  l: [Base, Solo]
+- p: [9, 22]
   k: '*'
   l: [Base, Solo]
 - p: [20, 33]
