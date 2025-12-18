@@ -185,7 +185,7 @@
 &kp LSHFT    &kp Z           &kp X           &kp C         &kp V          &kp B         &kp RIGHT_ARROW &kp N         &kp M         &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT
 																		  														    
 //52         53              54              55            56             57            58              59            60            61         62         63
-&to 1        &kp UP_ARROW    &kp DOWN_ARROW  &kp LALT      &kp SPACE      &none         &kp ENTER       &none         &kp ENTER     &kp RALT   &kp MINUS  &kp EQUAL
+&to 1        &kp UP_ARROW    &kp DOWN_ARROW  &kp LALT      &kp SPACE      &none         &kp ENTER       &mo 3         &kp ENTER     &kp RALT   &kp MINUS  &kp EQUAL
 
             >;
             sensor-bindings = <&scroll_encoder>;
