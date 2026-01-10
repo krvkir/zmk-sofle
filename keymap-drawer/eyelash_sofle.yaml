@@ -57,7 +57,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: _}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '-'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:numeric$$'}
