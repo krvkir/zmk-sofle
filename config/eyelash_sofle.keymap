@@ -203,7 +203,7 @@
         };
 
     // Layer 2: Navigation
-        Nav1 {
+        Nav {
             bindings = <
 &trans       &kp F1     &kp F2     &kp F3        &kp F4       &kp F5     &kp LC(UP)     &kp F6     &kp F7         &kp F8     &kp F9         &kp F10   &kp RBKT
 &trans       &kp PG_UP  &kp PG_DN  &kp LC(BSPC)  &kp LC(DEL)  &kp EQUAL  &kp LC(DOWN)   &kp MINUS  &kp LC(LEFT)   &kp UP     &kp LC(RIGHT)  &kp BSLH  &kp LBKT
@@ -212,7 +212,7 @@
 &trans       &trans     &trans     &trans        &trans       &trans     &kp LC(ENTER)  &trans     &kp LC(ENTER)  &trans     &trans         &trans
             >;
             sensor-bindings = <&scroll_encoder>;
-            display-name = "Nav1";
+            display-name = "Nav";
         };
 
     // Layer 3: Additional navigationNumpad and service bindings.
@@ -220,13 +220,13 @@
         Digits {
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4 &mmv MOVE_UP     &trans         &trans     &trans     &trans     &trans      &kp F12
-&trans       &kp F1          &kp F2          &kp F3        &np F4       &kp F5       &mmv MOVE_DOWN   &kp F6         &kp F7     &kp F8     &kp F9     &kp F10     &kp F11
+&trans       &kp F1          &kp F2          &kp F3        &kp F4       &kp F5       &mmv MOVE_DOWN   &kp F6         &kp F7     &kp F8     &kp F9     &kp F10     &kp F11
 &trans       &kp N1          &kp N2          &kp N3        &kp N4       &kp N5       &mmv MOVE_LEFT   &kp N6         &kp N7     &kp N8     &kp N9     &kp N0      &trans
 &trans       &kp EXCL        &kp AT          &kp HASH      &kp DOLLAR   &kp PERCENT  &mmv MOVE_RIGHT  &kp CARET      &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR    &trans
 &trans       &trans          &trans          &trans        &trans       &trans       &mkp LCLK        &trans         &trans     &trans     &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
-            display-name = "Nav2";
+            display-name = "Digits";
         };
 
 /*     // Layer 4: Numpad and service bindings */
