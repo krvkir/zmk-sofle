@@ -40,7 +40,7 @@
             /* Forward the parameter into &kp, and TAP it once */
             bindings = <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>;
         };
-	};
+  };
 
     behaviors {
         tho: tho { // tap-hold once
@@ -109,98 +109,94 @@
         compatible = "zmk,combos";
         #include "combos.dtsi"
 
-		// Horizontal
-		
+    // Horizontal
+
         COMBO(left_bkt, &kp LEFT_BRACKET, 17 18)
         COMBO(right_bkt, &kp RIGHT_BRACKET, 20 21)
-		COMBO(left_par, &kp LEFT_PARENTHESIS, 30 31)
+    COMBO(left_par, &kp LEFT_PARENTHESIS, 30 31)
         COMBO(right_par, &kp RIGHT_PARENTHESIS, 33 34)
         COMBO(left_brace, &kp LEFT_BRACE, 4 5)
         COMBO(right_brace, &kp RIGHT_BRACE, 7 8)
 
-		// Vertical
-		
+    // Vertical
+
         COMBO(backslash, &kp BSLH, 18 31)
         COMBO(pipe, &kp PIPE, 31 44)
         COMBO(minus, &kp MINUS, 16 29)
         COMBO(under, &kp UNDERSCORE, 29 42)
         COMBO(equal, &kp EQUAL, 22 35)
         COMBO(plus, &kp PLUS, 35 48)
-		COMBO(apostrophe, &kp APOS, 21 34)
-		/* COMBO(quote, &kp DQT, 34 47) */
-		  
-		COMBO(tab, &kp TAB, 17 30)
+    COMBO(apostrophe, &kp APOS, 21 34)
+    /* COMBO(quote, &kp DQT, 34 47) */
 
-		// ... symbols from digits row
+    COMBO(tab, &kp TAB, 17 30)
+
+    // ... symbols from digits row
         COMBO(excl, &kp EXCL, 14 27)
-		COMBO(at, &kp AT, 27 40)
-		COMBO(hash, &kp HASH, 15 28)
-		COMBO(dollar, &kp DOLLAR, 28 41)
-		COMBO(percent, &kp PERCENT, 23 36)
-		COMBO(caret, &kp CARET, 36 49)
-		COMBO(ampersand, &kp AMPERSAND, 24 37)
-        COMBO(asterisk, &kp ASTERISK, 37 50)	
+    COMBO(at, &kp AT, 27 40)
+    COMBO(hash, &kp HASH, 15 28)
+    COMBO(dollar, &kp DOLLAR, 28 41)
+    COMBO(percent, &kp PERCENT, 23 36)
+    COMBO(caret, &kp CARET, 36 49)
+    COMBO(ampersand, &kp AMPERSAND, 24 37)
+        COMBO(asterisk, &kp ASTERISK, 37 50)
 
         COMBO(excl_, &kp EXCL, 1 14)
-		COMBO(at_, &kp AT, 2 15)
-		COMBO(hash_, &kp HASH, 3 16)
-		COMBO(dollar_, &kp DOLLAR, 4 17)
-		COMBO(percent_, &kp PERCENT, 5 18)
-		COMBO(caret_, &kp CARET, 7 20)
-		COMBO(ampersand_, &kp AMPERSAND, 8 21)
-        COMBO(asterisk_, &kp ASTERISK, 9 22)	
-		  
-		// ... mouse keys
+    COMBO(at_, &kp AT, 2 15)
+    COMBO(hash_, &kp HASH, 3 16)
+    COMBO(dollar_, &kp DOLLAR, 4 17)
+    COMBO(percent_, &kp PERCENT, 5 18)
+    COMBO(caret_, &kp CARET, 7 20)
+    COMBO(ampersand_, &kp AMPERSAND, 8 21)
+        COMBO(asterisk_, &kp ASTERISK, 9 22)
+
+    // ... mouse keys
         mouse2 {
             bindings = <&mkp RCLK>;
             key-positions = <20 33>;
-			layers = <3>;
+      layers = <3>;
         };
 
-		mouse3 {
+    mouse3 {
             bindings = <&mkp MCLK>;
             key-positions = <33 46>;
-			layers = <3>;
+      layers = <3>;
         };
 
-		// COMBO(delete_word, &kp LC(BSPC), 16 57)
-	};
+    // COMBO(delete_word, &kp LC(BSPC), 16 57)
+  };
 
     keymap {
         compatible = "zmk,keymap";
-		
-		// Layer 0: a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
-        Base { 
+
+    // Layer 0: a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
+        Base {
             bindings = <
-//0          1               2               3             4              5             6               7             8             9          10         11          12
-&kp ESC      &kp N1          &kp N2          &kp N3        &kp N4         &kp N5        &kp UP_ARROW    &kp N6        &kp N7        &kp N8     &kp N9     &kp N0      &kp RBKT
-																		  														    
-//13         14              15              16            17             18            19              20            21            22         23         24          25
-&kp TAB      &kp Q           &kp W           &kp E         &kp R          &kp T         &kp DOWN_ARROW  &kp Y         &kp U         &kp I      &kp O      &kp P       &kp LBKT
-																		  														    
-//26         27              28              29            30             31            32              33            34            35         36         37          38
-&kp CAPS     &kp A           &kp S           &kp D         &kp F          &kp G         &kp LEFT_ARROW  &kp H         &kp J         &kp K      &kp L      &kp SEMI    &ltq 3 APOS
-																		  														    
-//39         40              41              42            43             44            45              46            47            48         49         50          51
-&kp LSHFT    &kp Z           &kp X           &kp C         &kp V          &kp B         &kp RIGHT_ARROW &kp N         &kp M         &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT
-																		  														    
-//52         53              54              55            56             57            58              59            60            61         62         63
-&to 1        &kp UP_ARROW    &kp DOWN_ARROW  &kp LALT      &kp SPACE      &none         &kp ENTER       &mo 3         &kp ENTER     &kp RALT   &kp MINUS  &kp EQUAL
+//0          1               2               3             4               5             6               7             8             9          10         11          12
+&kp GRAVE    &kp N1          &kp N2          &kp N3        &kp N4          &kp N5        &kp UP_ARROW    &kp N6        &kp N7        &kp N8     &kp N9     &kp N0      &kp RBKT
+//13         14              15              16            17              18            19              20            21            22         23         24          25
+&kp TAB      &kp Q           &kp W           &kp E         &kp R           &kp T         &kp DOWN_ARROW  &kp Y         &kp U         &kp I      &kp O      &kp P       &kp LBKT
+//26         27              28              29            30              31            32              33            34            35         36         37          38
+&kp CAPS     &kp A           &kp S           &kp D         &kp F           &kp G         &kp LEFT_ARROW  &kp H         &kp J         &kp K      &kp L      &kp SEMI    &kp APOS
+//39         40              41              42            43              44            45              46            47            48         49         50          51
+&kp LSHFT    &kp Z           &kp X           &kp C         &kp V           &kp B         &kp RIGHT_ARROW &kp N         &kp M         &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT
+//52         53              54              55            56              57            58              59            60            61         62         63
+&to 1        &kp UP_ARROW    &kp DOWN_ARROW  &kp LALT      &hm UNDER LSHFT &SPACE        &kp ENTER       &ltq 3 ENTER  &kp CAPS      &kp RALT   &kp MINUS  &kp EQUAL
 
             >;
             sensor-bindings = <&scroll_encoder>;
             /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
             display-name = "Base";
         };
-		
-		// Layer 1: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
-        Solo { 
+
+    // Layer 1: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
+        Solo {
             bindings = <
-&kp ESC      &kp N1          &kp N2           &kp N3       &kp N4         &kp N5        &trans         &kp N6        &kp N7        &kp N8       &kp N9        &kp N0          &kp RBKT
-&kp TAB      &kp Q           &kp W            &kp E        &kp R          &kp T         &trans         &kp Y         &kp U         &kp I        &kp O         &kp P           &kp LBKT
-&mo 2        &hm LCTRL A     &hm LALT S       &hm LSHFT D  &kp F          &kp G         &trans         &kp H         &kp J         &hm LSHFT K  &hm LALT L    &hm LCTRL SEMI  &ltq 3 APOS
-&kp LSHFT    &kp Z           &kp X            &kp C        &kp V          &kp B         &trans         &kp N         &kp M         &kp COMMA    &kp DOT       &kp FSLH        &kp RSHFT
-&to 0        &trans          &trans           &trans       &hm LWIN SPACE &trans        &trans         &trans        &trans        &trans       &trans        &trans
+&trans       &kp N1          &kp N2           &kp N3       &kp N4         &kp N5         &trans         &kp N6        &kp N7        &kp N8       &kp N9        &kp N0          &kp RBKT
+&kp TAB      &kp Q           &kp W            &kp E        &kp R          &kp T          &trans         &kp Y         &kp U         &kp I        &kp O         &kp P           &kp LBKT
+&mo 2        &hm LCTRL A     &hm LALT S       &hm LSHFT D  &hm LCTRL F    &kp G          &trans         &kp H         &hm LCTRL J   &hm LSHFT K  &hm LALT L    &hm LCTRL SEMI  &kp APOS
+&kp LSHFT    &kp Z           &kp X            &kp C        &kp V          &kp B          &trans         &kp N         &kp M         &kp COMMA    &kp DOT       &kp FSLH        &kp RSHFT
+&to 0        &trans          &trans           &trans       &trans         &hm LWIN SPACE &trans         &trans        &mo 2         &trans       &trans        &trans
 
             >;
             sensor-bindings = <&scroll_encoder>;
@@ -208,7 +204,7 @@
             display-name = "Solo";
         };
 
-		// Layer 2: Navigation
+    // Layer 2: Navigation
         Nav1 {
             bindings = <
 &trans       &kp F1     &kp F2     &kp F3        &kp F4       &kp F5     &kp LC(UP)     &kp F6     &kp F7         &kp F8     &kp F9         &kp F10   &kp RBKT
@@ -221,22 +217,22 @@
             display-name = "Nav1";
         };
 
-		// Layer 3: Additional navigationNumpad and service bindings.
-		// Don't remap alphabetical charactres on this layer as it may cause false recognitions when typing fast.
-        Nav2 { 
+    // Layer 3: Additional navigationNumpad and service bindings.
+    // Don't remap alphabetical charactres on this layer as it may cause false recognitions when typing fast.
+        Digits {
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4 &mmv MOVE_UP     &trans         &trans     &trans     &trans     &trans      &trans
-&trans       &trans          &trans          &trans        &trans       &trans       &mmv MOVE_DOWN   &trans         &trans     &trans     &trans     &trans      &trans
-&trans       &trans          &trans          &trans        &trans       &trans       &mmv MOVE_LEFT   &trans         &trans     &trans     &trans     &trans      &trans
-&trans       &trans          &trans          &trans        &trans       &trans       &mmv MOVE_RIGHT  &trans         &trans     &trans     &trans     &trans      &trans
+&bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4 &mmv MOVE_UP     &trans         &trans     &trans     &trans     &trans      &kp F12
+&trans       &kp F1          &kp F2          &kp F3        &np F4       &kp F5       &mmv MOVE_DOWN   &kp F6         &kp F7     &kp F8     &kp F9     &kp F10     &kp F11
+&trans       &kp N1          &kp N2          &kp N3        &kp N4       &kp N5       &mmv MOVE_LEFT   &kp N6         &kp N7     &kp N8     &kp N9     &kp N0      &trans
+&trans       &kp EXCL        &kp AT          &kp HASH      &kp DOLLAR   &kp PERCENT  &mmv MOVE_RIGHT  &kp CARET      &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR    &trans
 &trans       &trans          &trans          &trans        &trans       &trans       &mkp LCLK        &trans         &trans     &trans     &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "Nav2";
         };
 
-/* 		// Layer 4: Numpad and service bindings */
-/* 		// TODO Enable it with some key from the thumbs cluster. */
+/*     // Layer 4: Numpad and service bindings */
+/*     // TODO Enable it with some key from the thumbs cluster. */
 /*         Digits {  */
 /*             bindings = < */
 /* &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4 &mmv MOVE_UP     &trans         &trans     &trans     &trans     &trans      &trans */
@@ -261,5 +257,5 @@
 /*             display-name = "arrows"; */
 /*         }; */
 
-	};
+  };
 };
