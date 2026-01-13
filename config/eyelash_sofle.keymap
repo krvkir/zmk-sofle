@@ -112,10 +112,6 @@
 
         // Horizontal
 
-        COMBO(left_bkt, &kp LEFT_BRACKET, 17 18)
-        COMBO(right_bkt, &kp RIGHT_BRACKET, 20 21)
-        COMBO(left_par, &kp LEFT_PARENTHESIS, 30 31)
-        COMBO(right_par, &kp RIGHT_PARENTHESIS, 33 34)
         COMBO(left_brace, &kp LEFT_BRACE, 4 5)
         COMBO(right_brace, &kp RIGHT_BRACE, 7 8)
 
@@ -127,9 +123,12 @@
         COMBO(under, &kp UNDERSCORE, 29 42)
         COMBO(equal, &kp EQUAL, 22 35)
         COMBO(plus, &kp PLUS, 35 48)
-        COMBO(apostrophe, &kp APOS, 21 34)
-        /* COMBO(quote, &kp DQT, 34 47) */
 
+        COMBO(left_bkt, &kp LEFT_BRACKET, 17 30)
+        COMBO(right_bkt, &kp RIGHT_BRACKET, 21 34)
+        COMBO(left_par, &kp LEFT_PARENTHESIS, 30 43)
+        COMBO(right_par, &kp RIGHT_PARENTHESIS, 34 47)
+        /* COMBO(quote, &kp DQT, 34 47) */
         /* COMBO(tab, &kp TAB, 17 30) */
 
         // ... symbols from digits row
@@ -210,7 +209,7 @@ ___          &kp F1     &kp F2     &kp F3        &kp F4       &kp F5     &kp LC(
 ___          &kp PG_UP  &kp PG_DN  &kp LC(BSPC)  &kp LC(DEL)  &kp EQUAL  &kp LC(DOWN)   &kp MINUS  &kp LC(LEFT)   &kp UP     &kp LC(RIGHT)  &kp BSLH  &kp LBKT
 ___          &kp TAB    &kp ENTER  &kp BSPC      &kp DEL      &kp ESC    &kp LC(LEFT)   &kp GRAVE  &kp LEFT       &kp DOWN   &kp RIGHT      &kp SEMI  &kp APOS
 ___          &kp LC(Z)  &kp LC(X)  &kp LC(C)     &kp LC(V)    &kp LC(B)  &kp LC(RIGHT)  &kp HOME   &kp END        &kp COMMA  &kp DOT        &kp FSLH  &kp RSHFT
-___          ___        ___        ___           ___          ___        &kp LC(ENTER)  ___        &kp LC(ENTER)  ___        ___            ___
+___          ___        ___        ___           ___          ___        &kp LC(ENTER)  ___        ___            ___        ___            ___
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "Nav";
