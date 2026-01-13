@@ -182,7 +182,7 @@
 //39         40              41              42            43              44            45              46               47            48         49         50          51
 &kp LSHFT    &kp Z           &kp X           &kp C         &kp V           &kp B         &kp RIGHT       &kp N            &kp M         &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT
 //52         53              54              55            56              57            58              59               60            61         62         63
-&to 1        &kp UP          &kp DOWN        &kp LALT      &ltq 3 TAB      &kp SPACE     &kp ENTER       &hm LSHFT ENTER  &ltq 2 APOS   &kp RALT   &kp MINUS  &kp EQUAL
+&to 1        &kp UP          &kp DOWN        &kp LALT      &kp TAB         &kp SPACE     &kp ENTER       &kp ENTER        &kp APOS      &kp RALT   &kp MINUS  &kp EQUAL
             >;
             sensor-bindings = <&scroll_encoder>;
             /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
@@ -192,11 +192,11 @@
     // Layer 1: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
         Solo {
             bindings = <
-___          ___             ___              ___          ___            ___              ___           ___              ___           ___          ___           ___             ___
-___          ___             ___              ___          ___            ___              ___           ___              ___           ___          ___           ___             ___
-&mo 2        &hm LCTRL A     &hm LALT S       &hm LSHFT D  &hm LCTRL F    ___              ___           ___              &hm LCTRL J   &hm LSHFT K  &hm LALT L    &hm LCTRL SEMI  ___
-___          ___             ___              ___          ___            ___              ___           ___              ___           ___          ___           ___             ___
-&to 0        ___             ___              ___          &ltq 3 TAB     &hm LWIN SPACE   ___           &hm LSHFT ENTER  &ltq 2 APOS   ___          ___           ___
+___          ___             ___              ___          ___            ___              ___           ___              ___            ___          ___           ___             ___
+___          ___             ___              ___          ___            ___              ___           ___              ___            ___          ___           ___             ___
+&mo 2        &hm LCTRL A     &hm LALT S       &hm LSHFT D  &hm LCTRL F    ___              ___           ___              &hm LCTRL J    &hm LSHFT K  &hm LALT L    &hm LCTRL SEMI  ___
+___          ___             ___              ___          ___            ___              ___           ___              ___            ___          ___           ___             ___
+&to 0        ___             ___              &mo 2        &hm LWIN TAB   &ltq 3 SPACE     ___           &ltq 2 ENTER     &hm LSHFT APOS ___          ___           ___
             >;
             sensor-bindings = <&scroll_encoder>;
             /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
