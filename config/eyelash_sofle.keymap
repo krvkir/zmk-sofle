@@ -152,7 +152,7 @@
         LCOMBO(backslash,  &kp BSLH,       LM1 LB1, SOLO)
         /* LCOMBO(n5,         &kp N1,         LM0 LB0, SOLO) */
         LCOMBO(grave,      &kp GRAVE,      LM0 LB0, SOLO)
-        LCOMBO(minus,      &kp MINUS,      RM0 RB0, SOLO)
+        LCOMBO(minus,      &kp MINUS,      RM1 RB1, SOLO)
         LCOMBO(equal,      &kp EQUAL,      RM2 RB2, SOLO)
         LCOMBO(lbkt,       &kp LBKT,       RM3 RB3, SOLO)
         LCOMBO(rbkt,       &kp RBKT,       RM4 RB4, SOLO)
