@@ -123,7 +123,7 @@
         COMBO(n0,         &kp N0,         RT4 RM4)
 
         /* COMBO(C_z2,       &kp LC(Z),      LM4 LB4) */
-        /* COMBO(M_x,        &kp LA(X),      LM3 LB3) */
+        COMBO(plus,       &kp PLUS,       LM3 LB3)
         COMBO(under,      &kp UNDER,      LM2 LB2)
         COMBO(backslash,  &kp BSLH,       LM1 LB1)
         /* COMBO(n5,         &kp N1,         LM0 LB0) */
@@ -143,6 +143,12 @@
         LCOMBO(f8,         &kp F8,         RT2 RM2, NAV)
         LCOMBO(f9,         &kp F9,         RT3 RM3, NAV)
         LCOMBO(f10,        &kp F10,        RT4 RM4, NAV)
+
+        LCOMBO(bt1,        &bt BT_SEL 1,   LT4 LM4, NAV)
+        LCOMBO(bt2,        &bt BT_SEL 2,   LT3 LM3, NAV)
+        LCOMBO(bt3,        &bt BT_SEL 3,   LT2 LM2, NAV)
+        LCOMBO(bt4,        &bt BT_SEL 4,   LT1 LM1, NAV)
+        LCOMBO(bt_clr,     &bt BT_CLR,     LT0 LM0, NAV)
 
         // ... symbols from digits row
         LCOMBO(excl_,      &kp EXCL,      LN4 LT4, BASE)
@@ -192,7 +198,7 @@ ___       ___          ___         ___          ___              ___            
 ___       ___          ___         ___          ___              ___              ___   ___              ___             ___          ___         ___             ___
 &mo NAV   &hm LCTRL A  &hm LALT S  &hm LSHFT D  &hm LCTRL F      ___              ___   ___              &hm LCTRL J     &hm LSHFT K  &hm LALT L  &hm LCTRL SEMI  ___
 ___       ___          ___         ___          ___              ___              ___   ___              ___             ___          ___         ___             ___
-&to BASE  ___          ___         &mo 2        &ltq DIGITS TAB  &hm LWIN SPACE   ___   &ltq NAV ENTER   &hm LSHFT APOS  ___          ___         ___
+&to BASE  ___          ___         &mo NAV      &ltq DIGITS TAB  &hm LWIN SPACE   ___   &ltq NAV ENTER   &hm LSHFT APOS  ___          ___         ___
             >;
             sensor-bindings = <&scroll_encoder>;
             /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
