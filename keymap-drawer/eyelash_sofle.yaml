@@ -261,9 +261,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [40, 57]
-  k: '&macro_c_z'
-  l: [Base, Solo]
 - p: [14, 27]
   k: {t: '1', s: '!'}
   l: [Base, Solo]
@@ -293,9 +290,6 @@ combos:
   l: [Base, Solo]
 - p: [24, 37]
   k: {t: '0', s: )}
-  l: [Base, Solo]
-- p: [27, 40]
-  k: Ctl+Z
   l: [Base, Solo]
 - p: [29, 42]
   k: _
