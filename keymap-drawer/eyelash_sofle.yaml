@@ -291,6 +291,9 @@ combos:
 - p: [24, 37]
   k: {t: '0', s: )}
   l: [Base, Solo]
+- p: [28, 41]
+  k: +
+  l: [Base, Solo]
 - p: [29, 42]
   k: _
   l: [Base, Solo]
@@ -341,6 +344,21 @@ combos:
   l: [Nav]
 - p: [24, 37]
   k: F10
+  l: [Nav]
+- p: [14, 27]
+  k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  l: [Nav]
+- p: [15, 28]
+  k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  l: [Nav]
+- p: [16, 29]
+  k: {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  l: [Nav]
+- p: [17, 30]
+  k: {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  l: [Nav]
+- p: [18, 31]
+  k: $$mdi:bluetooth-off$$
   l: [Nav]
 - p: [1, 14]
   k: '!'
