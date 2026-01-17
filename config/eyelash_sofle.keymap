@@ -129,33 +129,33 @@
         */
 
         // Extra
-        LCOMBO(C_z, &kp LC(Z),  RH0 LB4, SOLO)
-        LCOMBO(C_x, &kp LC(X),  RH0 LB3, SOLO)
-        LCOMBO(C_c, &kp LC(C),  RH0 LB2, SOLO)
+        /* LCOMBO(C_z, &kp LC(Z),  RH0 LB4, SOLO) */
+        /* LCOMBO(C_x, &kp LC(X),  RH0 LB3, SOLO) */
+        /* LCOMBO(C_c, &kp LC(C),  RH0 LB2, SOLO) */
         /* LCOMBO(M_x, &kp LA(X),  LM3 LB3, SOLO) */
 
         // Vertical
-        LCOMBO(n1,         &kp N1,         LT4 LM4, SOLO)
-        LCOMBO(n2,         &kp N2,         LT3 LM3, SOLO)
-        LCOMBO(n3,         &kp N3,         LT2 LM2, SOLO)
-        LCOMBO(n4,         &kp N4,         LT1 LM1, SOLO)
-        LCOMBO(n5,         &kp N5,         LT0 LM0, SOLO)
-        LCOMBO(n6,         &kp N6,         RT0 RM0, SOLO)
-        LCOMBO(n7,         &kp N7,         RT1 RM1, SOLO)
-        LCOMBO(n8,         &kp N8,         RT2 RM2, SOLO)
-        LCOMBO(n9,         &kp N9,         RT3 RM3, SOLO)
-        LCOMBO(n0,         &kp N0,         RT4 RM4, SOLO)
+        COMBO(n1,         &kp N1,         LT4 LM4)
+        COMBO(n2,         &kp N2,         LT3 LM3)
+        COMBO(n3,         &kp N3,         LT2 LM2)
+        COMBO(n4,         &kp N4,         LT1 LM1)
+        COMBO(n5,         &kp N5,         LT0 LM0)
+        COMBO(n6,         &kp N6,         RT0 RM0)
+        COMBO(n7,         &kp N7,         RT1 RM1)
+        COMBO(n8,         &kp N8,         RT2 RM2)
+        COMBO(n9,         &kp N9,         RT3 RM3)
+        COMBO(n0,         &kp N0,         RT4 RM4)
 
-        LCOMBO(C_z2,       &kp LC(Z),      LM4 LB4, SOLO)
-        /* LCOMBO(M_x,        &kp LA(X),      LM3 LB3, SOLO) */
-        LCOMBO(under,      &kp UNDER,      LM2 LB2, SOLO)
-        LCOMBO(backslash,  &kp BSLH,       LM1 LB1, SOLO)
-        /* LCOMBO(n5,         &kp N1,         LM0 LB0, SOLO) */
-        LCOMBO(grave,      &kp GRAVE,      LM0 LB0, SOLO)
-        LCOMBO(minus,      &kp MINUS,      RM1 RB1, SOLO)
-        LCOMBO(equal,      &kp EQUAL,      RM2 RB2, SOLO)
-        LCOMBO(lbkt,       &kp LBKT,       RM3 RB3, SOLO)
-        LCOMBO(rbkt,       &kp RBKT,       RM4 RB4, SOLO)
+        COMBO(C_z2,       &kp LC(Z),      LM4 LB4)
+        /* COMBO(M_x,        &kp LA(X),      LM3 LB3) */
+        COMBO(under,      &kp UNDER,      LM2 LB2)
+        COMBO(backslash,  &kp BSLH,       LM1 LB1)
+        /* COMBO(n5,         &kp N1,         LM0 LB0) */
+        COMBO(grave,      &kp GRAVE,      LM0 LB0)
+        COMBO(minus,      &kp MINUS,      RM1 RB1)
+        COMBO(equal,      &kp EQUAL,      RM2 RB2)
+        COMBO(lbkt,       &kp LBKT,       RM3 RB3)
+        COMBO(rbkt,       &kp RBKT,       RM4 RB4)
 
         LCOMBO(f1,         &kp F1,         LT4 LM4, NAV)
         LCOMBO(f2,         &kp F2,         LT3 LM3, NAV)
@@ -167,20 +167,6 @@
         LCOMBO(f8,         &kp F8,         RT2 RM2, NAV)
         LCOMBO(f9,         &kp F9,         RT3 RM3, NAV)
         LCOMBO(f10,        &kp F10,        RT4 RM4, NAV)
-
-        LCOMBO(backslash, &kp BSLH,       LT0 LM0, BASE)
-        LCOMBO(pipe,      &kp PIPE,       LM0 LB0, BASE)
-        LCOMBO(minus,     &kp MINUS,      LT2 LM2, BASE)
-        LCOMBO(under,     &kp UNDERSCORE, LM2 LB2, BASE)
-        LCOMBO(equal,     &kp EQUAL,      RT2 RM2, BASE)
-        LCOMBO(plus,      &kp PLUS,       RM2 RB2, BASE)
-
-        LCOMBO(left_bkt,  &kp LBKT,      LT1 LM1, BASE)
-        LCOMBO(right_bkt, &kp RBKT,      RT1 RM1, BASE)
-        LCOMBO(left_par,  &kp LEFT_PARENTHESIS,  LM1 LB1, BASE)
-        LCOMBO(right_par, &kp RIGHT_PARENTHESIS, RM1 RB1, BASE)
-        /* COMBO(quote,  &kp DQT, 34 47) */
-        /* COMBO(tab,    &kp TAB, 17 30) */
 
         // ... symbols from digits row
         LCOMBO(excl_,      &kp EXCL,      LN4 LT4, BASE)
@@ -195,44 +181,40 @@
         // ... mouse keys
         LCOMBO(mouse2, &mkp RCLK, RT0 RM0, DIGITS)
         LCOMBO(mouse3, &mkp MCLK, RM0 RB0, DIGITS)
-
-        // Horizontal
-        LCOMBO(left_brace,  &kp LEFT_BRACE,  LN0 LN1, BASE)
-        LCOMBO(right_brace, &kp RIGHT_BRACE, RN0 RN1, BASE)
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-    // Layer 0: a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
+        // Layer 0: a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
         Base {
             bindings = <
-//0          1               2               3             4               5             6               7                8             9          10         11          12
-&kp GRAVE    &kp N1          &kp N2          &kp N3        &kp N4          &kp N5        &kp UP          &kp N6           &kp N7        &kp N8     &kp N9     &kp N0      &kp RBKT
+//0        1       2         3         4        5          6          7          8         9          10         11         12
+&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4   &kp N5     &kp UP     &kp N6     &kp N7    &kp N8     &kp N9     &kp N0     &kp RBKT
 
-//13         14              15              16            17              18            19              20               21            22         23         24          25
-&kp TAB      &kp Q           &kp W           &kp E         &kp R           &kp T         &kp DOWN        &kp Y            &kp U         &kp I      &kp O      &kp P       &kp LBKT
+//13       14      15        16        17       18         19         20         21        22         23         24         25
+&kp TAB    &kp Q   &kp W     &kp E     &kp R    &kp T      &kp DOWN   &kp Y      &kp U     &kp I      &kp O      &kp P      &kp LBKT
 
-//26         27              28              29            30              31            32              33               34            35         36         37          38
-&kp CAPS     &kp A           &kp S           &kp D         &kp F           &kp G         &kp LEFT        &kp H            &kp J         &kp K      &kp L      &kp SEMI    &kp APOS
+//26       27      28        29        30       31         32         33         34        35         36         37         38
+&kp CAPS   &kp A   &kp S     &kp D     &kp F    &kp G      &kp LEFT   &kp H      &kp J     &kp K      &kp L      &kp SEMI   &kp APOS
 
-//39         40              41              42            43              44            45              46               47            48         49         50          51
-&kp LSHFT    &kp Z           &kp X           &kp C         &kp V           &kp B         &kp RIGHT       &kp N            &kp M         &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT
+//39       40      41        42        43       44         45         46         47        48         49         50         51
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V    &kp B      &kp RIGHT  &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
 
-//52         53              54              55            56              57            58              59               60            61         62         63
-&to SOLO     &kp UP          &kp DOWN        &kp LALT      &kp TAB         &kp SPACE     &kp ENTER       &kp ENTER        &kp APOS      &kp RALT   &kp MINUS  &kp EQUAL
+//52       53      54        55        56       57         58         59         60        61         62         63
+&to SOLO   &kp UP  &kp DOWN  &kp LALT  &kp TAB  &kp SPACE  &kp ENTER  &kp ENTER  &kp APOS  &kp RALT   &kp MINUS  &kp EQUAL
             >;
             sensor-bindings = <&scroll_encoder>;
             /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
             display-name = "Base";
         };
 
-    // Layer 1: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
+        // Layer 1: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
         Solo {
             bindings = <
 ___       ___          ___         ___          ___              ___              ___   ___              ___             ___          ___         ___             ___
 ___       ___          ___         ___          ___              ___              ___   ___              ___             ___          ___         ___             ___
-&mo 2     &hm LCTRL A  &hm LALT S  &hm LSHFT D  &hm LCTRL F      ___              ___   ___              &hm LCTRL J     &hm LSHFT K  &hm LALT L  &hm LCTRL SEMI  ___
+&mo NAV   &hm LCTRL A  &hm LALT S  &hm LSHFT D  &hm LCTRL F      ___              ___   ___              &hm LCTRL J     &hm LSHFT K  &hm LALT L  &hm LCTRL SEMI  ___
 ___       ___          ___         ___          ___              ___              ___   ___              ___             ___          ___         ___             ___
 &to BASE  ___          ___         &mo 2        &ltq DIGITS TAB  &hm LWIN SPACE   ___   &ltq NAV ENTER   &hm LSHFT APOS  ___          ___         ___
             >;
@@ -241,7 +223,7 @@ ___       ___          ___         ___          ___              ___            
             display-name = "Solo";
         };
 
-    // Layer 2: Navigation
+        // Layer 2: Navigation
         Nav {
             bindings = <
 ___          &kp F1     &kp F2     &kp F3        &kp F4       &kp F5     &kp LC(UP)     &kp F6     &kp F7         &kp F8     &kp F9         &kp F10   &kp RBKT
@@ -254,8 +236,8 @@ ___          ___        ___        ___           ___          ___        &kp LC(
             display-name = "Nav";
         };
 
-    // Layer 3: Additional navigationNumpad and service bindings.
-    // Don't remap alphabetical charactres on this layer as it may cause false recognitions when typing fast.
+        // Layer 3: Additional navigationNumpad and service bindings.
+        // Don't remap alphabetical charactres on this layer as it may cause false recognitions when typing fast.
         Digits {
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4 &mmv MOVE_UP     ___            ___        ___        ___        ___         &kp F12
