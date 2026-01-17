@@ -147,7 +147,7 @@
         LCOMBO(n0,         &kp N0,         RT4 RM4, SOLO)
 
         LCOMBO(C_z2,       &kp LC(Z),      LM4 LB4, SOLO)
-        LCOMBO(M_x         &kp LA(X),      LM3 LB3, SOLO)
+        LCOMBO(M_x,        &kp LA(X),      LM3 LB3, SOLO)
         LCOMBO(under,      &kp UNDER,      LM2 LB2, SOLO)
         LCOMBO(backslash,  &kp BSLH,       LM1 LB1, SOLO)
         /* LCOMBO(n5,         &kp N1,         LM0 LB0, SOLO) */
