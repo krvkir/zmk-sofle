@@ -264,69 +264,60 @@ combos:
 - p: [40, 57]
   k: '&macro_c_z'
   l: [Base, Solo]
-- p: [59, 40]
-  k: Ctl+Z
-  l: [Solo]
-- p: [59, 41]
-  k: Ctl+X
-  l: [Solo]
-- p: [59, 42]
-  k: Ctl+C
-  l: [Solo]
 - p: [14, 27]
   k: {t: '1', s: '!'}
-  l: [Solo]
+  l: [Base, Solo]
 - p: [15, 28]
   k: {t: '2', s: '@'}
-  l: [Solo]
+  l: [Base, Solo]
 - p: [16, 29]
   k: {t: '3', s: '#'}
-  l: [Solo]
+  l: [Base, Solo]
 - p: [17, 30]
   k: {t: '4', s: $}
-  l: [Solo]
+  l: [Base, Solo]
 - p: [18, 31]
   k: {t: '5', s: '%'}
-  l: [Solo]
+  l: [Base, Solo]
 - p: [20, 33]
   k: {t: '6', s: ^}
-  l: [Solo]
+  l: [Base, Solo]
 - p: [21, 34]
   k: {t: '7', s: '&'}
-  l: [Solo]
+  l: [Base, Solo]
 - p: [22, 35]
   k: {t: '8', s: '*'}
-  l: [Solo]
+  l: [Base, Solo]
 - p: [23, 36]
   k: {t: '9', s: (}
-  l: [Solo]
+  l: [Base, Solo]
 - p: [24, 37]
   k: {t: '0', s: )}
-  l: [Solo]
+  l: [Base, Solo]
 - p: [27, 40]
   k: Ctl+Z
-  l: [Solo]
+  l: [Base, Solo]
 - p: [29, 42]
   k: _
-  l: [Solo]
+  l: [Base, Solo]
 - p: [30, 43]
-  k: {t: \, s: '|'}
-  l: [Solo]
+  k: {h: \, s: '|'}
+  l: [Base, Solo]
 - p: [31, 44]
   k: {t: '`', s: '~'}
-  l: [Solo]
+  l: [Base, Solo]
 - p: [34, 47]
-  k: {t: '-', s: _}
-  l: [Solo]
+  k: {h: '-', s: _}
+  l: [Base, Solo]
 - p: [35, 48]
-  k: {t: '=', s: +}
-  l: [Solo]
+  k: {h: '=', s: +}
+  l: [Base, Solo]
 - p: [36, 49]
-  k: {t: '[', s: '{'}
-  l: [Solo]
+  k: {h: '[', s: '{'}
+  l: [Base, Solo]
 - p: [37, 50]
-  k: {t: ']', s: '}'}
-  l: [Solo]
+  k: {h: ']', s: '}'}
+  l: [Base, Solo]
 - p: [14, 27]
   k: F1
   l: [Nav]
@@ -357,36 +348,6 @@ combos:
 - p: [24, 37]
   k: F10
   l: [Nav]
-- p: [18, 31]
-  k: {t: \, s: '|'}
-  l: [Base]
-- p: [31, 44]
-  k: '|'
-  l: [Base]
-- p: [16, 29]
-  k: {t: '-', s: _}
-  l: [Base]
-- p: [29, 42]
-  k: _
-  l: [Base]
-- p: [22, 35]
-  k: {t: '=', s: +}
-  l: [Base]
-- p: [35, 48]
-  k: +
-  l: [Base]
-- p: [17, 30]
-  k: {t: '[', s: '{'}
-  l: [Base]
-- p: [21, 34]
-  k: {t: ']', s: '}'}
-  l: [Base]
-- p: [30, 43]
-  k: (
-  l: [Base]
-- p: [34, 47]
-  k: )
-  l: [Base]
 - p: [1, 14]
   k: '!'
   l: [Base]
@@ -417,9 +378,3 @@ combos:
 - p: [33, 46]
   k: $$mdi:mouse-scroll-wheel$$
   l: [Digits]
-- p: [5, 4]
-  k: '{'
-  l: [Base]
-- p: [7, 8]
-  k: '}'
-  l: [Base]
