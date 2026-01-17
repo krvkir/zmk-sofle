@@ -1,3 +1,17 @@
+// Layers
+#define BASE 0
+#define SOLO 1
+#define NAV 2
+#define DIGITS 3
+
+#define LCOMBO(NAME, BINDINGS, KEYPOS, LAYER) \
+  combo_##NAME_##LAYER { \
+    timeout-ms = <100>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYER>; \
+  };
+
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     timeout-ms = <100>; \
@@ -5,6 +19,7 @@
     key-positions = <KEYPOS>; \
     layers = <0 1>; \
   };
+
 
 /* COMBO(c_z, &macro_c_z, 40 57) */
 /* COMBO(c_i, &macro_c_i, 22 57) */

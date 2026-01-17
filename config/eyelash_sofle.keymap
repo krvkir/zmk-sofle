@@ -128,60 +128,60 @@
                 ╰────────────────────╯                          ╰─────────────────────╯
         */
 
-        // Horizontal
-
-        COMBO(left_brace,  &kp LEFT_BRACE,  LN0 LN1)
-        COMBO(right_brace, &kp RIGHT_BRACE, RN0 RN1)
-
         // Vertical
+        LCOMBO(n1, &kp N1, LT4 LM4, SOLO)
+        LCOMBO(n2, &kp N2, LT3 LM3, SOLO)
+        LCOMBO(n3, &kp N3, LT2 LM2, SOLO)
+        LCOMBO(n4, &kp N4, LT1 LM1, SOLO)
+        LCOMBO(n5, &kp N5, LT0 LM0, SOLO)
+        LCOMBO(n6, &kp N6, RT0 RM0, SOLO)
+        LCOMBO(n7, &kp N7, RT1 RM1, SOLO)
+        LCOMBO(n8, &kp N8, RT2 RM2, SOLO)
+        LCOMBO(n9, &kp N9, RT3 RM3, SOLO)
+        LCOMBO(n0, &kp N0, RT4 RM4, SOLO)
+        LCOMBO(backslash,  &kp BSLH,       LM4 LB4, SOLO)
+        /* LCOMBO(n2,         &kp N1,         LM3 LB3, SOLO) */
+        /* LCOMBO(n3,         &kp N1,         LM2 LB2, SOLO) */
+        /* LCOMBO(n4,         &kp N1,         LM1 LB1, SOLO) */
+        /* LCOMBO(n5,         &kp N1,         LM0 LB0, SOLO) */
+        LCOMBO(grave,      &kp GRAVE,      LM0 LB0, SOLO)
+        LCOMBO(minus,      &kp MINUS,      RM0 RB0, SOLO)
+        LCOMBO(equal,      &kp EQUAL,      RM2 RB2, SOLO)
+        LCOMBO(lbkt,       &kp LBKT,       RM3 RB3, SOLO)
+        LCOMBO(rbkt,       &kp RBKT,       RM4 RB4, SOLO)
 
-        COMBO(backslash, &kp BSLH,       LT0 LM0)
-        COMBO(pipe,      &kp PIPE,       LM0 LB0)
-        COMBO(minus,     &kp MINUS,      LT2 LM2)
-        COMBO(under,     &kp UNDERSCORE, LM2 LB2)
-        COMBO(equal,     &kp EQUAL,      RT2 RM2)
-        COMBO(plus,      &kp PLUS,       RM2 RB2)
 
-        COMBO(left_bkt,  &kp LEFT_BRACKET,      LT1 LM1)
-        COMBO(right_bkt, &kp RIGHT_BRACKET,     RT1 RM1)
-        COMBO(left_par,  &kp LEFT_PARENTHESIS,  LM1 LB1)
-        COMBO(right_par, &kp RIGHT_PARENTHESIS, RM1 RB1)
+        LCOMBO(backslash, &kp BSLH,       LT0 LM0, BASE)
+        LCOMBO(pipe,      &kp PIPE,       LM0 LB0, BASE)
+        LCOMBO(minus,     &kp MINUS,      LT2 LM2, BASE)
+        LCOMBO(under,     &kp UNDERSCORE, LM2 LB2, BASE)
+        LCOMBO(equal,     &kp EQUAL,      RT2 RM2, BASE)
+        LCOMBO(plus,      &kp PLUS,       RM2 RB2, BASE)
+
+        LCOMBO(left_bkt,  &kp LBKT,      LT1 LM1, BASE)
+        LCOMBO(right_bkt, &kp RBKT,      RT1 RM1, BASE)
+        LCOMBO(left_par,  &kp LEFT_PARENTHESIS,  LM1 LB1, BASE)
+        LCOMBO(right_par, &kp RIGHT_PARENTHESIS, RM1 RB1, BASE)
         /* COMBO(quote,  &kp DQT, 34 47) */
         /* COMBO(tab,    &kp TAB, 17 30) */
 
         // ... symbols from digits row
-        /* COMBO(excl,      &kp EXCL,      14 27) */
-        /* COMBO(at,        &kp AT,        27 40) */
-        /* COMBO(hash,      &kp HASH,      15 28) */
-        /* COMBO(dollar,    &kp DOLLAR,    28 41) */
-        /* COMBO(percent,   &kp PERCENT,   23 36) */
-        /* COMBO(caret,     &kp CARET,     36 49) */
-        /* COMBO(ampersand, &kp AMPERSAND, 24 37) */
-        /* COMBO(asterisk,  &kp ASTERISK,  37 50) */
-
-        COMBO(excl_,      &kp EXCL,      LN4 LT4)
-        COMBO(at_,        &kp AT,        LN3 LT3)
-        COMBO(hash_,      &kp HASH,      LN2 LT2)
-        COMBO(dollar_,    &kp DOLLAR,    LN1 LT1)
-        COMBO(percent_,   &kp PERCENT,   LN0 LT0)
-        COMBO(caret_,     &kp CARET,     RN0 RT0)
-        COMBO(ampersand_, &kp AMPERSAND, RN1 RT1)
-        COMBO(asterisk_,  &kp ASTERISK,  RN2 RT2)
+        LCOMBO(excl_,      &kp EXCL,      LN4 LT4, BASE)
+        LCOMBO(at_,        &kp AT,        LN3 LT3, BASE)
+        LCOMBO(hash_,      &kp HASH,      LN2 LT2, BASE)
+        LCOMBO(dollar_,    &kp DOLLAR,    LN1 LT1, BASE)
+        LCOMBO(percent_,   &kp PERCENT,   LN0 LT0, BASE)
+        LCOMBO(caret_,     &kp CARET,     RN0 RT0, BASE)
+        LCOMBO(ampersand_, &kp AMPERSAND, RN1 RT1, BASE)
+        LCOMBO(asterisk_,  &kp ASTERISK,  RN2 RT2, BASE)
 
         // ... mouse keys
-        mouse2 {
-            bindings = <&mkp RCLK>;
-            key-positions = <20 33>;
-            layers = <3>;
-        };
+        LCOMBO(mouse2, &mkp RCLK, RT0 RM0, DIGITS)
+        LCOMBO(mouse3, &mkp MCLK, RM0 RB0, DIGITS)
 
-        mouse3 {
-            bindings = <&mkp MCLK>;
-            key-positions = <33 46>;
-            layers = <3>;
-        };
-
-    // COMBO(delete_word, &kp LC(BSPC), 16 57)
+        // Horizontal
+        LCOMBO(left_brace,  &kp LEFT_BRACE,  LN0 LN1, BASE)
+        LCOMBO(right_brace, &kp RIGHT_BRACE, RN0 RN1, BASE)
     };
 
     keymap {
@@ -203,7 +203,7 @@
 &kp LSHFT    &kp Z           &kp X           &kp C         &kp V           &kp B         &kp RIGHT       &kp N            &kp M         &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT
 
 //52         53              54              55            56              57            58              59               60            61         62         63
-&to 1        &kp UP          &kp DOWN        &kp LALT      &kp TAB         &kp SPACE     &kp ENTER       &kp ENTER        &kp APOS      &kp RALT   &kp MINUS  &kp EQUAL
+&to SOLO     &kp UP          &kp DOWN        &kp LALT      &kp TAB         &kp SPACE     &kp ENTER       &kp ENTER        &kp APOS      &kp RALT   &kp MINUS  &kp EQUAL
             >;
             sensor-bindings = <&scroll_encoder>;
             /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
@@ -217,7 +217,7 @@ ___          ___             ___              ___          ___            ___   
 ___          ___             ___              ___          ___            ___              ___           ___              ___            ___          ___           ___             ___
 &mo 2        &hm LCTRL A     &hm LALT S       &hm LSHFT D  &hm LCTRL F    ___              ___           ___              &hm LCTRL J    &hm LSHFT K  &hm LALT L    &hm LCTRL SEMI  ___
 ___          ___             ___              ___          ___            ___              ___           ___              ___            ___          ___           ___             ___
-&to 0        ___             ___              &mo 2        &hm LWIN TAB   &ltq 3 SPACE     ___           &ltq 2 ENTER     &hm LSHFT APOS ___          ___           ___
+&to BASE     ___             ___              &mo 2        &hm LWIN TAB   &ltq 3 SPACE     ___           &ltq 2 ENTER     &hm LSHFT APOS ___          ___           ___
             >;
             sensor-bindings = <&scroll_encoder>;
             /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
