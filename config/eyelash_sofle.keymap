@@ -144,11 +144,11 @@
         LCOMBO(f9,         &kp F9,         RT3 RM3, NAV)
         LCOMBO(f10,        &kp F10,        RT4 RM4, NAV)
 
-        LCOMBO(bt1,        &bt BT_SEL 1,   LT4 LM4, NAV)
-        LCOMBO(bt2,        &bt BT_SEL 2,   LT3 LM3, NAV)
-        LCOMBO(bt3,        &bt BT_SEL 3,   LT2 LM2, NAV)
-        LCOMBO(bt4,        &bt BT_SEL 4,   LT1 LM1, NAV)
-        LCOMBO(bt_clr,     &bt BT_CLR,     LT0 LM0, NAV)
+        LCOMBO(bt1,        &bt BT_SEL 1,   LM4 LB4, NAV)
+        LCOMBO(bt2,        &bt BT_SEL 2,   LM3 LB3, NAV)
+        LCOMBO(bt3,        &bt BT_SEL 3,   LM2 LB2, NAV)
+        LCOMBO(bt4,        &bt BT_SEL 4,   LM1 LB1, NAV)
+        LCOMBO(bt_clr,     &bt BT_CLR,     LM0 LB0, NAV)
 
         // ... symbols from digits row
         LCOMBO(excl_,      &kp EXCL,      LN4 LT4, BASE)
