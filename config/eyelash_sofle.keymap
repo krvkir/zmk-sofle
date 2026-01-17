@@ -147,7 +147,7 @@
         LCOMBO(n0,         &kp N0,         RT4 RM4, SOLO)
 
         LCOMBO(C_z2,       &kp LC(Z),      LM4 LB4, SOLO)
-        LCOMBO(M_x,        &kp LA(X),      LM3 LB3, SOLO)
+        /* LCOMBO(M_x,        &kp LA(X),      LM3 LB3, SOLO) */
         LCOMBO(under,      &kp UNDER,      LM2 LB2, SOLO)
         LCOMBO(backslash,  &kp BSLH,       LM1 LB1, SOLO)
         /* LCOMBO(n5,         &kp N1,         LM0 LB0, SOLO) */
@@ -157,6 +157,16 @@
         LCOMBO(lbkt,       &kp LBKT,       RM3 RB3, SOLO)
         LCOMBO(rbkt,       &kp RBKT,       RM4 RB4, SOLO)
 
+        LCOMBO(f1,         &kp F1,         LT4 LM4, NAV)
+        LCOMBO(f2,         &kp F2,         LT3 LM3, NAV)
+        LCOMBO(f3,         &kp F3,         LT2 LM2, NAV)
+        LCOMBO(f4,         &kp F4,         LT1 LM1, NAV)
+        LCOMBO(f5,         &kp F5,         LT0 LM0, NAV)
+        LCOMBO(f6,         &kp F6,         RT0 RM0, NAV)
+        LCOMBO(f7,         &kp F7,         RT1 RM1, NAV)
+        LCOMBO(f8,         &kp F8,         RT2 RM2, NAV)
+        LCOMBO(f9,         &kp F9,         RT3 RM3, NAV)
+        LCOMBO(f0,         &kp F0,         RT4 RM4, NAV)
 
         LCOMBO(backslash, &kp BSLH,       LT0 LM0, BASE)
         LCOMBO(pipe,      &kp PIPE,       LM0 LB0, BASE)
