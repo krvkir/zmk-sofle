@@ -122,8 +122,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Nav
-  - {t: '$$mdi:keyboard-tab$$', h: LWIN}
-  - {t: '$$mdi:keyboard-space$$', h: Digits}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:numeric$$'}
+  - {t: '$$mdi:keyboard-space$$', h: LWIN}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', h: Nav}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
@@ -253,7 +253,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -261,6 +261,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
+- p: [40, 57]
+  k: '&macro_c_z'
+  l: [Base, Solo]
+- p: [59, 40]
+  k: Ctl+Z
+  l: [Solo]
+- p: [59, 41]
+  k: Ctl+X
+  l: [Solo]
+- p: [59, 42]
+  k: Ctl+C
+  l: [Solo]
 - p: [14, 27]
   k: {t: '1', s: '!'}
   l: [Solo]
@@ -292,6 +304,12 @@ combos:
   k: {t: '0', s: )}
   l: [Solo]
 - p: [27, 40]
+  k: Ctl+Z
+  l: [Solo]
+- p: [29, 42]
+  k: _
+  l: [Solo]
+- p: [30, 43]
   k: {t: \, s: '|'}
   l: [Solo]
 - p: [31, 44]
