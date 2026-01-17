@@ -18,7 +18,7 @@
 
 &msc {
     acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
+    time-to-max-speed-ms = <100>;     // 300
     delay-ms = <0>;                   // 0
 };
 
@@ -74,23 +74,6 @@
             quick-tap-ms = <180>;
         };
 
-        /* as: auto_shift { */
-        /*     compatible = "zmk,behavior-hold-tap"; */
-        /*     label = "AUTO_SHIFT"; */
-        /*     bindings = <&kp>, <&kp>; */
-
-        /*     #binding-cells = <2>; */
-        /*     tapping-term-ms = <135>; */
-        /*     quick-tap-ms = <0>; */
-        /* }; */
-
-        /* rgb_encoder: rgb_encoder { */
-        /*     compatible = "zmk,behavior-sensor-rotate"; */
-        /*     label = "RGB_ENCODER"; */
-        /*     #sensor-binding-cells = <0>; */
-        /*     bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>; */
-        /* }; */
-
         scroll_encoder: scroll_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -98,13 +81,6 @@
             tap-ms = <100>;
         };
     };
-
-    /* lr_encoder: scroll_encoder { */
-    /*     compatible = "zmk,behavior-sensor-rotate"; */
-    /*     #sensor-binding-cells = <0>; */
-    /*     bindings = <&kp LEFT_ARROW>, <&kp RIGHT_ARROW>; */
-    /*     tap-ms = <30>; */
-    /* }; */
 
     combos {
         compatible = "zmk,combos";
@@ -146,7 +122,7 @@
         COMBO(n9,         &kp N9,         RT3 RM3)
         COMBO(n0,         &kp N0,         RT4 RM4)
 
-        COMBO(C_z2,       &kp LC(Z),      LM4 LB4)
+        /* COMBO(C_z2,       &kp LC(Z),      LM4 LB4) */
         /* COMBO(M_x,        &kp LA(X),      LM3 LB3) */
         COMBO(under,      &kp UNDER,      LM2 LB2)
         COMBO(backslash,  &kp BSLH,       LM1 LB1)
@@ -249,32 +225,5 @@ ___          ___             ___             ___           ___          ___     
             sensor-bindings = <&scroll_encoder>;
             display-name = "Digits";
         };
-
-/*     // Layer 4: Numpad and service bindings */
-/*     // TODO Enable it with some key from the thumbs cluster. */
-/*         Digits {  */
-/*             bindings = < */
-/* &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4 &mmv MOVE_UP     ___            ___        ___        ___        ___         ___    */
-/* ___          &tho F4 N4      &tho F3 N3      &tho F2 N2    &tho F1 N1   ___          &mmv MOVE_DOWN   ___            &kp EXCL   &kp AT     &kp HASH   &kp DLLR    ___    */
-/* ___          &tho F8 N8      &tho F7 N7      &tho F6 N6    &tho F5 N5   ___          &mmv MOVE_LEFT   ___            &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK   ___    */
-/* ___          &tho F12 EQUAL  &tho F11 MINUS  &tho F10 N0   &tho F9 N9   ___          &mmv MOVE_RIGHT  ___            &kp LPAR   &kp RPAR   &kp PLUS   &kp UNDER   ___    */
-/* ___          ___             ___             ___           ___          ___          &mkp LCLK        &kp LC(ENTER)  ___        ___        ___        ___    */
-/*             >; */
-/*             sensor-bindings = <&scroll_encoder>; */
-/*             display-name = "Digits"; */
-/*         }; */
-
-/*         layer1 { // arrows */
-/*             bindings = < */
-/* ___          ___             ___             ___           ___          ___          &kp CAPS        ___        ___        ___        ___        ___         ___    */
-/* ___          ___             ___             ___           ___          ___          &kp LSHIFT      ___        ___        ___        ___        ___         ___    */
-/* ___          ___             ___             ___           ___          ___          &kp LALT        ___        ___        ___        ___        ___         ___    */
-/* ___          ___             ___             ___           ___          ___          &kp LCTL        ___        ___        ___        ___        ___         ___    */
-/* &to 2        ___             ___             ___           ___          ___          &kp LGUI        ___        ___        ___        ___        ___    */
-/*             >; */
-/*             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; */
-/*             display-name = "arrows"; */
-/*         }; */
-
   };
 };
