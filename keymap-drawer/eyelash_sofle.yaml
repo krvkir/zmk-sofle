@@ -261,69 +261,117 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [5, 4]
-  k: '{'
-  l: [Base, Solo]
-- p: [7, 8]
-  k: '}'
-  l: [Base, Solo]
+- p: [14, 27]
+  k: {t: '1', s: '!'}
+  l: [Solo]
+- p: [15, 28]
+  k: {t: '2', s: '@'}
+  l: [Solo]
+- p: [16, 29]
+  k: {t: '3', s: '#'}
+  l: [Solo]
+- p: [17, 30]
+  k: {t: '4', s: $}
+  l: [Solo]
 - p: [18, 31]
-  k: {h: \, s: '|'}
-  l: [Base, Solo]
+  k: {t: '5', s: '%'}
+  l: [Solo]
+- p: [20, 33]
+  k: {t: '6', s: ^}
+  l: [Solo]
+- p: [21, 34]
+  k: {t: '7', s: '&'}
+  l: [Solo]
+- p: [22, 35]
+  k: {t: '8', s: '*'}
+  l: [Solo]
+- p: [23, 36]
+  k: {t: '9', s: (}
+  l: [Solo]
+- p: [24, 37]
+  k: {t: '0', s: )}
+  l: [Solo]
+- p: [27, 40]
+  k: {t: \, s: '|'}
+  l: [Solo]
+- p: [31, 44]
+  k: {t: '`', s: '~'}
+  l: [Solo]
+- p: [33, 46]
+  k: {t: '-', s: _}
+  l: [Solo]
+- p: [35, 48]
+  k: {t: '=', s: +}
+  l: [Solo]
+- p: [36, 49]
+  k: {t: '[', s: '{'}
+  l: [Solo]
+- p: [37, 50]
+  k: {t: ']', s: '}'}
+  l: [Solo]
+- p: [18, 31]
+  k: {t: \, s: '|'}
+  l: [Base]
 - p: [31, 44]
   k: '|'
-  l: [Base, Solo]
+  l: [Base]
 - p: [16, 29]
-  k: {h: '-', s: _}
-  l: [Base, Solo]
+  k: {t: '-', s: _}
+  l: [Base]
 - p: [29, 42]
   k: _
-  l: [Base, Solo]
+  l: [Base]
 - p: [22, 35]
-  k: {h: '=', s: +}
-  l: [Base, Solo]
+  k: {t: '=', s: +}
+  l: [Base]
 - p: [35, 48]
   k: +
-  l: [Base, Solo]
+  l: [Base]
 - p: [17, 30]
   k: {t: '[', s: '{'}
-  l: [Base, Solo]
+  l: [Base]
 - p: [21, 34]
   k: {t: ']', s: '}'}
-  l: [Base, Solo]
+  l: [Base]
 - p: [30, 43]
   k: (
-  l: [Base, Solo]
+  l: [Base]
 - p: [34, 47]
   k: )
-  l: [Base, Solo]
+  l: [Base]
 - p: [1, 14]
   k: '!'
-  l: [Base, Solo]
+  l: [Base]
 - p: [2, 15]
   k: '@'
-  l: [Base, Solo]
+  l: [Base]
 - p: [3, 16]
   k: '#'
-  l: [Base, Solo]
+  l: [Base]
 - p: [4, 17]
   k: $
-  l: [Base, Solo]
+  l: [Base]
 - p: [5, 18]
   k: '%'
-  l: [Base, Solo]
+  l: [Base]
 - p: [7, 20]
   k: ^
-  l: [Base, Solo]
+  l: [Base]
 - p: [8, 21]
   k: '&'
-  l: [Base, Solo]
+  l: [Base]
 - p: [9, 22]
   k: '*'
-  l: [Base, Solo]
+  l: [Base]
 - p: [20, 33]
   k: $$mdi:mouse-right-click-outline$$
   l: [Digits]
 - p: [33, 46]
   k: $$mdi:mouse-scroll-wheel$$
   l: [Digits]
+- p: [5, 4]
+  k: '{'
+  l: [Base]
+- p: [7, 8]
+  k: '}'
+  l: [Base]
