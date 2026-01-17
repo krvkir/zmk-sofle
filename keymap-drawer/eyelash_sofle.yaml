@@ -306,9 +306,6 @@ combos:
 - p: [27, 40]
   k: Ctl+Z
   l: [Solo]
-- p: [28, 41]
-  k: Alt+X
-  l: [Solo]
 - p: [29, 42]
   k: _
   l: [Solo]
@@ -330,6 +327,36 @@ combos:
 - p: [37, 50]
   k: {t: ']', s: '}'}
   l: [Solo]
+- p: [14, 27]
+  k: F1
+  l: [Nav]
+- p: [15, 28]
+  k: F2
+  l: [Nav]
+- p: [16, 29]
+  k: F3
+  l: [Nav]
+- p: [17, 30]
+  k: F4
+  l: [Nav]
+- p: [18, 31]
+  k: F5
+  l: [Nav]
+- p: [20, 33]
+  k: F6
+  l: [Nav]
+- p: [21, 34]
+  k: F7
+  l: [Nav]
+- p: [22, 35]
+  k: F8
+  l: [Nav]
+- p: [23, 36]
+  k: F9
+  l: [Nav]
+- p: [24, 37]
+  k: F0
+  l: [Nav]
 - p: [18, 31]
   k: {t: \, s: '|'}
   l: [Base]
