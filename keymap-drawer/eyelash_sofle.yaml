@@ -261,7 +261,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [4, 5]
+- p: [5, 4]
   k: '{'
   l: [Base, Solo]
 - p: [7, 8]
