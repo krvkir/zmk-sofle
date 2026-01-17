@@ -345,19 +345,19 @@ combos:
 - p: [24, 37]
   k: F10
   l: [Nav]
-- p: [14, 27]
+- p: [27, 40]
   k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
   l: [Nav]
-- p: [15, 28]
+- p: [28, 41]
   k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
   l: [Nav]
-- p: [16, 29]
+- p: [29, 42]
   k: {h: '4', s: '$$mdi:bluetooth-connect$$'}
   l: [Nav]
-- p: [17, 30]
+- p: [30, 43]
   k: {h: '5', s: '$$mdi:bluetooth-connect$$'}
   l: [Nav]
-- p: [18, 31]
+- p: [31, 44]
   k: $$mdi:bluetooth-off$$
   l: [Nav]
 - p: [1, 14]
