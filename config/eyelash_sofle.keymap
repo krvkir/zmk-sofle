@@ -128,21 +128,28 @@
                 ╰────────────────────╯                          ╰─────────────────────╯
         */
 
+        // Extra
+        LCOMBO(C_z, &kp LC(Z),  RH0 LB4, SOLO)
+        LCOMBO(C_x, &kp LC(X),  RH0 LB3, SOLO)
+        LCOMBO(C_c, &kp LC(C),  RH0 LB2, SOLO)
+        /* LCOMBO(M_x, &kp LA(X),  LM3 LB3, SOLO) */
+
         // Vertical
-        LCOMBO(n1, &kp N1, LT4 LM4, SOLO)
-        LCOMBO(n2, &kp N2, LT3 LM3, SOLO)
-        LCOMBO(n3, &kp N3, LT2 LM2, SOLO)
-        LCOMBO(n4, &kp N4, LT1 LM1, SOLO)
-        LCOMBO(n5, &kp N5, LT0 LM0, SOLO)
-        LCOMBO(n6, &kp N6, RT0 RM0, SOLO)
-        LCOMBO(n7, &kp N7, RT1 RM1, SOLO)
-        LCOMBO(n8, &kp N8, RT2 RM2, SOLO)
-        LCOMBO(n9, &kp N9, RT3 RM3, SOLO)
-        LCOMBO(n0, &kp N0, RT4 RM4, SOLO)
-        LCOMBO(backslash,  &kp BSLH,       LM4 LB4, SOLO)
-        /* LCOMBO(n2,         &kp N1,         LM3 LB3, SOLO) */
-        /* LCOMBO(n3,         &kp N1,         LM2 LB2, SOLO) */
-        /* LCOMBO(n4,         &kp N1,         LM1 LB1, SOLO) */
+        LCOMBO(n1,         &kp N1,         LT4 LM4, SOLO)
+        LCOMBO(n2,         &kp N2,         LT3 LM3, SOLO)
+        LCOMBO(n3,         &kp N3,         LT2 LM2, SOLO)
+        LCOMBO(n4,         &kp N4,         LT1 LM1, SOLO)
+        LCOMBO(n5,         &kp N5,         LT0 LM0, SOLO)
+        LCOMBO(n6,         &kp N6,         RT0 RM0, SOLO)
+        LCOMBO(n7,         &kp N7,         RT1 RM1, SOLO)
+        LCOMBO(n8,         &kp N8,         RT2 RM2, SOLO)
+        LCOMBO(n9,         &kp N9,         RT3 RM3, SOLO)
+        LCOMBO(n0,         &kp N0,         RT4 RM4, SOLO)
+
+        LCOMBO(C_z2,       &kp LC(Z),      LM4 LB4, SOLO)
+        LCOMBO(M_x         &kp LA(X),      LM3 LB3, SOLO)
+        LCOMBO(under,      &kp UNDER,      LM2 LB2, SOLO)
+        LCOMBO(backslash,  &kp BSLH,       LM1 LB1, SOLO)
         /* LCOMBO(n5,         &kp N1,         LM0 LB0, SOLO) */
         LCOMBO(grave,      &kp GRAVE,      LM0 LB0, SOLO)
         LCOMBO(minus,      &kp MINUS,      RM0 RB0, SOLO)
@@ -213,11 +220,11 @@
     // Layer 1: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
         Solo {
             bindings = <
-___          ___             ___              ___          ___            ___              ___           ___              ___            ___          ___           ___             ___
-___          ___             ___              ___          ___            ___              ___           ___              ___            ___          ___           ___             ___
-&mo 2        &hm LCTRL A     &hm LALT S       &hm LSHFT D  &hm LCTRL F    ___              ___           ___              &hm LCTRL J    &hm LSHFT K  &hm LALT L    &hm LCTRL SEMI  ___
-___          ___             ___              ___          ___            ___              ___           ___              ___            ___          ___           ___             ___
-&to BASE     ___             ___              &mo 2        &hm LWIN TAB   &ltq 3 SPACE     ___           &ltq 2 ENTER     &hm LSHFT APOS ___          ___           ___
+___       ___          ___         ___          ___              ___              ___   ___              ___             ___          ___         ___             ___
+___       ___          ___         ___          ___              ___              ___   ___              ___             ___          ___         ___             ___
+&mo 2     &hm LCTRL A  &hm LALT S  &hm LSHFT D  &hm LCTRL F      ___              ___   ___              &hm LCTRL J     &hm LSHFT K  &hm LALT L  &hm LCTRL SEMI  ___
+___       ___          ___         ___          ___              ___              ___   ___              ___             ___          ___         ___             ___
+&to BASE  ___          ___         &mo 2        &ltq DIGITS TAB  &hm LWIN SPACE   ___   &ltq NAV ENTER   &hm LSHFT APOS  ___          ___         ___
             >;
             sensor-bindings = <&scroll_encoder>;
             /* sensor-bindings = <&inc_dec_kp PG_DN PG_UP>; */
