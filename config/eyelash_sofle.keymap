@@ -108,7 +108,7 @@
 
     combos {
         compatible = "zmk,combos";
-        #include <key_labels.dtsi>
+        #include "key_labels.dtsi"
         #include "combos.dtsi"
 
         // Horizontal
