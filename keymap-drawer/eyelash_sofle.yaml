@@ -306,6 +306,9 @@ combos:
 - p: [27, 40]
   k: Ctl+Z
   l: [Solo]
+- p: [28, 41]
+  k: Alt+X
+  l: [Solo]
 - p: [29, 42]
   k: _
   l: [Solo]
