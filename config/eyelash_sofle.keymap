@@ -166,7 +166,7 @@
         LCOMBO(f7,         &kp F7,         RT1 RM1, NAV)
         LCOMBO(f8,         &kp F8,         RT2 RM2, NAV)
         LCOMBO(f9,         &kp F9,         RT3 RM3, NAV)
-        LCOMBO(f0,         &kp F0,         RT4 RM4, NAV)
+        LCOMBO(f10,        &kp F10,        RT4 RM4, NAV)
 
         LCOMBO(backslash, &kp BSLH,       LT0 LM0, BASE)
         LCOMBO(pipe,      &kp PIPE,       LM0 LB0, BASE)
