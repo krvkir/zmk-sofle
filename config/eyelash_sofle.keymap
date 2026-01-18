@@ -126,9 +126,8 @@
         /* COMBO(C_z2,       &kp LC(Z),      LM4 LB4) */
         COMBO(plus,       &kp PLUS,       LM3 LB3)
         COMBO(under,      &kp UNDER,      LM2 LB2)
-        COMBO(backslash,  &kp BSLH,       LM1 LB1)
-        /* COMBO(n5,         &kp N1,         LM0 LB0) */
-        COMBO(grave,      &kp GRAVE,      LM0 LB0)
+        COMBO(grave,      &kp GRAVE,      LM1 LB1)
+        COMBO(backslash,  &kp BSLH,       LM0 LB0)
         COMBO(minus,      &kp MINUS,      RM1 RB1)
         COMBO(equal,      &kp EQUAL,      RM2 RB2)
         COMBO(lbkt,       &kp LBKT,       RM3 RB3)
