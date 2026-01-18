@@ -198,61 +198,61 @@ layers:
 combos:
 - p: [40, 57]
   k: '&macro_c_z'
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [14, 27]
   k: {t: '1', s: '!'}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [15, 28]
   k: {t: '2', s: '@'}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [16, 29]
   k: {t: '3', s: '#'}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [17, 30]
   k: {t: '4', s: $}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [18, 31]
   k: {t: '5', s: '%'}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [20, 33]
   k: {t: '6', s: ^}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [21, 34]
   k: {t: '7', s: '&'}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [22, 35]
   k: {t: '8', s: '*'}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [23, 36]
   k: {t: '9', s: (}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [24, 37]
   k: {t: '0', s: )}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [28, 41]
   k: +
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [29, 42]
   k: _
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [30, 43]
   k: {t: '`', s: '~'}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [31, 44]
   k: {h: \, s: '|'}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [34, 47]
   k: {h: '-', s: _}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [35, 48]
   k: {h: '=', s: +}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [36, 49]
   k: {h: '[', s: '{'}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [37, 50]
   k: {h: ']', s: '}'}
-  l: [Solo, Nav]
+  l: [Solo, Base]
 - p: [14, 27]
   k: F1
   l: [Nav]
