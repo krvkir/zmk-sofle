@@ -127,8 +127,8 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB4'
-  - '&mkp MB5'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [40, 57]
@@ -233,9 +233,9 @@ combos:
 - p: [31, 44]
   k: {h: '5', s: '$$mdi:bluetooth-connect$$'}
   l: [Nav]
-- p: [20, 33]
+- p: [33, 46]
   k: '&mkp MB4'
   l: [Nav]
-- p: [21, 34]
+- p: [34, 47]
   k: '&mkp MB5'
   l: [Nav]
