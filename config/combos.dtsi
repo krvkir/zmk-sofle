@@ -2,7 +2,7 @@
 #define BASE 0
 #define SOLO 1
 #define NAV 2
-#define DIGITS 3
+#define DIG 3
 
 #define LCOMBO(NAME, BINDINGS, KEYPOS, LAYER) \
   combo_##NAME##LAYER { \
