@@ -33,27 +33,9 @@
 / {
     macros {
         #include "macros.dtsi"
-
-        hold_once: hold_once {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            wait-ms = <0>;
-            tap-ms  = <20>;
-            /* Forward the parameter into &kp, and TAP it once */
-            bindings = <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>;
-        };
   };
 
     behaviors {
-        tho: tho { // tap-hold once
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";         /* choose to taste */
-            tapping-term-ms = <200>;     /* tune to taste */
-            /* HOLD -> single-tap macro ; TAP -> plain keypress */
-            bindings = <&hold_once>, <&kp>;
-        };
-
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -105,12 +87,6 @@
                 ╰────────────────────╯                          ╰─────────────────────╯
         */
 
-        // Extra
-        /* LCOMBO(C_z, &kp LC(Z),  RH0 LB4, SOLO) */
-        /* LCOMBO(C_x, &kp LC(X),  RH0 LB3, SOLO) */
-        /* LCOMBO(C_c, &kp LC(C),  RH0 LB2, SOLO) */
-        /* LCOMBO(M_x, &kp LA(X),  LM3 LB3, SOLO) */
-
         // Vertical
         COMBO(n1,         &kp N1,         LT4 LM4)
         COMBO(n2,         &kp N2,         LT3 LM3)
@@ -123,7 +99,6 @@
         COMBO(n9,         &kp N9,         RT3 RM3)
         COMBO(n0,         &kp N0,         RT4 RM4)
 
-        /* COMBO(C_z2,       &kp LC(Z),      LM4 LB4) */
         COMBO(plus,       &kp PLUS,       LM3 LB3)
         COMBO(under,      &kp UNDER,      LM2 LB2)
         COMBO(grave,      &kp GRAVE,      LM1 LB1)
@@ -133,41 +108,41 @@
         COMBO(lbkt,       &kp LBKT,       RM3 RB3)
         COMBO(rbkt,       &kp RBKT,       RM4 RB4)
 
-        LCOMBO(f1,         &kp F1,         LT4 LM4, NAV)
-        LCOMBO(f2,         &kp F2,         LT3 LM3, NAV)
-        LCOMBO(f3,         &kp F3,         LT2 LM2, NAV)
-        LCOMBO(f4,         &kp F4,         LT1 LM1, NAV)
-        LCOMBO(f5,         &kp F5,         LT0 LM0, NAV)
-        LCOMBO(f6,         &kp F6,         RT0 RM0, NAV)
-        LCOMBO(f7,         &kp F7,         RT1 RM1, NAV)
-        LCOMBO(f8,         &kp F8,         RT2 RM2, NAV)
-        LCOMBO(f9,         &kp F9,         RT3 RM3, NAV)
-        LCOMBO(f10,        &kp F10,        RT4 RM4, NAV)
+        LCOMBO(f1,        &kp F1,         LT4 LM4, NAV)
+        LCOMBO(f2,        &kp F2,         LT3 LM3, NAV)
+        LCOMBO(f3,        &kp F3,         LT2 LM2, NAV)
+        LCOMBO(f4,        &kp F4,         LT1 LM1, NAV)
+        LCOMBO(f5,        &kp F5,         LT0 LM0, NAV)
+        LCOMBO(f6,        &kp F6,         RT0 RM0, NAV)
+        LCOMBO(f7,        &kp F7,         RT1 RM1, NAV)
+        LCOMBO(f8,        &kp F8,         RT2 RM2, NAV)
+        LCOMBO(f9,        &kp F9,         RT3 RM3, NAV)
+        LCOMBO(f10,       &kp F10,        RT4 RM4, NAV)
 
-        LCOMBO(bt0,        &bt BT_SEL 0,   LM4 LB4, NAV)
-        LCOMBO(bt1,        &bt BT_SEL 1,   LM3 LB3, NAV)
-        LCOMBO(bt2,        &bt BT_SEL 2,   LM2 LB2, NAV)
-        LCOMBO(bt3,        &bt BT_SEL 3,   LM1 LB1, NAV)
-        LCOMBO(bt_clr,     &bt BT_CLR,     LM0 LB0, NAV)
-        LCOMBO(mb4,        &mkp MB4,       RT0 RM0, NAV)
-        LCOMBO(mb5,        &mkp MB5,       RT1 RM1, NAV)
+        LCOMBO(bt0,       &bt BT_SEL 0,   LM4 LB4, NAV)
+        LCOMBO(bt1,       &bt BT_SEL 1,   LM3 LB3, NAV)
+        LCOMBO(bt2,       &bt BT_SEL 2,   LM2 LB2, NAV)
+        LCOMBO(bt3,       &bt BT_SEL 3,   LM1 LB1, NAV)
+        LCOMBO(bt4,       &bt BT_SEL 4,   LM0 LB0, NAV)
+        LCOMBO(mb_back,   &mkp MB4,       RT0 RM0, NAV)
+        LCOMBO(mb_fwd,    &mkp MB5,       RT1 RM1, NAV)
     };
 
     keymap {
         compatible = "zmk,keymap";
         // Layer 0: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk
-        Solo {
+        Base {
             bindings = <
 /*╭0────────────1─────────────2─────────────3─────────────4─────────────5────────╮   ╭6────────╮   ╭7─────────────8─────────────9─────────────10────────────11────────────12───────╮     */
    &kp GRAVE    &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &mmv MOVE_UP    &kp N6       &kp N7         &kp N8      &kp N9        &kp N0         &kp RBKT
    &kp TAB      &kp Q         &kp W         &kp E         &kp R         &kp T         &mmv MOVE_DOWN  &kp Y        &kp U          &kp I       &kp O         &kp P          &kp LBKT
    &mo NAV      &hm LCTRL A   &hm LALT S    &hm LSHFT D   &hm LCTRL F   &kp G         &mmv MOVE_LEFT  &kp H        &hm LCTRL J    &hm LSHFT K &hm LALT L    &hm LCTRL SEMI &kp APOS
    &kp LSHFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &mmv MOVE_RIGHT &kp N        &kp M          &kp COMMA   &kp DOT       &kp FSLH       &kp RSHFT
-   &to BASE     &kp UP        &kp DOWN      &ltq NAV RALT &hm LSHFT TAB &hm LWIN SPACE &mkp LCLK    &ltq NAV ENTER &hm RSHFT APOS &kp RCTRL   &kp MINUS     &kp EQUAL
+   &bt BT_CLR   &kp UP        &kp DOWN      &ltq NAV RALT &hm LSHFT TAB &hm LWIN SPACE &mkp LCLK    &ltq NAV ENTER &hm RSHFT APOS &kp RCTRL   &kp MINUS     &kp EQUAL
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&scroll_encoder>;
-            display-name = "Solo";
+            display-name = "Base";
         };
 
         // Layer 1: Navigation
@@ -183,21 +158,6 @@
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "Nav";
-        };
-
-        // Layer 2: a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
-        Base {
-            bindings = <
-/*╭0────────────1─────────────2─────────────3─────────────4─────────────5────────╮   ╭6────────╮   ╭7─────────────8─────────────9─────────────10────────────11────────────12───────╮     */
-   ___          ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
-   ___          ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
-   ___          &kp A         &kp S         &kp D         &kp F         ___           ___           ___           &kp J         &kp K         &kp L         &kp SEMI      ___
-   ___          ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
-   &to SOLO     ___           ___           &kp RALT      &kp TAB       &kp SPACE     ___           &kp ENTER     &kp APOS      &kp RCTRL     ___           ___
-/*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
-            >;
-            sensor-bindings = <&scroll_encoder>;
-            display-name = "Base";
         };
  };
 };

@@ -1,7 +1,6 @@
 // Layers
-#define SOLO 0
+#define BASE 0
 #define NAV 1
-#define BASE 2
 
 #define LCOMBO(NAME, BINDINGS, KEYPOS, LAYER) \
   combo_##NAME##LAYER { \
@@ -16,7 +15,7 @@
     timeout-ms = <100>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <SOLO BASE>; \
+    layers = <BASE>; \
   };
 
 
