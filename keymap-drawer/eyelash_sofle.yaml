@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - {t: '-', s: _}
   - {t: '=', s: +}
   Solo:
@@ -121,7 +121,7 @@ layers:
   - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Nav
+  - {t: '$$mdi:apple-keyboard-option$$', h: Nav}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:numeric$$'}
   - {t: '$$mdi:keyboard-space$$', h: LWIN}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -137,7 +137,7 @@ layers:
   - F3
   - F4
   - F5
-  - Ctl+$$mdi:arrow-up-bold$$
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
   - F7
   - F8
@@ -150,8 +150,8 @@ layers:
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - Ctl+$$mdi:backspace-reverse-outline$$
   - {t: '=', s: +}
-  - Ctl+$$mdi:arrow-down-bold$$
-  - {t: '-', s: _}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&mkp MB2'
   - Ctl+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
@@ -163,7 +163,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:keyboard-esc$$
-  - Ctl+$$mdi:arrow-left-bold$$
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '`', s: '~'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -176,7 +176,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - Ctl+B
-  - Ctl+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - HOME
   - END
   - {t: ',', s: <}
@@ -189,12 +189,12 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: 'Ctl+$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:mouse-left-click-outline$$
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB3'
+  - '&mkp MB4'
+  - '&mkp MB5'
   Digits:
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
