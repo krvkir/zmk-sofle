@@ -149,20 +149,6 @@
         LCOMBO(bt3,        &bt BT_SEL 3,   LM2 LB2, NAV)
         LCOMBO(bt4,        &bt BT_SEL 4,   LM1 LB1, NAV)
         LCOMBO(bt_clr,     &bt BT_CLR,     LM0 LB0, NAV)
-
-        // ... symbols from digits row
-        LCOMBO(excl_,      &kp EXCL,      LN4 LT4, BASE)
-        LCOMBO(at_,        &kp AT,        LN3 LT3, BASE)
-        LCOMBO(hash_,      &kp HASH,      LN2 LT2, BASE)
-        LCOMBO(dollar_,    &kp DOLLAR,    LN1 LT1, BASE)
-        LCOMBO(percent_,   &kp PERCENT,   LN0 LT0, BASE)
-        LCOMBO(caret_,     &kp CARET,     RN0 RT0, BASE)
-        LCOMBO(ampersand_, &kp AMPERSAND, RN1 RT1, BASE)
-        LCOMBO(asterisk_,  &kp ASTERISK,  RN2 RT2, BASE)
-
-        // ... mouse keys
-        LCOMBO(mouse2, &mkp RCLK, RT0 RM0, DIG)
-        LCOMBO(mouse3, &mkp MCLK, RM0 RB0, DIG)
     };
 
     keymap {
@@ -172,11 +158,11 @@
         Base {
             bindings = <
 /*╭0────────────1─────────────2─────────────3─────────────4─────────────5────────╮   ╭6────────╮   ╭7─────────────8─────────────9─────────────10────────────11────────────12───────╮     */
-   &kp GRAVE    &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &mmv MOVE_UP   &kp N6       &kp N7        &kp N8        &kp N9        &kp N0        &kp RBKT
-   &kp TAB      &kp Q         &kp W         &kp E         &kp R         &kp T         &mmv MOVE_DOWN &kp Y        &kp U         &kp I         &kp O         &kp P         &kp LBKT
-   &kp CAPS     &kp A         &kp S         &kp D         &kp F         &kp G         &mmv MOVE_LEFT &kp H        &kp J         &kp K         &kp L         &kp SEMI      &kp APOS
-   &kp LSHFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &mmv MOVE_RIGH &kp N        &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
-   &to SOLO     &kp UP        &kp DOWN      &kp RALT      &kp TAB       &kp SPACE     &mkp LCLK      &kp ENTER    &kp APOS      &kp RCTRL     &kp MINUS     &kp EQUAL
+   &kp GRAVE    &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &mmv MOVE_UP    &kp N6       &kp N7        &kp N8        &kp N9        &kp N0        &kp RBKT
+   &kp TAB      &kp Q         &kp W         &kp E         &kp R         &kp T         &mmv MOVE_DOWN  &kp Y        &kp U         &kp I         &kp O         &kp P         &kp LBKT
+   &kp CAPS     &kp A         &kp S         &kp D         &kp F         &kp G         &mmv MOVE_LEFT  &kp H        &kp J         &kp K         &kp L         &kp SEMI      &kp APOS
+   &kp LSHFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &mmv MOVE_RIGHT &kp N        &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
+   &to SOLO     &kp UP        &kp DOWN      &kp RALT      &kp TAB       &kp SPACE     &mkp LCLK       &kp ENTER    &kp APOS      &kp RCTRL     &kp MINUS     &kp EQUAL
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&scroll_encoder>;
