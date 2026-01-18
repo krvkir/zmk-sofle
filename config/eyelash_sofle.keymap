@@ -87,7 +87,7 @@
                 ╰────────────────────╯                          ╰─────────────────────╯
         */
 
-        // Vertical
+        /* Only vertical adjacent key pairs are used since horizontal adjacent pairs interfere with rollups. */
         COMBO(n1,         &kp N1,         LT4 LM4)
         COMBO(n2,         &kp N2,         LT3 LM3)
         COMBO(n3,         &kp N3,         LT2 LM2)
@@ -124,8 +124,8 @@
         LCOMBO(bt2,       &bt BT_SEL 2,   LM2 LB2, NAV)
         LCOMBO(bt3,       &bt BT_SEL 3,   LM1 LB1, NAV)
         LCOMBO(bt4,       &bt BT_SEL 4,   LM0 LB0, NAV)
-        LCOMBO(mb_back,   &mkp MB4,       RT0 RM0, NAV)
-        LCOMBO(mb_fwd,    &mkp MB5,       RT1 RM1, NAV)
+        LCOMBO(mb_back,   &mkp MB4,       RM0 RB0, NAV)
+        LCOMBO(mb_fwd,    &mkp MB5,       RM1 RB1, NAV)
     };
 
     keymap {
@@ -153,7 +153,7 @@
    ___          &kp PG_UP     &kp PG_DN     &kp LC(BSPC)  &kp LC(DEL)   &kp EQUAL     &msc SCRL_DOWN  &mkp MB3    &kp LC(LEFT)  &kp UP        &kp LC(RIGHT) &kp BSLH      &kp LBKT
    ___          &kp TAB       &kp ENTER     &kp BSPC      &kp DEL       &kp ESC       &msc SCRL_LEFT  &kp GRAVE   &kp LEFT      &kp DOWN      &kp RIGHT     &kp SEMI      &kp APOS
    ___          &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)     &msc SCRL_RIGHT &kp HOME    &kp END       &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
-   ___          ___           ___           ___           ___           ___           &mkp RCLK       ___         ___           &mkp MB4      &mkp MB5      ___
+   ___          ___           ___           ___           ___           ___           &mkp RCLK       ___         ___           ___           ___           ___
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&scroll_encoder>;
