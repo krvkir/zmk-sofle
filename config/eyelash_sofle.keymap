@@ -195,7 +195,7 @@
    ___          ___           ___           ___           ___           ___            ___          ___            ___            ___         ___           ___            ___
    &mo NAV      &hm LCTRL A   &hm LALT S    &hm LSHFT D   &hm LCTRL F   ___            ___          ___            &hm LCTRL J    &hm LSHFT K &hm LALT L    &hm LCTRL SEMI ___
    ___          ___           ___           ___           ___           ___            ___          ___            ___            ___         ___           ___            ___
-   &to BASE     ___           ___           &ltq RALT NAV &ltq DIG TAB  &hm LWIN SPACE ___          &ltq NAV ENTER &hm LSHFT APOS ___         ___           ___
+   &to BASE     ___           ___           &ltq NAV RALT &ltq DIG TAB  &hm LWIN SPACE ___          &ltq NAV ENTER &hm LSHFT APOS ___         ___           ___
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&scroll_encoder>;
