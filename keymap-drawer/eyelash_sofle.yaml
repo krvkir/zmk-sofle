@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - '&mmv MOVE_RIGH'
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - N
   - M
   - {t: ',', s: <}
@@ -360,33 +360,3 @@ combos:
 - p: [31, 44]
   k: $$mdi:bluetooth-off$$
   l: [Nav]
-- p: [1, 14]
-  k: '!'
-  l: [Base]
-- p: [2, 15]
-  k: '@'
-  l: [Base]
-- p: [3, 16]
-  k: '#'
-  l: [Base]
-- p: [4, 17]
-  k: $
-  l: [Base]
-- p: [5, 18]
-  k: '%'
-  l: [Base]
-- p: [7, 20]
-  k: ^
-  l: [Base]
-- p: [8, 21]
-  k: '&'
-  l: [Base]
-- p: [9, 22]
-  k: '*'
-  l: [Base]
-- p: [20, 33]
-  k: $$mdi:mouse-right-click-outline$$
-  l: [Digits]
-- p: [33, 46]
-  k: $$mdi:mouse-scroll-wheel$$
-  l: [Digits]

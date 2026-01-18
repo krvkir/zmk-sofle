@@ -69,9 +69,6 @@
 <svg id="mdi:mouse-right-click-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-mouse-right-click-outline" viewBox="0 0 24 24"><path d="M13 9V1.07C16.94 1.56 20 4.92 20 9H13M11 9V1.07C10.3 1.16 9.63 1.33 9 1.59C6.67 2.53 4.89 4.53 4.25 7C4.09 7.64 4 8.31 4 9H11M6.34 7C6.82 5.65 7.78 4.5 9 3.81V7H6.34M6 15V13H18V15C18 16.59 17.37 18.12 16.24 19.24C15.12 20.37 13.59 21 12 21C10.41 21 8.88 20.37 7.76 19.24C6.63 18.12 6 16.59 6 15M4 15C4 17.12 4.84 19.16 6.34 20.66C7.84 22.16 9.88 23 12 23C14.12 23 16.16 22.16 17.66 20.66C19.16 19.16 20 17.12 20 15V11H4V15Z" /></svg>
 </svg>
-<svg id="mdi:mouse-scroll-wheel">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-mouse-scroll-wheel" viewBox="0 0 24 24"><path d="M11 1.07C7.05 1.56 4 4.92 4 9H11V7.73C10.4 7.39 10 6.74 10 6V4C10 3.26 10.4 2.61 11 2.27V1.07M13 9V7.73C13.6 7.39 14 6.74 14 6V4C14 3.26 13.6 2.61 13 2.27V1.07C16.94 1.56 20 4.92 20 9H13M4 15C4 17.12 4.84 19.16 6.34 20.66C7.84 22.16 9.88 23 12 23C14.12 23 16.16 22.16 17.66 20.66C19.16 19.16 20 17.12 20 15V11H4V15M13 6V4C13 3.45 12.55 3 12 3C11.45 3 11 3.45 11 4V6C11 6.55 11.45 7 12 7C12.55 7 13 6.55 13 6Z" /></svg>
-</svg>
 <svg id="mdi:numeric">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric" viewBox="0 0 24 24"><path d="M4,17V9H2V7H6V17H4M22,15C22,16.11 21.1,17 20,17H16V15H20V13H18V11H20V9H16V7H20A2,2 0 0,1 22,9V10.5A1.5,1.5 0 0,1 20.5,12A1.5,1.5 0 0,1 22,13.5V15M14,15V17H8V13C8,11.89 8.9,11 10,11H12V9H8V7H12A2,2 0 0,1 14,9V11C14,12.11 13.1,13 12,13H10V15H14Z" /></svg>
 </svg>
@@ -544,9 +541,8 @@ rect.held, rect.combo.held {
 <g transform="translate(518, 91)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 67%">&amp;mmv</tspan><tspan x="0" dy="1.2em" style="font-size: 67%">MOVE_RIGH</tspan>
-</text>
+<use href="#mdi:menu-right" xlink:href="#mdi:menu-right" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:menu-right"/>
+<use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-8" y="-24" height="15" width="15.0" class="key shifted glyph mdi:mouse"/>
 </g>
 <g transform="translate(616, 203)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -733,38 +729,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="826" y="183" width="28" height="26" class="combo"/>
 <text x="840" y="207" class="combo hold">]</text>
 <text x="840" y="185" class="combo shifted">}</text>
-</g>
-<g class="combo combopos-18">
-<rect rx="6" ry="6" x="70" y="71" width="28" height="26" class="combo"/>
-<text x="84" y="84" class="combo tap">!</text>
-</g>
-<g class="combo combopos-19">
-<rect rx="6" ry="6" x="126" y="50" width="28" height="26" class="combo"/>
-<text x="140" y="63" class="combo tap">@</text>
-</g>
-<g class="combo combopos-20">
-<rect rx="6" ry="6" x="182" y="43" width="28" height="26" class="combo"/>
-<text x="196" y="56" class="combo tap">#</text>
-</g>
-<g class="combo combopos-21">
-<rect rx="6" ry="6" x="238" y="50" width="28" height="26" class="combo"/>
-<text x="252" y="63" class="combo tap">$</text>
-</g>
-<g class="combo combopos-22">
-<rect rx="6" ry="6" x="294" y="50" width="28" height="26" class="combo"/>
-<text x="308" y="63" class="combo tap">%</text>
-</g>
-<g class="combo combopos-23">
-<rect rx="6" ry="6" x="602" y="50" width="28" height="26" class="combo"/>
-<text x="616" y="63" class="combo tap">^</text>
-</g>
-<g class="combo combopos-24">
-<rect rx="6" ry="6" x="658" y="50" width="28" height="26" class="combo"/>
-<text x="672" y="63" class="combo tap">&amp;</text>
-</g>
-<g class="combo combopos-25">
-<rect rx="6" ry="6" x="714" y="43" width="28" height="26" class="combo"/>
-<text x="728" y="56" class="combo tap">*</text>
 </g>
 </g>
 </g>
@@ -1950,14 +1914,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
-</g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="602" y="106" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="607" y="110" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="602" y="162" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="607" y="166" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
 </g>
 </g>
 </g>
