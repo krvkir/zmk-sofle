@@ -18,15 +18,15 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;     // 300
-    delay-ms = <0>;                   // 0
+    acceleration-exponent = <2>;      // 0
+    time-to-max-speed-ms = <700>;     // 300
+    delay-ms = <8>;                   // 0
 };
 
 &mmv {
-    time-to-max-speed-ms = <1000>;
+    time-to-max-speed-ms = <700>;
     acceleration-exponent = <2>;
-    trigger-period-ms = <16>;
+    trigger-period-ms = <8>;
 };
 
 
@@ -149,69 +149,55 @@
         LCOMBO(bt3,        &bt BT_SEL 3,   LM2 LB2, NAV)
         LCOMBO(bt4,        &bt BT_SEL 4,   LM1 LB1, NAV)
         LCOMBO(bt_clr,     &bt BT_CLR,     LM0 LB0, NAV)
+        LCOMBO(mb4,        &mkp MB4,       RT0 RM0, NAV)
+        LCOMBO(mb5,        &mkp MB5,       RT1 RM1, NAV)
     };
 
     keymap {
         compatible = "zmk,keymap";
-
-        // Layer 0: a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
-        Base {
-            bindings = <
-/*╭0────────────1─────────────2─────────────3─────────────4─────────────5────────╮   ╭6────────╮   ╭7─────────────8─────────────9─────────────10────────────11────────────12───────╮     */
-   &kp GRAVE    &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &mmv MOVE_UP    &kp N6       &kp N7        &kp N8        &kp N9        &kp N0        &kp RBKT
-   &kp TAB      &kp Q         &kp W         &kp E         &kp R         &kp T         &mmv MOVE_DOWN  &kp Y        &kp U         &kp I         &kp O         &kp P         &kp LBKT
-   &kp CAPS     &kp A         &kp S         &kp D         &kp F         &kp G         &mmv MOVE_LEFT  &kp H        &kp J         &kp K         &kp L         &kp SEMI      &kp APOS
-   &kp LSHFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &mmv MOVE_RIGHT &kp N        &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
-   &to SOLO     &kp UP        &kp DOWN      &kp RALT      &kp TAB       &kp SPACE     &mkp LCLK       &kp ENTER    &kp APOS      &kp RCTRL     &kp MINUS     &kp EQUAL
-/*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
-            >;
-            sensor-bindings = <&scroll_encoder>;
-            display-name = "Base";
-        };
-
-        // Layer 1: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk means
+        // Layer 0: autonomous layer that works on all dumb devices like android phones; home row mods and nav layer is done by zmk
         Solo {
             bindings = <
 /*╭0────────────1─────────────2─────────────3─────────────4─────────────5────────╮   ╭6────────╮   ╭7─────────────8─────────────9─────────────10────────────11────────────12───────╮     */
-   ___          ___           ___           ___           ___           ___            ___          ___            ___            ___         ___           ___            ___
-   ___          ___           ___           ___           ___           ___            ___          ___            ___            ___         ___           ___            ___
-   &mo NAV      &hm LCTRL A   &hm LALT S    &hm LSHFT D   &hm LCTRL F   ___            ___          ___            &hm LCTRL J    &hm LSHFT K &hm LALT L    &hm LCTRL SEMI ___
-   ___          ___           ___           ___           ___           ___            ___          ___            ___            ___         ___           ___            ___
-   &to BASE     ___           ___           &ltq NAV RALT &ltq DIG TAB  &hm LWIN SPACE ___          &ltq NAV ENTER &hm LSHFT APOS ___         ___           ___
+   &kp GRAVE    &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &mmv MOVE_UP    &kp N6       &kp N7         &kp N8      &kp N9        &kp N0         &kp RBKT
+   &kp TAB      &kp Q         &kp W         &kp E         &kp R         &kp T         &mmv MOVE_DOWN  &kp Y        &kp U          &kp I       &kp O         &kp P          &kp LBKT
+   &mo NAV      &hm LCTRL A   &hm LALT S    &hm LSHFT D   &hm LCTRL F   &kp G         &mmv MOVE_LEFT  &kp H        &hm LCTRL J    &hm LSHFT K &hm LALT L    &hm LCTRL SEMI &kp APOS
+   &kp LSHFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &mmv MOVE_RIGHT &kp N        &kp M          &kp COMMA   &kp DOT       &kp FSLH       &kp RSHFT
+   &to BASE     &kp UP        &kp DOWN      &ltq NAV RALT &hm LSHFT TAB &hm LWIN SPACE &mkp LCLK    &ltq NAV ENTER &hm RSHFT APOS &kp RCTRL   &kp MINUS     &kp EQUAL
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "Solo";
         };
 
-        // Layer 2: Navigation
+        // Layer 1: Navigation
         Nav {
             bindings = <
 /*╭0────────────1─────────────2─────────────3─────────────4─────────────5────────╮   ╭6────────╮   ╭7─────────────8─────────────9─────────────10────────────11────────────12───────╮     */
    ___          &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &msc SCRL_UP    &kp F6      &kp F7        &kp F8        &kp F9        &kp F10       &kp RBKT
-   ___          &kp PG_UP     &kp PG_DN     &kp LC(BSPC)  &kp LC(DEL)   &kp EQUAL     &msc SCRL_DOWN  &mkp MB2    &kp LC(LEFT)  &kp UP        &kp LC(RIGHT) &kp BSLH      &kp LBKT
+   ___          &kp PG_UP     &kp PG_DN     &kp LC(BSPC)  &kp LC(DEL)   &kp EQUAL     &msc SCRL_DOWN  &mkp MB3    &kp LC(LEFT)  &kp UP        &kp LC(RIGHT) &kp BSLH      &kp LBKT
    ___          &kp TAB       &kp ENTER     &kp BSPC      &kp DEL       &kp ESC       &msc SCRL_LEFT  &kp GRAVE   &kp LEFT      &kp DOWN      &kp RIGHT     &kp SEMI      &kp APOS
    ___          &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)     &msc SCRL_RIGHT &kp HOME    &kp END       &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
-   ___          ___           ___           ___           ___           ___           &mkp RCLK       ___         ___           &mkp MB3      &mkp MB4      &mkp MB5
+   ___          ___           ___           ___           ___           ___           &mkp RCLK       ___         ___           &mkp MB4      &mkp MB5      ___
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "Nav";
         };
 
-        // Layer 3: Additional navigation, numpad and service bindings.
-        Digits {
+        // Layer 2: a base for kmonad mapping: no nav layer, no home row mods — kmonad provides them
+        Base {
             bindings = <
 /*╭0────────────1─────────────2─────────────3─────────────4─────────────5────────╮   ╭6────────╮   ╭7─────────────8─────────────9─────────────10────────────11────────────12───────╮     */
-   &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &mmv MOVE_UP    ___         ___           ___           ___           ___           &kp F12
-   ___          &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &mmv MOVE_DOWN  &kp F6      &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
-   ___          &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &mmv MOVE_LEFT  &kp N6      &kp N7        &kp N8        &kp N9        &kp N0        ___
-   ___          &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT   &mmv MOVE_RIGHT &kp CARET   &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      ___
-   ___          ___           ___           ___           ___           ___           &mkp LCLK       ___         ___           ___           ___           ___
+   ___          ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
+   ___          ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
+   ___          &kp A         &kp S         &kp D         &kp F         ___           ___           ___           &kp J         &kp K         &kp L         &kp SEMI      ___
+   ___          ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
+   &to SOLO     ___           ___           &kp RALT      &kp TAB       &kp SPACE     ___           &kp ENTER     &kp APOS      &kp RCTRL     ___           ___
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&scroll_encoder>;
-            display-name = "Digits";
+            display-name = "Base";
         };
-  };
+ };
 };
