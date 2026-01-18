@@ -298,10 +298,10 @@ combos:
   k: _
   l: [Base, Solo]
 - p: [30, 43]
-  k: {h: \, s: '|'}
+  k: {t: '`', s: '~'}
   l: [Base, Solo]
 - p: [31, 44]
-  k: {t: '`', s: '~'}
+  k: {h: \, s: '|'}
   l: [Base, Solo]
 - p: [34, 47]
   k: {h: '-', s: _}
