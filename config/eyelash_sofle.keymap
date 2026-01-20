@@ -31,9 +31,20 @@
 
 
 / {
+    rgb_brightness_encoder: rgb_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+    };
+    rgb_hue_encoder: rgb_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+    };
+
     macros {
         #include "macros.dtsi"
-  };
+    };
 
     behaviors {
         hm: homerow_mods {
@@ -141,7 +152,7 @@
    &rgb_ug RGB_TOG &kp UP      &kp DOWN     &ltq NAV RALT &hm LSHFT TAB &hm LWIN SPACE &mkp LCLK    &ltq NAV ENTER &hm RSHFT APOS &kp RCTRL   &kp MINUS     &kp EQUAL
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
-            sensor-bindings = <&inc_dec_kp RGB_BRI RGB_BRD>;
+            sensor-bindings = <&rgb_brightness_encoder>;
             display-name = "Base";
         };
 
@@ -156,7 +167,7 @@
    &bt BT_CLR   ___           ___           ___           ___           ___           &mkp RCLK       ___         ___           ___           ___           ___
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
-            sensor-bindings = <&inc_dec_kp RGB_HUI RGB_HUD>;
+            sensor-bindings = <&rgb_hue_encoder>;
             display-name = "Nav";
         };
     };
