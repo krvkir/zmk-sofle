@@ -131,9 +131,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [40, 57]
-  k: '&macro_c_z'
-  l: [Base]
 - p: [14, 27]
   k: {t: '1', s: '!'}
   l: [Base]
@@ -164,6 +161,9 @@ combos:
 - p: [24, 37]
   k: {t: '0', s: )}
   l: [Base]
+- p: [27, 40]
+  k: {h: \, s: '|'}
+  l: [Base]
 - p: [28, 41]
   k: +
   l: [Base]
@@ -174,19 +174,16 @@ combos:
   k: {t: '`', s: '~'}
   l: [Base]
 - p: [31, 44]
-  k: {h: \, s: '|'}
+  k: {h: '[', s: '{'}
+  l: [Base]
+- p: [33, 46]
+  k: {h: ']', s: '}'}
   l: [Base]
 - p: [34, 47]
   k: {h: '-', s: _}
   l: [Base]
 - p: [35, 48]
   k: {h: '=', s: +}
-  l: [Base]
-- p: [36, 49]
-  k: {h: '[', s: '{'}
-  l: [Base]
-- p: [37, 50]
-  k: {h: ']', s: '}'}
   l: [Base]
 - p: [14, 27]
   k: F1
