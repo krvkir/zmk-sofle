@@ -92,3 +92,40 @@
 #define RH2 61
 #define RH3 62
 #define RH4 63
+
+// gaps
+#define GLN0 LT0 LN0 // left-number gaps row
+#define GLN1 LT1 LN1
+#define GLN2 LT2 LN2
+#define GLN3 LT3 LN3
+#define GLN4 LT4 LN4
+
+#define GRN0 RT0 RN0 // right-number gap row
+#define GRN1 RT1 RN1
+#define GRN2 RT2 RN2
+#define GRN3 RT3 RN3
+#define GRN4 RT4 RN4
+
+#define GLT0 LT0 LM0 // left-top gaps row
+#define GLT1 LT1 LM1
+#define GLT2 LT2 LM2
+#define GLT3 LT3 LM3
+#define GLT4 LT4 LM4
+
+#define GRT0 RT0 RM0 // right-top gap row
+#define GRT1 RT1 RM1
+#define GRT2 RT2 RM2
+#define GRT3 RT3 RM3
+#define GRT4 RT4 RM4
+
+#define GLB0 LB0 LM0 // left-bottom gaps row
+#define GLB1 LB1 LM1
+#define GLB2 LB2 LM2
+#define GLB3 LB3 LM3
+#define GLB4 LB4 LM4
+
+#define GRB0 RB0 RM0 // right-bottom gap row
+#define GRB1 RB1 RM1
+#define GRB2 RB2 RM2
+#define GRB3 RB3 RM3
+#define GRB4 RB4 RM4
