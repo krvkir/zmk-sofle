@@ -99,14 +99,14 @@
         COMBO(n9,         &kp N9,         RT3 RM3)
         COMBO(n0,         &kp N0,         RT4 RM4)
 
+        COMBO(backslash,  &kp BSLH,       LM4 LB4)
         COMBO(plus,       &kp PLUS,       LM3 LB3)
         COMBO(under,      &kp UNDER,      LM2 LB2)
         COMBO(grave,      &kp GRAVE,      LM1 LB1)
-        COMBO(backslash,  &kp BSLH,       LM0 LB0)
+        COMBO(lbkt,       &kp LBKT,       LM0 LB0)
+        COMBO(rbkt,       &kp RBKT,       RM0 RB0)
         COMBO(minus,      &kp MINUS,      RM1 RB1)
         COMBO(equal,      &kp EQUAL,      RM2 RB2)
-        COMBO(lbkt,       &kp LBKT,       RM3 RB3)
-        COMBO(rbkt,       &kp RBKT,       RM4 RB4)
 
         LCOMBO(f1,        &kp F1,         LT4 LM4, NAV)
         LCOMBO(f2,        &kp F2,         LT3 LM3, NAV)

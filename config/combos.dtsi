@@ -19,7 +19,7 @@
   };
 
 
-COMBO(c_z, &macro_c_z, 40 57)
+/* COMBO(c_z, &macro_c_z, 40 57) */
 /* COMBO(c_i, &macro_c_i, 22 57) */
 /* COMBO(c_i__, &macro_c_i__, 22 57 60) */
 /* COMBO(c_i___, &macro_c_i___, 22 57 59 60) */

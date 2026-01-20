@@ -7,7 +7,7 @@
       bindings = <BINDINGS>; \
   };
 
-MACRO(c_z, &kp T &kp H &kp E &kp SPC)
+/* MACRO(c_z, &kp T &kp H &kp E &kp SPC) */
 /* MACRO(c_i, &kp I &kp S &kp SPC) */
 /* MACRO(c_i__, &kp W &kp A &kp S &kp SPC) */
 /* MACRO(c_i___, &kp B &kp E &kp I &kp N &kp G &kp SPC) */
