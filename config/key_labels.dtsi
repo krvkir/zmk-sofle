@@ -31,67 +31,68 @@
 #define RN3 10
 #define RN4 11
 #define RN5 12
-
-#define LT0 18  // left-top row
-#define LT1 17
-#define LT2 16
-#define LT3 15
-#define LT4 14
-#define LT5 13
-
-#define RT0 20  // right-top row
-#define RT1 21
-#define RT2 22
-#define RT3 23
-#define RT4 24
-#define RT5 25
-
-#define LM0 31  // left-middle row
-#define LM1 30
-#define LM2 29
-#define LM3 28
-#define LM4 27
-#define LM5 26
-
-#define RM0 33  // right-middle row
-#define RM1 34
-#define RM2 35
-#define RM3 36
-#define RM4 37
-#define RM5 38
-
-#define LB0 44  // left-bottom row
-#define LB1 43
-#define LB2 42
-#define LB3 41
-#define LB4 40
-#define LB5 39
-
-#define LEC 52  // left encoder key
-#define JS0  6  // right joystick
+// left-top row
+#define LT0 18  // t
+#define LT1 17  // r
+#define LT2 16  // e
+#define LT3 15  // w
+#define LT4 14  // q
+#define LT5 13  // TAB
+// right-top row
+#define RT0 20  // y
+#define RT1 21  // u
+#define RT2 22  // i
+#define RT3 23  // o
+#define RT4 24  // p
+#define RT5 25  // [
+// left-middle row
+#define LM0 31  // g
+#define LM1 30  // f
+#define LM2 29  // d
+#define LM3 28  // s
+#define LM4 27  // a
+#define LM5 26  // CAPS
+// right-middle row
+#define RM0 33  // h
+#define RM1 34  // j
+#define RM2 35  // k
+#define RM3 36  // l
+#define RM4 37  // ;
+#define RM5 38  // '
+// left-bottom row
+#define LB0 44  // b
+#define LB1 43  // v
+#define LB2 42  // c
+#define LB3 41  // x
+#define LB4 40  // z
+#define LB5 39  // LSHIFT
+// left encoder key
+#define LEC 52
+// right joystick
+#define JS0  6
 #define JS1 32
 #define JS2 58
 #define JS3 45
 #define JS4 19
-
-#define RB0 46  // right-bottom row
-#define RB1 47
-#define RB2 48
-#define RB3 49
-#define RB4 50
-#define RB5 51
-
-#define LH0 57  // left thumb keys
-#define LH1 56
-#define LH2 55
-#define LH3 54
-#define LH4 53
-
-#define RH0 59  // right thumb keys
-#define RH1 60
-#define RH2 61
-#define RH3 62
-#define RH4 63
+// right-bottom row
+#define RB0 46  // n
+#define RB1 47  // m
+#define RB2 48  // ,
+#define RB3 49  // .
+#define RB4 50  // /
+#define RB5 51  // RSHIFT
+// left thumb keys
+#define LH0 57  // SPACE
+#define LH1 56  // TAB
+#define LH2 55  //
+#define LH3 54  //
+#define LH4 53  //
+// right thumb keys
+#define RH0 59  // RET
+#define RH1 60  // '
+#define RH2 61  //
+#define RH3 62  //
+#define RH4 63  //
 
 // gaps
 #define GLN0 LT0 LN0 // left-number gaps row
