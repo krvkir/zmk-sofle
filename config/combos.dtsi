@@ -1,15 +1,6 @@
 #define BASE 0
 #define NAV 1
 
-#define MACRO(NAME, BINDINGS) \
-  macro_##NAME: macro_##NAME { \
-      compatible = "zmk,behavior-macro"; \
-      #binding-cells = <0>; \
-      wait-ms = <0>; \
-      tap-ms = <10>; \
-      bindings = <BINDINGS>; \
-  };
-
 #define LCOMBO(NAME, BINDINGS, KEYPOS, LAYER) \
   combo_##NAME##LAYER { \
     timeout-ms = <100>; \
@@ -25,7 +16,6 @@
     key-positions = <KEYPOS>; \
     layers = <BASE>; \
   };
-
 
 
 MACRO(c_able    , &kp A &kp B &kp L &kp E)
