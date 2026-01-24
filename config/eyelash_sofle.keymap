@@ -42,9 +42,9 @@
         bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
     };
 
-    /* macros { */
-    /*     #include "macros.dtsi" */
-    /* }; */
+    macros {
+        /* #include "macros.dtsi" */
+    };
 
     behaviors {
         hm: homerow_mods {
