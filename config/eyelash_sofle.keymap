@@ -211,8 +211,8 @@
         LCOMBO(f9,        &kp F9,         RT3 RM3, NAV)
         LCOMBO(f10,       &kp F10,        RT4 RM4, NAV)
 
-        LCOMBO(minus,     &kp RC(MINUS),  RM1 RB1)
-        LCOMBO(equal,     &kp RC(EQUAL),  RM2 RB2)
+        LCOMBO(minus,     &kp RC(MINUS),  RM1 RB1, NAV)
+        LCOMBO(equal,     &kp RC(EQUAL),  RM2 RB2, NAV)
 
         LCOMBO(bt0,       &bt BT_SEL 0,   LM4 LB4, NAV)
         LCOMBO(bt1,       &bt BT_SEL 1,   LM3 LB3, NAV)
