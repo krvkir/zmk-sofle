@@ -57,7 +57,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:apple-keyboard-option$$', h: Nav}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: Nav}
   - {t: '$$mdi:keyboard-space$$', h: LWIN}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', h: Nav}
@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-right-click-outline$$
   - {type: held alternate}
