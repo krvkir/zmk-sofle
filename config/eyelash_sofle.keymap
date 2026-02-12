@@ -219,8 +219,9 @@
         LCOMBO(bt2,       &bt BT_SEL 2,   LM2 LB2, NAV)
         LCOMBO(bt3,       &bt BT_SEL 3,   LM1 LB1, NAV)
         LCOMBO(bt4,       &bt BT_SEL 4,   LM0 LB0, NAV)
-        LCOMBO(mb_back,   &mkp MB4,       RM0 RB0, NAV)
-        LCOMBO(mb_fwd,    &mkp MB5,       RM1 RB1, NAV)
+        LCOMBO(mb_mdl,    &mkp MB3,       RM0 RB0, NAV)
+        LCOMBO(mb_back,   &mkp MB4,       RM1 RB1, NAV)
+        LCOMBO(mb_fwd,    &mkp MB5,       RM2 RB2, NAV)
 
         /* /\* Word shortcuts: English prefixes and suffixes*\/ */
         /* COMBO(c_able    , &macro_c_able    , RH0 LM4 LB0)  // ab */
