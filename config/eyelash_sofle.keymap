@@ -194,9 +194,9 @@
         COMBO(backslash,  &kp BSLH,       LM4 LB4)
         COMBO(plus,       &kp PLUS,       LM3 LB3)
         COMBO(under,      &kp UNDER,      LM2 LB2)
-        COMBO(grave,      &kp GRAVE,      LM1 LB1)
-        COMBO(lbkt,       &kp LBKT,       LM0 LB0)
-        COMBO(rbkt,       &kp RBKT,       RM0 RB0)
+        COMBO(lbkt,       &kp LBKT,       LM1 LB1)
+        COMBO(rbkt,       &kp RBKT,       LM0 LB0)
+        COMBO(grave,      &kp GRAVE,      RM1 RB1)
         COMBO(minus,      &kp MINUS,      RM1 RB1)
         COMBO(equal,      &kp EQUAL,      RM2 RB2)
 
