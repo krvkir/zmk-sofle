@@ -211,8 +211,6 @@
         LCOMBO(f9,        &kp F9,         RT3 RM3, NAV)
         LCOMBO(f10,       &kp F10,        RT4 RM4, NAV)
 
-        LCOMBO(minus,     &kp RC(MINUS),  RM1 RB1, NAV)
-        LCOMBO(equal,     &kp RC(EQUAL),  RM2 RB2, NAV)
 
         LCOMBO(bt0,       &bt BT_SEL 0,   LM4 LB4, NAV)
         LCOMBO(bt1,       &bt BT_SEL 1,   LM3 LB3, NAV)
@@ -220,8 +218,10 @@
         LCOMBO(bt3,       &bt BT_SEL 3,   LM1 LB1, NAV)
         LCOMBO(bt4,       &bt BT_SEL 4,   LM0 LB0, NAV)
         LCOMBO(mb_mdl,    &mkp MB3,       RM0 RB0, NAV)
-        LCOMBO(mb_back,   &mkp MB4,       RM1 RB1, NAV)
-        LCOMBO(mb_fwd,    &mkp MB5,       RM2 RB2, NAV)
+        LCOMBO(minus,     &kp RC(MINUS),  RM1 RB1, NAV)
+        LCOMBO(equal,     &kp RC(EQUAL),  RM2 RB2, NAV)
+        LCOMBO(mb_back,   &mkp MB4,       RM3 RB3, NAV)
+        LCOMBO(mb_fwd,    &mkp MB5,       RM4 RB4, NAV)
 
         /* /\* Word shortcuts: English prefixes and suffixes*\/ */
         /* COMBO(c_able    , &macro_c_able    , RH0 LM4 LB0)  // ab */
