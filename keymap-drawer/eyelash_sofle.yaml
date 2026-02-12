@@ -215,6 +215,12 @@ combos:
 - p: [24, 37]
   k: F10
   l: [Nav]
+- p: [34, 47]
+  k: Ctl+-
+  l: [Nav]
+- p: [35, 48]
+  k: Ctl+=
+  l: [Nav]
 - p: [27, 40]
   k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
   l: [Nav]
