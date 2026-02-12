@@ -231,8 +231,11 @@ combos:
   k: {h: '5', s: '$$mdi:bluetooth-connect$$'}
   l: [Nav]
 - p: [33, 46]
-  k: '&mkp MB4'
+  k: '&mkp MB3'
   l: [Nav]
 - p: [34, 47]
+  k: '&mkp MB4'
+  l: [Nav]
+- p: [35, 48]
   k: '&mkp MB5'
   l: [Nav]
