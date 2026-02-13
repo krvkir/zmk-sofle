@@ -196,7 +196,7 @@
         COMBO(under,      &kp UNDER,      LM2 LB2)
         COMBO(lbkt,       &kp LBKT,       LM1 LB1)
         COMBO(rbkt,       &kp RBKT,       LM0 LB0)
-        COMBO(grave,      &kp GRAVE,      RM1 RB1)
+        COMBO(grave,      &kp GRAVE,      RM0 RB0)
         COMBO(minus,      &kp MINUS,      RM1 RB1)
         COMBO(equal,      &kp EQUAL,      RM2 RB2)
 
