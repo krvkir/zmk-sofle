@@ -204,7 +204,7 @@
         COMBO(mb_back,    &mkp MB4,       RM3 RB3)
         COMBO(mb_fwd,     &mkp MB5,       RM4 RB4)
 
-        COMBO(l_srv,      &mo SRV,        LH0 RH0)
+        // COMBO(l_srv,      &mo SRV,        LH0 RH0)
         COMBO(ralt,       &kp RALT,       LH0 LH2)
 
         /* Nav layer */
@@ -225,7 +225,7 @@
         LCOMBO(mb_back,   &mkp MB4,       RM3 RB3, NAV)
         LCOMBO(mb_fwd,    &mkp MB5,       RM4 RB4, NAV)
 
-        LCOMBO(l_srv,     &mo SRV,        LH0 RH0, NAV)
+        // LCOMBO(l_srv,     &mo SRV,        LH0 RH0, NAV)
 
         /* Service layer */
         LCOMBO(bt0,       &bt BT_SEL 0,   LM4 LT4, SRV)
