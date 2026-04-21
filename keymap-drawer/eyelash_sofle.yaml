@@ -28,7 +28,7 @@ layers:
   - P
   - {t: '[', s: '{'}
   - Nav
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: LWIN}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
@@ -38,7 +38,7 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: ;, h: LWIN, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -259,53 +259,68 @@ combos:
 - p: [57, 59]
   k: Srv
   l: [Base]
-- p: [57, 55]
+- p: [59, 61]
   k: $$mdi:apple-keyboard-option$$
   l: [Base]
 - p: [14, 27]
-  k: F1
+  k: S(1)
   l: [Nav]
 - p: [15, 28]
-  k: F2
+  k: S(2)
   l: [Nav]
 - p: [16, 29]
-  k: F3
+  k: S(3)
   l: [Nav]
 - p: [17, 30]
-  k: F4
+  k: S(4)
   l: [Nav]
 - p: [18, 31]
-  k: F5
+  k: S(5)
   l: [Nav]
 - p: [20, 33]
-  k: F6
+  k: S(6)
   l: [Nav]
 - p: [21, 34]
-  k: F7
+  k: S(7)
   l: [Nav]
 - p: [22, 35]
-  k: F8
+  k: S(8)
   l: [Nav]
 - p: [23, 36]
-  k: F9
+  k: S(9)
   l: [Nav]
 - p: [24, 37]
+  k: S(10)
+  l: [Nav]
+- p: [40, 27]
+  k: F1
+  l: [Nav]
+- p: [41, 28]
+  k: F2
+  l: [Nav]
+- p: [42, 29]
+  k: F3
+  l: [Nav]
+- p: [43, 30]
+  k: F4
+  l: [Nav]
+- p: [44, 31]
+  k: F5
+  l: [Nav]
+- p: [46, 33]
+  k: F6
+  l: [Nav]
+- p: [47, 34]
+  k: F7
+  l: [Nav]
+- p: [48, 35]
+  k: F8
+  l: [Nav]
+- p: [49, 36]
+  k: F9
+  l: [Nav]
+- p: [50, 37]
   k: F10
-  l: [Nav]
-- p: [33, 46]
-  k: '&mkp MB3'
-  l: [Nav]
-- p: [34, 47]
-  k: Ctl+-
-  l: [Nav]
-- p: [35, 48]
-  k: Ctl+=
-  l: [Nav]
-- p: [36, 49]
-  k: '&mkp MB4'
-  l: [Nav]
-- p: [37, 50]
-  k: '&mkp MB5'
   l: [Nav]
 - p: [57, 59]
   k: Srv
