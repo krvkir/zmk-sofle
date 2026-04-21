@@ -218,7 +218,7 @@
         LCOMBO(s7,        &kp RC(N7),      RT1 RM1, NAV)
         LCOMBO(s8,        &kp RC(N8),      RT2 RM2, NAV)
         LCOMBO(s9,        &kp RC(N9),      RT3 RM3, NAV)
-        LCOMBO(s10,       &kp RC(N10),     RT4 RM4, NAV)
+        LCOMBO(s10,       &kp RC(N0),      RT4 RM4, NAV)
 
         LCOMBO(f1,        &kp F1,          LB4 LM4, NAV)
         LCOMBO(f2,        &kp F2,          LB3 LM3, NAV)
