@@ -56,9 +56,9 @@ layers:
   - RGB TOG
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:apple-keyboard-option$$', h: Nav}
-  - {t: '$$mdi:keyboard-tab$$', h: Nav}
-  - {t: '$$mdi:keyboard-space$$', h: LWIN}
+  - {t: '$$mdi:apple-keyboard-option$$', h: LWIN}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-space$$', h: Nav}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', h: Nav}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
@@ -118,14 +118,79 @@ layers:
   - {t: Ctl+., s: Ctl+>}
   - {t: Ctl+/, s: 'Ctl+?'}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
+  - $$mdi:mouse-right-click-outline$$
+  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  Srv:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-right-click-outline$$
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -168,13 +233,13 @@ combos:
   k: +
   l: [Base]
 - p: [29, 42]
-  k: _
-  l: [Base]
-- p: [30, 43]
   k: {h: '[', s: '{'}
   l: [Base]
-- p: [31, 44]
+- p: [30, 43]
   k: {h: ']', s: '}'}
+  l: [Base]
+- p: [31, 44]
+  k: _
   l: [Base]
 - p: [33, 46]
   k: {t: '`', s: '~'}
@@ -184,6 +249,18 @@ combos:
   l: [Base]
 - p: [35, 48]
   k: {h: '=', s: +}
+  l: [Base]
+- p: [36, 49]
+  k: '&mkp MB4'
+  l: [Base]
+- p: [37, 50]
+  k: '&mkp MB5'
+  l: [Base]
+- p: [57, 59]
+  k: Srv
+  l: [Base]
+- p: [57, 55]
+  k: $$mdi:apple-keyboard-option$$
   l: [Base]
 - p: [14, 27]
   k: F1
@@ -215,21 +292,6 @@ combos:
 - p: [24, 37]
   k: F10
   l: [Nav]
-- p: [27, 40]
-  k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  l: [Nav]
-- p: [28, 41]
-  k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  l: [Nav]
-- p: [29, 42]
-  k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  l: [Nav]
-- p: [30, 43]
-  k: {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  l: [Nav]
-- p: [31, 44]
-  k: {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  l: [Nav]
 - p: [33, 46]
   k: '&mkp MB3'
   l: [Nav]
@@ -245,3 +307,21 @@ combos:
 - p: [37, 50]
   k: '&mkp MB5'
   l: [Nav]
+- p: [57, 59]
+  k: Srv
+  l: [Nav]
+- p: [27, 14]
+  k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  l: [Srv]
+- p: [28, 15]
+  k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  l: [Srv]
+- p: [29, 16]
+  k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  l: [Srv]
+- p: [30, 17]
+  k: {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  l: [Srv]
+- p: [31, 18]
+  k: {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  l: [Srv]
