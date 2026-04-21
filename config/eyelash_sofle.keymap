@@ -180,6 +180,8 @@
           };
 
         /* Only vertical adjacent key pairs are used since horizontal adjacent pairs interfere with rollups. */
+
+        /* Main layer */
         COMBO(n1,         &kp N1,         LT4 LM4)
         COMBO(n2,         &kp N2,         LT3 LM3)
         COMBO(n3,         &kp N3,         LT2 LM2)
@@ -193,13 +195,19 @@
 
         COMBO(backslash,  &kp BSLH,       LM4 LB4)
         COMBO(plus,       &kp PLUS,       LM3 LB3)
-        COMBO(under,      &kp UNDER,      LM2 LB2)
-        COMBO(lbkt,       &kp LBKT,       LM1 LB1)
-        COMBO(rbkt,       &kp RBKT,       LM0 LB0)
+        COMBO(lbkt,       &kp LBKT,       LM2 LB2)
+        COMBO(rbkt,       &kp RBKT,       LM1 LB1)
+        COMBO(under,      &kp UNDER,      LM0 LB0)
         COMBO(grave,      &kp GRAVE,      RM0 RB0)
         COMBO(minus,      &kp MINUS,      RM1 RB1)
         COMBO(equal,      &kp EQUAL,      RM2 RB2)
+        COMBO(mb_back,    &mkp MB4,       RM3 RB3)
+        COMBO(mb_fwd,     &mkp MB5,       RM4 RB4)
 
+        COMBO(l_srv,      &mo SRV,        LH0 RH0)
+        COMBO(ralt,       &kp RALT,       LH0 LH2)
+
+        /* Nav layer */
         LCOMBO(f1,        &kp F1,         LT4 LM4, NAV)
         LCOMBO(f2,        &kp F2,         LT3 LM3, NAV)
         LCOMBO(f3,        &kp F3,         LT2 LM2, NAV)
@@ -211,17 +219,20 @@
         LCOMBO(f9,        &kp F9,         RT3 RM3, NAV)
         LCOMBO(f10,       &kp F10,        RT4 RM4, NAV)
 
-
-        LCOMBO(bt0,       &bt BT_SEL 0,   LM4 LB4, NAV)
-        LCOMBO(bt1,       &bt BT_SEL 1,   LM3 LB3, NAV)
-        LCOMBO(bt2,       &bt BT_SEL 2,   LM2 LB2, NAV)
-        LCOMBO(bt3,       &bt BT_SEL 3,   LM1 LB1, NAV)
-        LCOMBO(bt4,       &bt BT_SEL 4,   LM0 LB0, NAV)
         LCOMBO(mb_mdl,    &mkp MB3,       RM0 RB0, NAV)
         LCOMBO(minus,     &kp RC(MINUS),  RM1 RB1, NAV)
         LCOMBO(equal,     &kp RC(EQUAL),  RM2 RB2, NAV)
         LCOMBO(mb_back,   &mkp MB4,       RM3 RB3, NAV)
         LCOMBO(mb_fwd,    &mkp MB5,       RM4 RB4, NAV)
+
+        LCOMBO(l_srv,     &mo SRV,        LH0 RH0, NAV)
+
+        /* Service layer */
+        LCOMBO(bt0,       &bt BT_SEL 0,   LM4 LT4, SRV)
+        LCOMBO(bt1,       &bt BT_SEL 1,   LM3 LT3, SRV)
+        LCOMBO(bt2,       &bt BT_SEL 2,   LM2 LT2, SRV)
+        LCOMBO(bt3,       &bt BT_SEL 3,   LM1 LT1, SRV)
+        LCOMBO(bt4,       &bt BT_SEL 4,   LM0 LT0, SRV)
 
         /* /\* Word shortcuts: English prefixes and suffixes*\/ */
         /* COMBO(c_able    , &macro_c_able    , RH0 LM4 LB0)  // ab */
@@ -288,7 +299,7 @@
    &kp TAB         &kp Q       &kp W         &kp E        &kp R         &kp T         &mmv MOVE_DOWN  &kp Y        &kp U          &kp I       &kp O         &kp P          &kp LBKT
    &mo NAV         &hm LCTRL A &hm LALT S    &hm LSHFT D  &hm LCTRL F   &kp G         &mmv MOVE_LEFT  &kp H        &hm LCTRL J    &hm LSHFT K &hm LALT L    &hm LCTRL SEMI &kp APOS
    &kp LSHFT       &kp Z       &kp X         &kp C        &kp V         &kp B         &mmv MOVE_RIGHT &kp N        &kp M          &kp COMMA   &kp DOT       &kp FSLH       &kp RSHFT
-   &rgb_ug RGB_TOG &kp UP      &kp DOWN     &ltq NAV RALT &ltq NAV TAB  &hm LWIN SPACE &mkp LCLK    &ltq NAV ENTER &hm RSHFT APOS &kp RCTRL   &kp MINUS     &kp EQUAL
+   &rgb_ug RGB_TOG &kp UP      &kp DOWN    &hm LWIN RALT &hm LSHIFT TAB &ltq NAV SPACE &mkp LCLK    &ltq NAV ENTER &hm RSHFT APOS &kp RCTRL   &kp MINUS     &kp EQUAL
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&rgb_brightness_encoder>;
@@ -304,11 +315,26 @@
    ___          &kp PG_UP     &kp PG_DN     &kp LC(BSPC)  &kp LC(DEL)   &kp ENTER     &msc SCRL_DOWN  ___         &kp LC(LEFT)  &kp UP        &kp LC(RIGHT) ___           &kp RC(LBKT)
    ___          &kp LC(A)     &kp LC(S)     &kp BSPC      &kp DEL       &kp ESC       &msc SCRL_LEFT  ___         &kp LEFT      &kp DOWN      &kp RIGHT     &kp RC(SEMI)  &kp RC(APOS)
    ___          &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)     &msc SCRL_RIGHT &kp HOME    &kp END       &kp RC(COMMA) &kp RC(DOT)   &kp RC(FSLH)  ___
-   &bt BT_CLR   ___           ___           ___           ___           ___           &mkp RCLK       ___         ___           ___           ___           ___
+   ___          ___           ___           ___           ___           ___           &mkp RCLK       ___         ___           ___           ___           ___
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&rgb_hue_encoder>;
             display-name = "Nav";
+        };
+
+        // Layer 2: Service. Bluetooth, colors.
+        Srv {
+            bindings = <
+/*╭0────────────1─────────────2─────────────3─────────────4─────────────5────────╮   ╭6────────╮   ╭7─────────────8─────────────9─────────────10────────────11────────────12───────╮     */
+   ___          ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
+   ___          ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
+   ___          ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
+   ___          ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
+   &bt BT_CLR   ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
+/*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
+            >;
+            sensor-bindings = <&rgb_hue_encoder>;
+            display-name = "Srv";
         };
     };
 };
