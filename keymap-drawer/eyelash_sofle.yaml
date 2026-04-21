@@ -290,7 +290,7 @@ combos:
   k: Ctl+9
   l: [Nav]
 - p: [24, 37]
-  k: Ctl+10
+  k: Ctl+0
   l: [Nav]
 - p: [40, 27]
   k: F1
