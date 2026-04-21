@@ -263,34 +263,34 @@ combos:
   k: $$mdi:apple-keyboard-option$$
   l: [Base]
 - p: [14, 27]
-  k: S(1)
+  k: Ctl+1
   l: [Nav]
 - p: [15, 28]
-  k: S(2)
+  k: Ctl+2
   l: [Nav]
 - p: [16, 29]
-  k: S(3)
+  k: Ctl+3
   l: [Nav]
 - p: [17, 30]
-  k: S(4)
+  k: Ctl+4
   l: [Nav]
 - p: [18, 31]
-  k: S(5)
+  k: Ctl+5
   l: [Nav]
 - p: [20, 33]
-  k: S(6)
+  k: Ctl+6
   l: [Nav]
 - p: [21, 34]
-  k: S(7)
+  k: Ctl+7
   l: [Nav]
 - p: [22, 35]
-  k: S(8)
+  k: Ctl+8
   l: [Nav]
 - p: [23, 36]
-  k: S(9)
+  k: Ctl+9
   l: [Nav]
 - p: [24, 37]
-  k: S(10)
+  k: Ctl+10
   l: [Nav]
 - p: [40, 27]
   k: F1

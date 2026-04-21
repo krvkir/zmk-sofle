@@ -1100,43 +1100,43 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="70" y="127" width="28" height="26" class="combo"/>
-<text x="84" y="140" class="combo tap">S(1)</text>
+<text x="84" y="140" class="combo tap">Ctl+1</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="126" y="106" width="28" height="26" class="combo"/>
-<text x="140" y="119" class="combo tap">S(2)</text>
+<text x="140" y="119" class="combo tap">Ctl+2</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="182" y="99" width="28" height="26" class="combo"/>
-<text x="196" y="112" class="combo tap">S(3)</text>
+<text x="196" y="112" class="combo tap">Ctl+3</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="238" y="106" width="28" height="26" class="combo"/>
-<text x="252" y="119" class="combo tap">S(4)</text>
+<text x="252" y="119" class="combo tap">Ctl+4</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="294" y="106" width="28" height="26" class="combo"/>
-<text x="308" y="119" class="combo tap">S(5)</text>
+<text x="308" y="119" class="combo tap">Ctl+5</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="602" y="106" width="28" height="26" class="combo"/>
-<text x="616" y="119" class="combo tap">S(6)</text>
+<text x="616" y="119" class="combo tap">Ctl+6</text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="658" y="106" width="28" height="26" class="combo"/>
-<text x="672" y="119" class="combo tap">S(7)</text>
+<text x="672" y="119" class="combo tap">Ctl+7</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="714" y="99" width="28" height="26" class="combo"/>
-<text x="728" y="112" class="combo tap">S(8)</text>
+<text x="728" y="112" class="combo tap">Ctl+8</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="770" y="106" width="28" height="26" class="combo"/>
-<text x="784" y="119" class="combo tap">S(9)</text>
+<text x="784" y="119" class="combo tap">Ctl+9</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="826" y="127" width="28" height="26" class="combo"/>
-<text x="840" y="140" class="combo tap">S(10)</text>
+<text x="840" y="140" class="combo tap">Ctl+10</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="70" y="183" width="28" height="26" class="combo"/>
