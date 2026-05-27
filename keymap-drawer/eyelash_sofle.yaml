@@ -56,13 +56,13 @@ layers:
   - RGB TOG
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:apple-keyboard-option$$', h: LWIN}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '['}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: Nav}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', h: Nav}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:apple-keyboard-control$$', h: ']'}
   - {t: '-', s: _}
   - {t: '=', s: +}
   Nav:
@@ -226,34 +226,34 @@ combos:
 - p: [24, 37]
   k: {t: '0', s: )}
   l: [Base]
-- p: [27, 40]
-  k: {h: \, s: '|'}
+- p: [40, 27]
+  k: {t: \, s: '|'}
   l: [Base]
-- p: [28, 41]
+- p: [41, 28]
   k: +
   l: [Base]
-- p: [29, 42]
-  k: {h: '[', s: '{'}
+- p: [42, 29]
+  k: {t: '[', s: '{'}
   l: [Base]
-- p: [30, 43]
-  k: {h: ']', s: '}'}
+- p: [43, 30]
+  k: {t: ']', s: '}'}
   l: [Base]
-- p: [31, 44]
+- p: [44, 31]
   k: _
   l: [Base]
-- p: [33, 46]
+- p: [46, 33]
   k: {t: '`', s: '~'}
   l: [Base]
-- p: [34, 47]
-  k: {h: '-', s: _}
+- p: [47, 34]
+  k: {t: '-', s: _}
   l: [Base]
-- p: [35, 48]
-  k: {h: '=', s: +}
+- p: [48, 35]
+  k: {t: '=', s: +}
   l: [Base]
-- p: [36, 49]
+- p: [49, 36]
   k: '&mkp MB4'
   l: [Base]
-- p: [37, 50]
+- p: [50, 37]
   k: '&mkp MB5'
   l: [Base]
 - p: [57, 59]
@@ -263,80 +263,65 @@ combos:
   k: $$mdi:apple-keyboard-option$$
   l: [Base]
 - p: [14, 27]
-  k: Ctl+1
-  l: [Nav]
-- p: [15, 28]
-  k: Ctl+2
-  l: [Nav]
-- p: [16, 29]
-  k: Ctl+3
-  l: [Nav]
-- p: [17, 30]
-  k: Ctl+4
-  l: [Nav]
-- p: [18, 31]
-  k: Ctl+5
-  l: [Nav]
-- p: [20, 33]
-  k: Ctl+6
-  l: [Nav]
-- p: [21, 34]
-  k: Ctl+7
-  l: [Nav]
-- p: [22, 35]
-  k: Ctl+8
-  l: [Nav]
-- p: [23, 36]
-  k: Ctl+9
-  l: [Nav]
-- p: [24, 37]
-  k: Ctl+0
-  l: [Nav]
-- p: [40, 27]
   k: F1
   l: [Nav]
-- p: [41, 28]
+- p: [15, 28]
   k: F2
   l: [Nav]
-- p: [42, 29]
+- p: [16, 29]
   k: F3
   l: [Nav]
-- p: [43, 30]
+- p: [17, 30]
   k: F4
   l: [Nav]
-- p: [44, 31]
+- p: [18, 31]
   k: F5
   l: [Nav]
-- p: [46, 33]
+- p: [20, 33]
   k: F6
   l: [Nav]
-- p: [47, 34]
+- p: [21, 34]
   k: F7
   l: [Nav]
-- p: [48, 35]
+- p: [22, 35]
   k: F8
   l: [Nav]
-- p: [49, 36]
+- p: [23, 36]
   k: F9
   l: [Nav]
-- p: [50, 37]
+- p: [24, 37]
   k: F10
+  l: [Nav]
+- p: [31, 30]
+  k: '&mkp MB4'
+  l: [Nav]
+- p: [18, 17]
+  k: '&mkp MB5'
+  l: [Nav]
+- p: [33, 34]
+  k: '&mkp MB1'
+  l: [Nav]
+- p: [20, 21]
+  k: '&mkp MB2'
+  l: [Nav]
+- p: [46, 47]
+  k: '&mkp MB3'
   l: [Nav]
 - p: [57, 59]
   k: Srv
   l: [Nav]
-- p: [27, 14]
+- p: [14, 27]
   k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
   l: [Srv]
-- p: [28, 15]
+- p: [15, 28]
   k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
   l: [Srv]
-- p: [29, 16]
+- p: [16, 29]
   k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
   l: [Srv]
-- p: [30, 17]
+- p: [17, 30]
   k: {h: '4', s: '$$mdi:bluetooth-connect$$'}
   l: [Srv]
-- p: [31, 18]
+- p: [18, 31]
   k: {h: '5', s: '$$mdi:bluetooth-connect$$'}
   l: [Srv]
