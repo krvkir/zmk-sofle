@@ -183,68 +183,81 @@
         /* Only vertical adjacent key pairs are used since horizontal adjacent pairs interfere with rollups. */
 
         /* Main layer */
-        COMBO(n1,         &kp N1,         LT4 LM4)
-        COMBO(n2,         &kp N2,         LT3 LM3)
-        COMBO(n3,         &kp N3,         LT2 LM2)
-        COMBO(n4,         &kp N4,         LT1 LM1)
-        COMBO(n5,         &kp N5,         LT0 LM0)
-        COMBO(n6,         &kp N6,         RT0 RM0)
-        COMBO(n7,         &kp N7,         RT1 RM1)
-        COMBO(n8,         &kp N8,         RT2 RM2)
-        COMBO(n9,         &kp N9,         RT3 RM3)
-        COMBO(n0,         &kp N0,         RT4 RM4)
+        COMBO(glt4,        &kp N1,         GLT4)
+        COMBO(glt3,        &kp N2,         GLT3)
+        COMBO(glt2,        &kp N3,         GLT2)
+        COMBO(glt1,        &kp N4,         GLT1)
+        COMBO(glt0,        &kp N5,         GLT0)
 
-        COMBO(backslash,  &kp BSLH,       LM4 LB4)
-        COMBO(plus,       &kp PLUS,       LM3 LB3)
-        COMBO(lbkt,       &kp LBKT,       LM2 LB2)
-        COMBO(rbkt,       &kp RBKT,       LM1 LB1)
-        COMBO(under,      &kp UNDER,      LM0 LB0)
-        COMBO(grave,      &kp GRAVE,      RM0 RB0)
-        COMBO(minus,      &kp MINUS,      RM1 RB1)
-        COMBO(equal,      &kp EQUAL,      RM2 RB2)
-        COMBO(mb_back,    &mkp MB4,       RM3 RB3)
-        COMBO(mb_fwd,     &mkp MB5,       RM4 RB4)
+        COMBO(grt0,        &kp N6,         GRT0)
+        COMBO(grt1,        &kp N7,         GRT1)
+        COMBO(grt2,        &kp N8,         GRT2)
+        COMBO(grt3,        &kp N9,         GRT3)
+        COMBO(grt4,        &kp N0,         GRT4)
+
+
+        COMBO(glb4,        &kp BSLH,       GLB4)
+        COMBO(glb3,        &kp PLUS,       GLB3)
+        COMBO(glb2,        &kp LBKT,       GLB2)
+        COMBO(glb1,        &kp RBKT,       GLB1)
+        COMBO(glb0,        &kp UNDER,      GLB0)
+
+        COMBO(grb0,        &kp GRAVE,      GRB0)
+        COMBO(grb1,        &kp MINUS,      GRB1)
+        COMBO(grb2,        &kp EQUAL,      GRB2)
+        COMBO(grb3,        &mkp MB4,       GRB3) // mouse back
+        COMBO(grb4,        &mkp MB5,       GRB4) // mouse forward
 
         COMBO(l_srv,      &mo SRV,        LH0 RH0)
         COMBO(ralt,       &kp RALT,       RH0 RH2)
 
-        /* Nav layer */
-        LCOMBO(s1,        &kp RC(N1),      LT4 LM4, NAV)
-        LCOMBO(s2,        &kp RC(N2),      LT3 LM3, NAV)
-        LCOMBO(s3,        &kp RC(N3),      LT2 LM2, NAV)
-        LCOMBO(s4,        &kp RC(N4),      LT1 LM1, NAV)
-        LCOMBO(s5,        &kp RC(N5),      LT0 LM0, NAV)
-        LCOMBO(s6,        &kp RC(N6),      RT0 RM0, NAV)
-        LCOMBO(s7,        &kp RC(N7),      RT1 RM1, NAV)
-        LCOMBO(s8,        &kp RC(N8),      RT2 RM2, NAV)
-        LCOMBO(s9,        &kp RC(N9),      RT3 RM3, NAV)
-        LCOMBO(s10,       &kp RC(N0),      RT4 RM4, NAV)
+        /* Navigation layer */
+        /* Here it's safe to use horizontal pairs, but not on the home row. */
+        LCOMBO(nglt4,        &kp F1,      GLT4, NAV)
+        LCOMBO(nglt3,        &kp F2,      GLT3, NAV)
+        LCOMBO(nglt2,        &kp F3,      GLT2, NAV)
+        LCOMBO(nglt1,        &kp F4,      GLT1, NAV)
+        LCOMBO(nglt0,        &kp F5,      GLT0, NAV)
 
-        LCOMBO(f1,        &kp F1,          LB4 LM4, NAV)
-        LCOMBO(f2,        &kp F2,          LB3 LM3, NAV)
-        LCOMBO(f3,        &kp F3,          LB2 LM2, NAV)
-        LCOMBO(f4,        &kp F4,          LB1 LM1, NAV)
-        LCOMBO(f5,        &kp F5,          LB0 LM0, NAV)
-        LCOMBO(f6,        &kp F6,          RB0 RM0, NAV)
-        LCOMBO(f7,        &kp F7,          RB1 RM1, NAV)
-        LCOMBO(f8,        &kp F8,          RB2 RM2, NAV)
-        LCOMBO(f9,        &kp F9,          RB3 RM3, NAV)
-        LCOMBO(f10,       &kp F10,         RB4 RM4, NAV)
+        LCOMBO(ngrt0,        &kp F6,      GRT0, NAV)
+        LCOMBO(ngrt1,        &kp F7,      GRT1, NAV)
+        LCOMBO(ngrt2,        &kp F8,      GRT2, NAV)
+        LCOMBO(ngrt3,        &kp F9,      GRT3, NAV)
+        LCOMBO(ngrt4,        &kp F10,     GRT4, NAV)
 
-        // LCOMBO(mb_mdl,    &mkp MB3,       RM0 RB0, NAV)
-        // LCOMBO(minus,     &kp RC(MINUS),  RM1 RB1, NAV)
-        // LCOMBO(equal,     &kp RC(EQUAL),  RM2 RB2, NAV)
-        // LCOMBO(mb_back,   &mkp MB4,       RM3 RB3, NAV)
-        // LCOMBO(mb_fwd,    &mkp MB5,       RM4 RB4, NAV)
+        LCOMBO(nmb4,        &mkp MB4,     LM0 LM1, NAV)
+        LCOMBO(nmb5,        &mkp MB5,     LT0 LT1, NAV)
+
+        LCOMBO(nmb1,        &mkp MB1,     RM0 RM1, NAV)
+        LCOMBO(nmb2,        &mkp MB2,     RT0 RT1, NAV)
+        LCOMBO(nmb3,        &mkp MB3,     RB0 RB1, NAV)
+
+        // LCOMBO(f1,        &kp F1,          GLB4, NAV)
+        // LCOMBO(f2,        &kp F2,          GLB3, NAV)
+        // LCOMBO(f3,        &kp F3,          GLB2, NAV)
+        // LCOMBO(f4,        &kp F4,          GLB1, NAV)
+        // LCOMBO(f5,        &kp F5,          GLB0, NAV)
+
+        // LCOMBO(f6,        &kp F6,          GRB0, NAV)
+        // LCOMBO(f7,        &kp F7,          GRB1, NAV)
+        // LCOMBO(f8,        &kp F8,          GRB2, NAV)
+        // LCOMBO(ngrb3,       &kp F9,          GRB3, NAV)
+        // LCOMBO(ngrb4,       &kp F10,         GRB4, NAV)
+
+        // LCOMBO(mb_mdl,    &mkp MB3,       GRB0, NAV)
+        // LCOMBO(minus,     &kp RC(MINUS),  GRB1, NAV)
+        // LCOMBO(equal,     &kp RC(EQUAL),  GRB2, NAV)
+        // LCOMBO(mb_back,   &mkp MB4,       GRB3, NAV)
+        // LCOMBO(mb_fwd,    &mkp MB5,       GRB4, NAV)
 
         LCOMBO(l_srv2,    &mo SRV,        LH0 RH0, NAV)
 
         /* Service layer */
-        LCOMBO(bt0,       &bt BT_SEL 0,   LM4 LT4, SRV)
-        LCOMBO(bt1,       &bt BT_SEL 1,   LM3 LT3, SRV)
-        LCOMBO(bt2,       &bt BT_SEL 2,   LM2 LT2, SRV)
-        LCOMBO(bt3,       &bt BT_SEL 3,   LM1 LT1, SRV)
-        LCOMBO(bt4,       &bt BT_SEL 4,   LM0 LT0, SRV)
+        LCOMBO(bt0,       &bt BT_SEL 0,   GLT4, SRV)
+        LCOMBO(bt1,       &bt BT_SEL 1,   GLT3, SRV)
+        LCOMBO(bt2,       &bt BT_SEL 2,   GLT2, SRV)
+        LCOMBO(bt3,       &bt BT_SEL 3,   GLT1, SRV)
+        LCOMBO(bt4,       &bt BT_SEL 4,   GLT0, SRV)
 
         /* /\* Word shortcuts: English prefixes and suffixes*\/ */
         /* COMBO(c_able    , &macro_c_able    , RH0 LM4 LB0)  // ab */
@@ -311,7 +324,7 @@
    &kp TAB         &kp Q       &kp W         &kp E        &kp R         &kp T         &mmv MOVE_DOWN  &kp Y        &kp U          &kp I       &kp O         &kp P          &kp LBKT
    &mo NAV         &hm LWIN A  &hm LALT S    &hm LSHFT D  &hm LCTRL F   &kp G         &mmv MOVE_LEFT  &kp H        &hm LCTRL J    &hm LSHFT K &hm LALT L    &hm LWIN SEMI  &kp APOS
    &kp LSHFT       &kp Z       &kp X         &kp C        &kp V         &kp B         &mmv MOVE_RIGHT &kp N        &kp M          &kp COMMA   &kp DOT       &kp FSLH       &kp RSHFT
-   &rgb_ug RGB_TOG &kp UP      &kp DOWN    &hm LWIN RALT &hm LSHIFT TAB &ltq NAV SPACE &mkp LCLK    &ltq NAV ENTER &hm RSHFT APOS &kp RCTRL   &kp MINUS     &kp EQUAL
+   &rgb_ug RGB_TOG &kp UP      &kp DOWN    &hm LBKT RALT &hm LSHIFT TAB &ltq NAV SPACE &mkp LCLK    &ltq NAV ENTER &hm RSHFT APOS &hm RBKT RCTRL &kp MINUS  &kp EQUAL
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&rgb_brightness_encoder>;
