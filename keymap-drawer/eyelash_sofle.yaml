@@ -56,13 +56,13 @@ layers:
   - RGB TOG
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:apple-keyboard-option$$', h: '['}
+  - {t: '[', h: '$$mdi:apple-keyboard-option$$', s: '{'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: Nav}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', h: Nav}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: ']'}
+  - {t: ']', h: '$$mdi:apple-keyboard-control$$', s: '}'}
   - {t: '-', s: _}
   - {t: '=', s: +}
   Nav:
@@ -260,6 +260,9 @@ combos:
   k: Srv
   l: [Base]
 - p: [59, 61]
+  k: $$mdi:apple-keyboard-option$$
+  l: [Base]
+- p: [57, 55]
   k: $$mdi:apple-keyboard-option$$
   l: [Base]
 - p: [14, 27]
