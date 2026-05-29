@@ -209,8 +209,8 @@
         COMBO(grb4,        &mkp MB5,       GRB4) // mouse forward
 
         COMBO(l_srv,      &mo SRV,        LH0 RH0)
-        COMBO(ralt,       &kp RALT,       RH0 RH2)
-        COMBO(ralt,       &kp RALT,       LH0 LH2)
+        COMBO(ralt1,      &kp RALT,       RH0 RH2)
+        COMBO(ralt2,      &kp RALT,       LH0 LH2)
 
         /* Navigation layer */
         /* Here it's safe to use horizontal pairs, but not on the home row. */
