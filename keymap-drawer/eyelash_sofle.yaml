@@ -310,6 +310,15 @@ combos:
 - p: [46, 47]
   k: '&mkp MB3'
   l: [Nav]
+- p: [42, 29]
+  k: SCROLLLOCK
+  l: [Nav]
+- p: [43, 30]
+  k: Ins
+  l: [Nav]
+- p: [44, 31]
+  k: $$mdi:printer-outline$$
+  l: [Nav]
 - p: [57, 59]
   k: Srv
   l: [Nav]
