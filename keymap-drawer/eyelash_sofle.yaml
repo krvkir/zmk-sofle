@@ -121,13 +121,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Ctl+[', s: 'Ctl+{'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - $$mdi:mouse-right-click-outline$$
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Ctl+]', s: 'Ctl+}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Srv:
@@ -265,6 +265,21 @@ combos:
 - p: [57, 55]
   k: $$mdi:apple-keyboard-option$$
   l: [Base]
+- p: [31, 30]
+  k: '&mkp MB4'
+  l: [Nav]
+- p: [18, 17]
+  k: '&mkp MB5'
+  l: [Nav]
+- p: [33, 34]
+  k: '&mkp MB1'
+  l: [Nav]
+- p: [20, 21]
+  k: '&mkp MB2'
+  l: [Nav]
+- p: [46, 47]
+  k: '&mkp MB3'
+  l: [Nav]
 - p: [14, 27]
   k: F1
   l: [Nav]
@@ -295,21 +310,6 @@ combos:
 - p: [24, 37]
   k: F10
   l: [Nav]
-- p: [31, 30]
-  k: '&mkp MB4'
-  l: [Nav]
-- p: [18, 17]
-  k: '&mkp MB5'
-  l: [Nav]
-- p: [33, 34]
-  k: '&mkp MB1'
-  l: [Nav]
-- p: [20, 21]
-  k: '&mkp MB2'
-  l: [Nav]
-- p: [46, 47]
-  k: '&mkp MB3'
-  l: [Nav]
 - p: [42, 29]
   k: SCROLLLOCK
   l: [Nav]
@@ -318,6 +318,9 @@ combos:
   l: [Nav]
 - p: [44, 31]
   k: $$mdi:printer-outline$$
+  l: [Nav]
+- p: [47, 34]
+  k: Ctl+-
   l: [Nav]
 - p: [57, 59]
   k: Srv
