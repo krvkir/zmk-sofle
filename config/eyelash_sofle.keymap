@@ -195,7 +195,6 @@
         COMBO(grt3,        &kp N9,         GRT3)
         COMBO(grt4,        &kp N0,         GRT4)
 
-
         COMBO(glb4,        &kp BSLH,       GLB4)
         COMBO(glb3,        &kp PLUS,       GLB3)
         COMBO(glb2,        &kp LBKT,       GLB2)
@@ -214,6 +213,13 @@
 
         /* Navigation layer */
         /* Here it's safe to use horizontal pairs, but not on the home row. */
+        LCOMBO(nmb4,         &mkp MB4,    LM0 LM1, NAV)
+        LCOMBO(nmb5,         &mkp MB5,    LT0 LT1, NAV)
+
+        LCOMBO(nmb1,         &mkp MB1,    RM0 RM1, NAV)
+        LCOMBO(nmb2,         &mkp MB2,    RT0 RT1, NAV)
+        LCOMBO(nmb3,         &mkp MB3,    RB0 RB1, NAV)
+
         LCOMBO(nglt4,        &kp F1,      GLT4, NAV)
         LCOMBO(nglt3,        &kp F2,      GLT3, NAV)
         LCOMBO(nglt2,        &kp F3,      GLT2, NAV)
@@ -226,13 +232,6 @@
         LCOMBO(ngrt3,        &kp F9,      GRT3, NAV)
         LCOMBO(ngrt4,        &kp F10,     GRT4, NAV)
 
-        LCOMBO(nmb4,         &mkp MB4,    LM0 LM1, NAV)
-        LCOMBO(nmb5,         &mkp MB5,    LT0 LT1, NAV)
-
-        LCOMBO(nmb1,         &mkp MB1,    RM0 RM1, NAV)
-        LCOMBO(nmb2,         &mkp MB2,    RT0 RT1, NAV)
-        LCOMBO(nmb3,         &mkp MB3,    RB0 RB1, NAV)
-
         // LCOMBO(ins,       &kp INSERT,     GLB4, NAV)
         // LCOMBO(,     &kp PSCRN,   GLB3,   NAV)
         LCOMBO(scrolllock,   &kp SCROLLLOCK, GLB2, NAV)
@@ -240,7 +239,7 @@
         LCOMBO(pscrn,        &kp PSCRN,      GLB0, NAV)
 
         // LCOMBO(f6,        &kp F6,          GRB0, NAV)
-        // LCOMBO(f7,        &kp F7,          GRB1, NAV)
+        LCOMBO(ngrb1,        &kp RC(MINUS),   GRB1, NAV)
         // LCOMBO(f8,        &kp F8,          GRB2, NAV)
         // LCOMBO(ngrb3,     &kp F9,          GRB3, NAV)
         // LCOMBO(ngrb4,     &kp F10,         GRB4, NAV)
@@ -341,7 +340,7 @@
    ___          &kp PG_UP     &kp PG_DN     &kp LC(BSPC)  &kp LC(DEL)   &kp ENTER     &msc SCRL_DOWN  ___         &kp LC(LEFT)  &kp UP        &kp LC(RIGHT) ___           &kp RC(LBKT)
    ___          &kp LC(A)     &kp LC(S)     &kp BSPC      &kp DEL       &kp ESC       &msc SCRL_LEFT  ___         &kp LEFT      &kp DOWN      &kp RIGHT     &kp RC(SEMI)  &kp RC(APOS)
    ___          &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)     &msc SCRL_RIGHT &kp HOME    &kp END       &kp RC(COMMA) &kp RC(DOT)   &kp RC(FSLH)  ___
-   ___          ___           ___           ___           ___           ___           &mkp RCLK       ___         ___           ___           ___           ___
+   ___          ___           ___           &kp RC(LBKT)  ___           ___           &mkp RCLK       ___         ___           &kp RC(RBKT)  ___           ___
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&rgb_hue_encoder>;
