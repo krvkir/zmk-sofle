@@ -58,9 +58,9 @@ layers:
   - $$mdi:arrow-down-bold$$
   - {t: '[', h: '$$mdi:apple-keyboard-option$$', s: '{'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-space$$', h: Nav}
-  - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', h: Nav}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:keyboard-space$$', h: Nav}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - {t: ']', h: '$$mdi:apple-keyboard-control$$', s: '}'}
   - {t: '-', s: _}
