@@ -99,7 +99,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:keyboard-esc$$
   - $$mdi:pan-left$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
