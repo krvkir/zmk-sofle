@@ -111,17 +111,16 @@
     behaviors {
         // there's also mod-tap &mt
         // also see: https://zmk.dev/docs/keymaps/behaviors/hold-tap?examples=home_row_mods
-        // hm: homerow_mods {
-        //   compatible = "zmk,behavior-hold-tap";
-        //   label = "HOMEROW_MODS";
-        //   bindings = <&kp>, <&kp>;
-        //
-        //   #binding-cells = <2>;
-        //   tapping-term-ms = <200>;
-        //   quick-tap-ms = <180>;
-        //   flavor = "tap-preferred";
-        // };
-
+        hm: homerow_mods {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_MODS";
+          bindings = <&kp>, <&kp>;
+          #binding-cells = <2>;
+          tapping-term-ms = <200>;
+          quick-tap-ms = <180>;
+          flavor = "balanced";
+          // flavor = "tap-preferred";
+        };
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -149,7 +148,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <
                 7 8 9 10 11 12             // right number row
-                20 21 22 23 24 25          // right top row
+                14 20 21 22 23 24 25       // right top row + w
                 27 33 34 35 36 37 38       // right home row + s
                 40 41 42 46 47 48 49 50 51 // right bottom row + zxc
                 59 60 61 62 63             // right thumb keys
@@ -375,7 +374,7 @@
    &kp TAB         &kp Q       &kp W         &kp E        &kp R         &kp T         &mmv MOVE_DOWN  &kp Y        &kp U          &kp I       &kp O         &kp P          &kp LBKT
    &mo NAV         &hml LWIN A &hml LALT S   &hml LSHFT D &hmlc LCTRL F &kp G         &mmv MOVE_LEFT  &kp H        &hmr LCTRL J   &hmr LSHFT K &hmr LALT L  &hmr LWIN SEMI  &kp APOS
    &kp LSHFT       &kp Z       &kp X         &kp C        &kp V         &kp B         &mmv MOVE_RIGHT &kp N        &kp M          &kp COMMA   &kp DOT       &kp FSLH       &kp RSHFT
-   &rgb_ug RGB_TOG &kp UP      &kp DOWN    &hml RALT LBKT &hml LSHIFT TAB &ltq NAV ENTER &mkp LCLK  &ltq NAV SPACE &hmr RSHFT APOS &hmr RCTRL RBKT &kp MINUS &kp EQUAL
+   &rgb_ug RGB_TOG &kp UP      &kp DOWN      &hm RALT LBKT &hm LSHIFT TAB &ltq NAV ENTER &mkp LCLK  &ltq NAV SPACE &hm RSHFT APOS &hm RCTRL RBKT &kp MINUS  &kp EQUAL
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&rgb_brightness_encoder>;
