@@ -211,6 +211,8 @@
         COMBO(ralt1,      &kp RALT,       RH0 RH2)
         COMBO(ralt2,      &kp RALT,       LH0 LH2)
 
+        COMBO(cm_right,   &kp LC(LALT),   RH1 RH2)
+
         /* Navigation layer */
         /* Here it's safe to use horizontal pairs, but not on the home row. */
         LCOMBO(nmb4,         &mkp MB4,    LM0 LM1, NAV)
