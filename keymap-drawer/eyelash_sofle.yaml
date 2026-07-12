@@ -265,6 +265,9 @@ combos:
 - p: [57, 55]
   k: $$mdi:apple-keyboard-option$$
   l: [Base]
+- p: [60, 61]
+  k: Ctl+$$mdi:apple-keyboard-option$$
+  l: [Base]
 - p: [31, 30]
   k: '&mkp MB4'
   l: [Nav]
