@@ -111,16 +111,16 @@
     behaviors {
         // there's also mod-tap &mt
         // also see: https://zmk.dev/docs/keymaps/behaviors/hold-tap?examples=home_row_mods
-        # hm: homerow_mods {
-        #   compatible = "zmk,behavior-hold-tap";
-        #   label = "HOMEROW_MODS";
-        #   bindings = <&kp>, <&kp>;
-
-        #   #binding-cells = <2>;
-        #   tapping-term-ms = <200>;
-        #   quick-tap-ms = <180>;
-        #   flavor = "tap-preferred";
-        # };
+        // hm: homerow_mods {
+        //   compatible = "zmk,behavior-hold-tap";
+        //   label = "HOMEROW_MODS";
+        //   bindings = <&kp>, <&kp>;
+        //
+        //   #binding-cells = <2>;
+        //   tapping-term-ms = <200>;
+        //   quick-tap-ms = <180>;
+        //   flavor = "tap-preferred";
+        // };
 
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
