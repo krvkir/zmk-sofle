@@ -139,7 +139,7 @@
             >;
             hold-trigger-on-release;
         };
-        hmlc: home_row_mod_left {
+        hmlc: home_row_mod_left_ctrl {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
