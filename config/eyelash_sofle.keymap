@@ -211,6 +211,7 @@
         COMBO(ralt1,      &kp RALT,       RH0 RH2)
         COMBO(ralt2,      &kp RALT,       LH0 LH2)
 
+        COMBO(cm_left,    &kp LC(LALT),   LH1 LH2)
         COMBO(cm_right,   &kp LC(LALT),   RH1 RH2)
 
         /* Navigation layer */
