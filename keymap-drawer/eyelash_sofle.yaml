@@ -266,10 +266,10 @@ combos:
   k: $$mdi:apple-keyboard-option$$
   l: [Base]
 - p: [56, 55]
-  k: Ctl+$$mdi:apple-keyboard-option$$
+  k: '&nav_ctrl_alt'
   l: [Base]
 - p: [60, 61]
-  k: Ctl+$$mdi:apple-keyboard-option$$
+  k: '&nav_ctrl_alt'
   l: [Base]
 - p: [31, 30]
   k: '&mkp MB4'

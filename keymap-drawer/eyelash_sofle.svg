@@ -779,11 +779,11 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-23">
 <rect rx="6" ry="6" x="269" y="258" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="274" y="262" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
+<text x="283" y="271" class="combo tap"><tspan style="font-size: 60%">&amp;nav_ctrl…</tspan></text>
 </g>
 <g class="combo combopos-24">
 <rect rx="6" ry="6" x="627" y="258" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="632" y="262" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
+<text x="641" y="271" class="combo tap"><tspan style="font-size: 60%">&amp;nav_ctrl…</tspan></text>
 </g>
 </g>
 </g>
