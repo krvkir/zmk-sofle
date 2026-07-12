@@ -135,6 +135,7 @@
                 33 34 35 36 37 38       // right home row
                 46 47 48 49 50 51       // right bottom row
                 59 60 61 62 63          // right thumb keys
+                53 54 55 56 57          // left thumb keys
             >;
             hold-trigger-on-release;
         };
@@ -152,6 +153,7 @@
                 27 33 34 35 36 37 38       // right home row + s
                 40 41 42 46 47 48 49 50 51 // right bottom row + zxc
                 59 60 61 62 63             // right thumb keys
+                53 54 55 56 57             // left thumb keys
             >;
             hold-trigger-on-release;
         };
@@ -169,6 +171,7 @@
                 26 27 28 29 30 31      // left home row
                 39 40 41 42 43 44      // left bottom row
                 53 54 55 56 57         // left thumb keys
+                59 60 61 62 63         // right thumb keys
             >;
             hold-trigger-on-release;
         };
