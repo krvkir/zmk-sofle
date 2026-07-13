@@ -388,7 +388,7 @@
    &kp TAB         &kp Q       &kp W         &kp E        &kp R         &kp T         &mmv MOVE_DOWN  &kp Y        &kp U          &kp I       &kp O         &kp P          &kp LBKT
    &mo NAV         &hm LWIN A  &hml LALT S   &hml LSHFT D &hmlc LCTRL F &kp G         &mmv MOVE_LEFT  &kp H        &hmr LCTRL J   &hmr LSHFT K &hmr LALT L  &hmr LWIN SEMI  &kp APOS
    &kp LSHFT       &kp Z       &kp X         &kp C        &kp V         &kp B         &mmv MOVE_RIGHT &kp N        &kp M          &kp COMMA   &kp DOT       &kp FSLH       &kp RSHFT
-   &rgb_ug RGB_TOG &kp UP      &kp DOWN      &hm RALT LBKT &hm LSHIFT TAB &ltq NAV ENTER &mkp LCLK  &ltq NAV SPACE &hm RSHFT APOS &hm RCTRL RBKT &kp MINUS  &kp EQUAL
+   &rgb_ug RGB_TOG &kp UP      &kp DOWN      &hm RWIN LBKT &hm LSHIFT TAB &ltq NAV ENTER &mkp LCLK  &ltq NAV SPACE &hm RSHFT APOS &hm RCTRL RBKT &kp MINUS  &kp EQUAL
 /*             ╰53────────────54────────────55────────────56────────────57───────╯   ╰58───────╯   ╰59────────────60────────────61────────────62────────────63──────────╯                */
             >;
             sensor-bindings = <&rgb_brightness_encoder>;
