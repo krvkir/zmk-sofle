@@ -56,7 +56,7 @@ layers:
   - RGB TOG
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
-  - {t: '[', h: '$$mdi:apple-keyboard-option$$', s: '{'}
+  - {t: '[', h: RWIN, s: '{'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: Nav}
   - $$mdi:mouse-left-click-outline$$
