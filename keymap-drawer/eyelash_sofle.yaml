@@ -331,3 +331,9 @@ combos:
 - p: [57, 59]
   k: Srv
   l: [Nav]
+- p: [55, 40]
+  k: '&macro_c_the'
+  l: [Base]
+- p: [55, 30]
+  k: '&macro_c_for'
+  l: [Base]
