@@ -414,7 +414,7 @@
 
         // Layer 2: Navigation 2
         // (On my linux setup right control switches level 3 shift, where punctuation signs work identically on every locale.)
-        Nav {
+        Nav2 {
             bindings = <
 /*╭0────────────1─────────────2─────────────3─────────────4─────────────5────────╮   ╭6────────╮   ╭7─────────────8─────────────9─────────────10────────────11────────────12───────╮     */
    ___          &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &msc SCRL_UP    &kp F6      &kp F7        &kp F8        &kp F9        &kp F10       ___
